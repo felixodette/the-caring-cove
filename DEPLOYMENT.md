@@ -1,6 +1,9 @@
 # cPanel Deployment Guide
 
-Deployments are configured per branch:
+Deployments are configured per branch. Your server has:
+- `repositories/` — where Git repos are cloned (use subfolders here)
+- `public_html/` — main domain (thecaringcove.co.ke) document root
+- `dev.thecaringcove.co.ke/` — subdomain document root
 
 | Branch | Domain |
 |--------|--------|
@@ -23,7 +26,7 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 4. Configure:
    - **Clone a Repository**: Turn **ON**
    - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
-   - **Repository Path**: e.g. `repositories/thecaringcove-prod` or `thecaringcove.co.ke`
+   - **Repository Path**: `repositories/thecaringcove-prod` (uses your existing `repositories` folder)
    - **Repository Name**: `the-caring-cove-prod` (or any label you prefer)
 5. Click **Create** and wait for the clone to finish
 
@@ -69,7 +72,7 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 3. Configure:
    - **Clone a Repository**: Turn **ON**
    - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
-   - **Repository Path**: e.g. `repositories/thecaringcove-dev` or `dev.thecaringcove.co.ke`
+   - **Repository Path**: `repositories/thecaringcove-dev` (separate from production)
    - **Repository Name**: `the-caring-cove-dev`
 4. Click **Create**
 
@@ -100,10 +103,10 @@ Copy `.env.example` to `.env.local` in the dev repo folder and configure staging
 
 ## Summary: Branch selection
 
-| Environment | Repository Path (example) | Branch to select |
-|-------------|---------------------------|------------------|
-| Production  | `repositories/thecaringcove-prod` | **main** |
-| Staging     | `repositories/thecaringcove-dev`  | **develop** |
+| Environment | Repository Path | Branch | Domain |
+|-------------|-----------------|--------|--------|
+| Production  | `repositories/thecaringcove-prod` | **main** | thecaringcove.co.ke |
+| Staging     | `repositories/thecaringcove-dev`  | **develop** | dev.thecaringcove.co.ke |
 
 The branch is chosen in **Manage → Pull or Deploy → Checked-Out Branch**. Each repo is independent, so production uses `main` and staging uses `develop`.
 
