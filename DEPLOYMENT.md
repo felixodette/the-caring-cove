@@ -50,10 +50,10 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 2. Click **Create Application**
 3. Configure:
    - **Node.js version**: 18 or higher
-   - **Application root**: same as your **Repository Path** (e.g. `repositories/thecaringcove-prod`)
-   - **Application URL**: `thecaringcove.co.ke` (or leave blank and use subdomain)
-   - **Application startup file**: `server.js` — or use **Run script**: `npm start`
-4. Create the app, then point your domain’s document root to this app (or use the app’s URL)
+   - **Application root**: `repositories/thecaringcove-prod`
+   - **Application URL**: Select **thecaringcove.co.ke**
+   - **Application startup file**: `server.js` (or use `npm start` if your host has a Run script field)
+4. Click **Create**, then **Start** the app
 
 #### 5. Environment variables
 
@@ -90,10 +90,20 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 
 #### 4. Set up the Node.js app for the subdomain
 
-1. Go to **Setup Node.js App**
-2. Create another application with:
-   - **Application root**: your dev repo path (e.g. `repositories/thecaringcove-dev`)
-   - **Application URL**: `dev.thecaringcove.co.ke`
+1. Go to **cPanel → Software → Setup Node.js App**
+2. Click **Create Application**
+3. Fill in the form:
+   - **Node.js version**: Select **18** or higher
+   - **Application root**: Enter `repositories/thecaringcove-dev`  
+     (Path relative to your home directory. Some hosts show it as `/home/username/repositories/thecaringcove-dev`.)
+   - **Application URL**: Select **dev.thecaringcove.co.ke** from the dropdown
+   - **Application startup file**: Enter `server.js`  
+     (The repo includes a `server.js` for cPanel/Passenger. If your host has a "Run script" field instead, use `npm start`.)
+4. Click **Create**
+5. After creation, click **Run NPM Install** if that option appears (otherwise the deploy step handles it)
+6. Click **Start** or **Restart** to run the app
+
+**Important:** Run **Deploy HEAD Commit** (step 3) before starting the app so `npm run build` has completed.
 
 #### 5. Environment variables
 
