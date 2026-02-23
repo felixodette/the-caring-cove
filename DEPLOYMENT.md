@@ -2,91 +2,136 @@
 
 Deployments are configured per branch:
 
-| Branch | Domain | Document Root |
-|--------|--------|---------------|
-| `develop` | dev.thecaringcove.co.ke | Subdomain docroot |
-| `main` | thecaringcove.co.ke | Main domain docroot |
+| Branch | Domain |
+|--------|--------|
+| `develop` | dev.thecaringcove.co.ke |
+| `main` | thecaringcove.co.ke |
 
-## Prerequisites
+---
 
-- Node.js 18+ enabled in cPanel (Setup Node.js App)
-- Git Version Control installed in cPanel
+## Step-by-Step: Set Up Each Environment
 
-## Setup: Two Separate Deployment Environments
+You will create **two separate Git repositories** in cPanel—one for each domain. Each repository pulls a different branch from the same GitHub repo.
 
-### 1. Production (thecaringcove.co.ke)
+### Production (thecaringcove.co.ke) — uses `main` branch
 
-1. Create a Git repository in cPanel:
-   - **cPanel → Git Version Control → Create**
-   - Repository URL: `https://github.com/felixodette/the-caring-cove.git`
-   - Clone to: `~/thecaringcove.co.ke` (or your production docroot)
+#### 1. Clone the repository
 
-2. After cloning, configure:
-   - **Branch**: `main`
-   - **Deploy Path**: Document root for `thecaringcove.co.ke` (e.g. `~/public_html` or `~/thecaringcove.co.ke/public_html`)
+1. Log in to **cPanel**
+2. Go to **Files → Git Version Control**
+3. Click **Create**
+4. Configure:
+   - **Clone a Repository**: Turn **ON**
+   - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
+   - **Repository Path**: e.g. `repositories/thecaringcove-prod` or `thecaringcove.co.ke`
+   - **Repository Name**: `the-caring-cove-prod` (or any label you prefer)
+5. Click **Create** and wait for the clone to finish
 
-3. Set **Deploy Script** (optional, in cPanel Git settings):
-   - Path: `scripts/deploy.sh`
-   - Or run manually after each pull:
-     ```bash
-     cd ~/thecaringcove.co.ke
-     npm ci --omit=dev
-     npm run build
-     ```
+#### 2. Switch to the `main` branch
 
-4. Create Node.js Application in cPanel:
-   - **cPanel → Setup Node.js App → Create Application**
-   - Application root: `~/thecaringcove.co.ke` (or your deploy path)
-   - Application URL: `thecaringcove.co.ke`
-   - Application startup file: `node_modules/next/dist/bin/next`
-   - Run script: `npm start` (or `node node_modules/next/dist/bin/next start`)
+1. In the repository list, click **Manage** next to the repo you just created
+2. Open the **Pull or Deploy** tab
+3. Find **Checked-Out Branch**
+4. Select **main** from the dropdown
+5. Click **Update** — this checks out `main` and pulls the latest code
 
-5. Copy `.env.example` to `.env.local` and configure values.
+#### 3. Deploy (build the app)
 
-### 2. Staging (dev.thecaringcove.co.ke)
+1. Still in **Pull or Deploy**
+2. Click **Update from Remote** to pull the latest changes
+3. Click **Deploy HEAD Commit** — this runs the tasks in `.cpanel.yml` (`npm ci` and `npm run build`)
 
-1. Create a second Git repository in cPanel:
-   - **cPanel → Git Version Control → Create**
-   - Repository URL: `https://github.com/felixodette/the-caring-cove.git`
-   - Clone to: `~/dev.thecaringcove.co.ke` (or your subdomain docroot)
+#### 4. Set up the Node.js app
 
-2. Configure:
-   - **Branch**: `develop`
-   - **Deploy Path**: Document root for `dev.thecaringcove.co.ke`
+1. Go to **Software → Setup Node.js App**
+2. Click **Create Application**
+3. Configure:
+   - **Node.js version**: 18 or higher
+   - **Application root**: same as your **Repository Path** (e.g. `repositories/thecaringcove-prod`)
+   - **Application URL**: `thecaringcove.co.ke` (or leave blank and use subdomain)
+   - **Application startup file**: `server.js` — or use **Run script**: `npm start`
+4. Create the app, then point your domain’s document root to this app (or use the app’s URL)
 
-3. Set **Deploy Script**: same as production (`scripts/deploy.sh`)
+#### 5. Environment variables
 
-4. Create Node.js Application for the subdomain:
-   - Application root: `~/dev.thecaringcove.co.ke`
-   - Application URL: `dev.thecaringcove.co.ke`
+1. In **File Manager**, go to your repository folder
+2. Copy `.env.example` to `.env.local`
+3. Edit `.env.local` and add your production values (e.g. `NEXT_PUBLIC_WHATSAPP_NUMBER`)
 
-5. Copy `.env.example` to `.env.local` for staging.
+---
 
-## Deployment Workflow
+### Staging (dev.thecaringcove.co.ke) — uses `develop` branch
+
+#### 1. Clone the repository again
+
+1. Go to **Files → Git Version Control**
+2. Click **Create**
+3. Configure:
+   - **Clone a Repository**: Turn **ON**
+   - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
+   - **Repository Path**: e.g. `repositories/thecaringcove-dev` or `dev.thecaringcove.co.ke`
+   - **Repository Name**: `the-caring-cove-dev`
+4. Click **Create**
+
+#### 2. Switch to the `develop` branch
+
+1. Click **Manage** for this repo
+2. Open **Pull or Deploy**
+3. In **Checked-Out Branch**, select **develop**
+4. Click **Update**
+
+#### 3. Deploy
+
+1. Click **Update from Remote**
+2. Click **Deploy HEAD Commit**
+
+#### 4. Set up the Node.js app for the subdomain
+
+1. Go to **Setup Node.js App**
+2. Create another application with:
+   - **Application root**: your dev repo path (e.g. `repositories/thecaringcove-dev`)
+   - **Application URL**: `dev.thecaringcove.co.ke`
+
+#### 5. Environment variables
+
+Copy `.env.example` to `.env.local` in the dev repo folder and configure staging values.
+
+---
+
+## Summary: Branch selection
+
+| Environment | Repository Path (example) | Branch to select |
+|-------------|---------------------------|------------------|
+| Production  | `repositories/thecaringcove-prod` | **main** |
+| Staging     | `repositories/thecaringcove-dev`  | **develop** |
+
+The branch is chosen in **Manage → Pull or Deploy → Checked-Out Branch**. Each repo is independent, so production uses `main` and staging uses `develop`.
+
+---
+
+## Deploying updates
 
 ### Deploy to dev.thecaringcove.co.ke
-```bash
-git push origin develop
-```
-Then in cPanel: **Git → Deploy** for the dev repository.
+
+1. Push to GitHub: `git push origin develop`
+2. In cPanel: **Git Version Control → Manage** (dev repo) → **Pull or Deploy**
+3. Click **Update from Remote**
+4. Click **Deploy HEAD Commit**
 
 ### Deploy to thecaringcove.co.ke
-```bash
-git push origin main
-```
-Then in cPanel: **Git → Deploy** for the production repository.
 
-## Optional: Webhook Auto-Deploy
+1. Push to GitHub: `git push origin main`
+2. In cPanel: **Git Version Control → Manage** (prod repo) → **Pull or Deploy**
+3. Click **Update from Remote**
+4. Click **Deploy HEAD Commit**
 
-To auto-deploy on push, you can set up a GitHub webhook that calls a cPanel endpoint, or use a cron job that runs `git pull` periodically. Contact your host for webhook support.
+---
 
-## Alternative: Single Repo, Two Deploy Paths
+## What `.cpanel.yml` does
 
-If your cPanel supports multiple Git deployments from the same repo:
+The `.cpanel.yml` file in the repo defines deployment tasks. When you click **Deploy HEAD Commit**, cPanel runs:
 
-1. Clone once to a shared location
-2. Create two deployments:
-   - Deployment 1: Branch `main` → production docroot
-   - Deployment 2: Branch `develop` → dev subdomain docroot
+- `npm ci` — install dependencies
+- `npm run build` — build the Next.js app
 
-Each deployment uses its own deploy script path.
+After deployment, restart the Node.js app in **Setup Node.js App** if it doesn’t auto-restart.

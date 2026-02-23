@@ -1,0 +1,7 @@
+---
+# cPanel deployment tasks - runs when you click "Deploy HEAD Commit"
+# Runs from the repository root
+deployment:
+  tasks:
+    - npm ci
+    - npm run build
