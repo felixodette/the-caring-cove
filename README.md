@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Deployment
+
+| Branch | Deploys To |
+|--------|------------|
+| `develop` | dev.thecaringcove.co.ke |
+| `main` | thecaringcove.co.ke |
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for cPanel setup. See [GITFLOW.md](./GITFLOW.md) for the GitFlow workflow.
+
 ## Getting Started
 
 First, run the development server:
