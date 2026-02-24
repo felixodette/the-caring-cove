@@ -6,83 +6,84 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 20%;
+    /* High-End Estate palette - Sage, Warm Sand, Cream, Deep Charcoal */
+    --background: 30 60% 85%; /* Cream/Linen #F1E3D3 - reduces eye strain */
+    --foreground: 230 20% 20%; /* Deep Charcoal #2B2D42 - WCAG AA contrast */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card: 32 55% 90%;
+    --card-foreground: 230 20% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover: 32 55% 92%;
+    --popover-foreground: 230 20% 20%;
 
-    --primary: 217 91% 53%;
+    --primary: 90 30% 40%; /* Sage Green #5D6D3E - nature & growth */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 60% 97%;
-    --secondary-foreground: 220 20% 20%;
+    --secondary: 30 50% 60%; /* Warm Sand/Terracotta #D4A373 */
+    --secondary-foreground: 230 20% 20%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 30 45% 78%;
+    --muted-foreground: 230 15% 35%;
 
-    --accent: 217 91% 53%;
+    --accent: 90 30% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 53%;
+    --border: 30 35% 80%;
+    --input: 30 35% 80%;
+    --ring: 90 30% 40%;
 
     --radius: 0.5rem;
 
-    --navy: 220 40% 13%;
-    --navy-foreground: 0 0% 100%;
-    --section-bg: 220 60% 97%;
-    --subtitle: 217 91% 53%;
+    --navy: 230 20% 20%; /* Deep Charcoal for headers/footer */
+    --navy-foreground: 30 60% 85%; /* Cream on dark */
+    --section-bg: 30 50% 78%; /* Slightly darker cream for section contrast */
+    --subtitle: 90 30% 40%; /* Sage for labels */
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 53%;
+    --sidebar-background: 32 55% 90%;
+    --sidebar-foreground: 230 20% 20%;
+    --sidebar-primary: 90 30% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 50% 78%;
+    --sidebar-accent-foreground: 230 20% 20%;
+    --sidebar-border: 30 35% 80%;
+    --sidebar-ring: 90 30% 40%;
   }
 
   .dark {
-    --background: 220 40% 7%;
-    --foreground: 0 0% 95%;
-    --card: 220 40% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 220 40% 10%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 217 91% 53%;
+    --background: 230 25% 12%;
+    --foreground: 30 60% 90%;
+    --card: 230 25% 15%;
+    --card-foreground: 30 60% 90%;
+    --popover: 230 25% 15%;
+    --popover-foreground: 30 60% 90%;
+    --primary: 90 35% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 220 20% 18%;
-    --muted-foreground: 220 10% 60%;
-    --accent: 217 91% 53%;
+    --secondary: 30 40% 35%;
+    --secondary-foreground: 30 60% 90%;
+    --muted: 230 20% 20%;
+    --muted-foreground: 30 40% 65%;
+    --accent: 90 35% 45%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 217 91% 53%;
-    --navy: 220 40% 7%;
-    --navy-foreground: 0 0% 100%;
-    --section-bg: 220 30% 10%;
-    --subtitle: 217 91% 60%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 230 20% 22%;
+    --input: 230 20% 22%;
+    --ring: 90 35% 45%;
+    --navy: 230 25% 12%;
+    --navy-foreground: 30 60% 90%;
+    --section-bg: 230 22% 16%;
+    --subtitle: 90 40% 55%;
+    --sidebar-background: 230 25% 12%;
+    --sidebar-foreground: 30 60% 90%;
+    --sidebar-primary: 90 35% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217 91% 53%;
+    --sidebar-accent: 230 20% 18%;
+    --sidebar-accent-foreground: 30 60% 90%;
+    --sidebar-border: 230 20% 22%;
+    --sidebar-ring: 90 35% 45%;
   }
 }
 
