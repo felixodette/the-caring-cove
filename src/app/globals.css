@@ -10,10 +10,10 @@
     --background: 30 60% 85%; /* Cream/Linen #F1E3D3 - reduces eye strain */
     --foreground: 230 20% 20%; /* Deep Charcoal #2B2D42 - WCAG AA contrast */
 
-    --card: 32 55% 90%;
+    --card: 0 0% 100%; /* White - contrast against cream sections */
     --card-foreground: 230 20% 20%;
 
-    --popover: 32 55% 92%;
+    --popover: 0 0% 100%;
     --popover-foreground: 230 20% 20%;
 
     --primary: 90 30% 40%; /* Sage Green #5D6D3E - nature & growth */
@@ -39,10 +39,10 @@
 
     --navy: 230 20% 20%; /* Deep Charcoal for headers/footer */
     --navy-foreground: 30 60% 85%; /* Cream on dark */
-    --section-bg: 30 50% 78%; /* Slightly darker cream for section contrast */
+    --section-bg: 0 0% 100%; /* White - contrast between page sections */
     --subtitle: 90 30% 40%; /* Sage for labels */
 
-    --sidebar-background: 32 55% 90%;
+    --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 230 20% 20%;
     --sidebar-primary: 90 30% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
