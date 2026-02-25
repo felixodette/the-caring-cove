@@ -1,7 +1,7 @@
 ---
 # cPanel deployment tasks - runs when you click "Deploy HEAD Commit"
-# Runs from the repository root
+# Runs from the repository root (repositories/thecaringcove-dev or thecaringcove-prod)
 deployment:
   tasks:
-    - npm ci
+    - npm install
     - npm run build

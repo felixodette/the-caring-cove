@@ -42,7 +42,7 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 
 1. Still in **Pull or Deploy**
 2. Click **Update from Remote** to pull the latest changes
-3. Click **Deploy HEAD Commit** — this runs the tasks in `.cpanel.yml` (`npm ci` and `npm run build`)
+3. Click **Deploy HEAD Commit** — this runs the tasks in `.cpanel.yml` (`npm install` and `npm run build`)
 
 #### 4. Set up the Node.js app
 
@@ -144,7 +144,7 @@ The branch is chosen in **Manage → Pull or Deploy → Checked-Out Branch**. Ea
 
 The `.cpanel.yml` file in the repo defines deployment tasks. When you click **Deploy HEAD Commit**, cPanel runs:
 
-- `npm ci` — install dependencies
+- `npm install` — install dependencies
 - `npm run build` — build the Next.js app
 
 After deployment, restart the Node.js app in **Setup Node.js App** if it doesn’t auto-restart.
@@ -158,8 +158,17 @@ After deployment, restart the Node.js app in **Setup Node.js App** if it doesn�
 **Cause:** The app was started before dependencies were installed, or the Node.js app is running the wrong script.
 
 **Fix:**
-1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to finish (this runs `npm ci` and `npm run build`).
+1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to finish (this runs `npm install` and `npm run build`).
 2. In **Setup Node.js App**, ensure the **Application startup file** is `server.js` (or **Run script** is `npm start`), **not** `npm run dev`. Use `dev` only for local development.
+
+### `Cannot find module '.../node_modules/next/dist/bin/next'`
+
+**Cause:** `node_modules` is missing or incomplete. The deploy may have failed or not run.
+
+**Fix:**
+1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to complete. Check the deploy log for errors.
+2. In **Setup Node.js App**, click **Run NPM Install** if that button is available, then **Restart** the app.
+3. Via **File Manager**, verify `repositories/thecaringcove-dev/node_modules` exists. If not, the deploy failed—check the deploy log.
 
 ### Node version too old (Node 10, etc.)
 
