@@ -10,7 +10,7 @@ const contactInfo = [
 
 export default function ContactContent() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <p className="section-subtitle">Contact</p>

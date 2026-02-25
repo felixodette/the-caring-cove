@@ -17,7 +17,7 @@ const members = [
 
 export default function TeamContent() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {members.map((m, i) => (

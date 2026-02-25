@@ -13,7 +13,7 @@ const services = [
 ];
 
 const Services = () => (
-  <section id="services" className="py-20 bg-section-bg">
+  <section id="services" className="py-20 bg-white">
     <div className="container mx-auto">
       <div className="text-center mb-12">
         <p className="section-subtitle">Our Service</p>

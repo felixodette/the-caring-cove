@@ -47,7 +47,7 @@ export default function AboutContent() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-section-bg">
+      <section className="py-20 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

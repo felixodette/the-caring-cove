@@ -18,7 +18,7 @@ const features = [
 ];
 
 const Pricing = () => (
-  <section className="py-20 bg-section-bg">
+  <section className="py-20 bg-white">
     <div className="container mx-auto">
       <div className="text-center mb-12">
         <p className="section-subtitle">Pricing Plan</p>

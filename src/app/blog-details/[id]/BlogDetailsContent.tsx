@@ -15,7 +15,7 @@ export default function BlogDetailsContent() {
       <p className="text-muted-foreground mb-6">
         Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget elementum acondimentum eget, diam. Nam at tortor in tellus interdum sagitliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet.
       </p>
-      <blockquote className="border-l-4 border-primary bg-section-bg p-6 italic text-muted-foreground mb-6">
+      <blockquote className="border-l-4 border-primary bg-white p-6 italic text-muted-foreground mb-6 rounded-r-lg shadow-sm">
         Sollicitudin nisi nulla eget augue. Maecenas quis turpaliquet, portorem et, dictum purus. Cdimentfermentposuere world class service provider
       </blockquote>
       <img src="/images/blog-detail.jpg" alt="Blog detail" className="w-full rounded-lg mb-6" />
@@ -30,7 +30,7 @@ export default function BlogDetailsContent() {
       </ul>
 
       {/* Comment Form */}
-      <div className="bg-section-bg p-8 rounded-lg">
+      <div className="bg-white p-8 rounded-lg shadow-sm">
         <h3 className="text-xl font-bold text-foreground mb-6">Leave a Comment</h3>
         <form className="space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">

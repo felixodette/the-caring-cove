@@ -15,7 +15,7 @@ const recentPosts = [
 const BlogSidebar = () => (
   <aside className="space-y-8">
     {/* Search */}
-    <div className="bg-card border border-border rounded-lg p-6">
+    <div className="bg-white border border-border rounded-lg p-6 shadow-sm">
       <h4 className="font-bold text-lg text-foreground mb-4 border-b-2 border-primary pb-2 inline-block">Search Keyword</h4>
       <div className="relative mt-4">
         <input
@@ -30,7 +30,7 @@ const BlogSidebar = () => (
     </div>
 
     {/* Categories */}
-    <div className="bg-card border border-border rounded-lg p-6">
+    <div className="bg-white border border-border rounded-lg p-6 shadow-sm">
       <h4 className="font-bold text-lg text-foreground mb-4 border-b-2 border-primary pb-2 inline-block">Category</h4>
       <ul className="space-y-3 mt-4">
         {categories.map((c) => (
@@ -44,7 +44,7 @@ const BlogSidebar = () => (
     </div>
 
     {/* Recent Posts */}
-    <div className="bg-card border border-border rounded-lg p-6">
+    <div className="bg-white border border-border rounded-lg p-6 shadow-sm">
       <h4 className="font-bold text-lg text-foreground mb-4 border-b-2 border-primary pb-2 inline-block">Recent Posts</h4>
       <div className="space-y-4 mt-4">
         {recentPosts.map((p) => (

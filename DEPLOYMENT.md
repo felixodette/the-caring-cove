@@ -148,3 +148,35 @@ The `.cpanel.yml` file in the repo defines deployment tasks. When you click **De
 - `npm run build` — build the Next.js app
 
 After deployment, restart the Node.js app in **Setup Node.js App** if it doesn’t auto-restart.
+
+---
+
+## Troubleshooting
+
+### `next: command not found` / `node_modules missing`
+
+**Cause:** The app was started before dependencies were installed, or the Node.js app is running the wrong script.
+
+**Fix:**
+1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to finish (this runs `npm ci` and `npm run build`).
+2. In **Setup Node.js App**, ensure the **Application startup file** is `server.js` (or **Run script** is `npm start`), **not** `npm run dev`. Use `dev` only for local development.
+
+### Node version too old (Node 10, etc.)
+
+**Cause:** Next.js 16 requires **Node 18 or higher**. The error path may show `/opt/alt/alt-nodejs10`.
+
+**Fix:**
+1. Go to **Setup Node.js App**
+2. Click **Edit** on your application
+3. Change **Node.js version** to **18** or **20**
+4. Save, then **Restart** the app
+
+If Node 18+ isn't available, ask your host to add it (most cPanel hosts support Node 18+).
+
+### Correct order of setup
+
+1. Clone repo and switch to the correct branch
+2. **Deploy HEAD Commit** (installs deps and builds) — wait for success
+3. Create/configure the Node.js app with `server.js` or `npm start`
+4. Set `NODE_ENV=production` in the app's environment variables (if your host allows)
+5. Start the app

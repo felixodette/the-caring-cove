@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* High-End Estate palette - Sage, Warm Sand, Cream, Deep Charcoal */
-    --background: 30 60% 85%; /* Cream/Linen #F1E3D3 - reduces eye strain */
+    --background: 0 0% 100%; /* White - reverted from cream */
     --foreground: 230 20% 20%; /* Deep Charcoal #2B2D42 - WCAG AA contrast */
 
     --card: 0 0% 100%; /* White - contrast against cream sections */
@@ -23,7 +23,7 @@
     --secondary-foreground: 230 20% 20%;
 
     --muted: 30 45% 78%;
-    --muted-foreground: 230 15% 35%;
+    --muted-foreground: 230 15% 28%; /* Darker for WCAG AA on white cards */
 
     --accent: 90 30% 40%;
     --accent-foreground: 0 0% 100%;

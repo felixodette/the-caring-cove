@@ -10,7 +10,7 @@ const categories = [
 
 export default function ServiceDetailsContent() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main content */}

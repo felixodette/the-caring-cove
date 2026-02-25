@@ -13,7 +13,7 @@ export default function BlogContent() {
   return (
     <>
       {posts.map((p) => (
-        <article key={p.id} className="bg-card border border-border rounded-lg overflow-hidden">
+        <article key={p.id} className="bg-white border border-border rounded-lg overflow-hidden shadow-sm">
           <img src={p.img} alt={p.title} className="w-full h-72 object-cover" />
           <div className="p-6">
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs mb-4">

@@ -14,7 +14,7 @@ export default function TeamDetailsContent() {
   return (
     <>
       {/* Team member info */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <img src="/images/team-detail.jpg" alt="Karshin Kumar" className="rounded-lg w-full max-w-md" />
@@ -43,7 +43,7 @@ export default function TeamDetailsContent() {
       </section>
 
       {/* Experience */}
-      <section className="py-16 bg-section-bg">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
           <h3 className="text-2xl font-bold text-foreground mb-8">My Experiences</h3>
           <div className="grid md:grid-cols-2 gap-6">
@@ -61,7 +61,7 @@ export default function TeamDetailsContent() {
       </section>
 
       {/* Skills */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
           <h3 className="text-2xl font-bold text-foreground mb-8">My Professional</h3>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
