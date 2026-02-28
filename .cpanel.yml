@@ -1,6 +1,6 @@
 ---
-# cPanel deployment tasks - runs when you click "Deploy HEAD Commit"
-# Runs from the repository root (repositories/thecaringcove-dev or thecaringcove-prod)
+# cPanel deployment - static export (no Node.js runtime)
+# Build creates out/ folder; serve from document root
 deployment:
   tasks:
     - npm install

@@ -3,6 +3,10 @@ import PageBanner from "@/components/sections/PageBanner";
 import BlogSidebar from "@/components/sections/BlogSidebar";
 import BlogDetailsContent from "./BlogDetailsContent";
 
+export function generateStaticParams() {
+  return [{ id: "1" }, { id: "2" }, { id: "3" }];
+}
+
 export default function BlogDetailsPage({ params }: { params: Promise<{ id: string }> }) {
   return (
     <PageLayout>

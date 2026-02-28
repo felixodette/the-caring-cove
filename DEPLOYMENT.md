@@ -1,9 +1,6 @@
-# cPanel Deployment Guide
+# cPanel Deployment Guide (Static Export)
 
-Deployments are configured per branch. Your server has:
-- `repositories/` — where Git repos are cloned (use subfolders here)
-- `public_html/` — main domain (thecaringcove.co.ke) document root
-- `dev.thecaringcove.co.ke/` — subdomain document root
+This app uses **static export** — no Node.js runtime on the server. The build produces static HTML/CSS/JS in the `out/` folder, which Apache serves directly. This works within Safaricom shared hosting's 1GB memory limit (no Node.js build or runtime needed on the server).
 
 | Branch | Domain |
 |--------|--------|
@@ -14,9 +11,7 @@ Deployments are configured per branch. Your server has:
 
 ## Step-by-Step: Set Up Each Environment
 
-You will create **two separate Git repositories** in cPanel—one for each domain. Each repository pulls a different branch from the same GitHub repo.
-
-### Production (thecaringcove.co.ke) — uses `main` branch
+### Staging (dev.thecaringcove.co.ke) — uses `develop` branch
 
 #### 1. Clone the repository
 
@@ -26,55 +21,9 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 4. Configure:
    - **Clone a Repository**: Turn **ON**
    - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
-   - **Repository Path**: `repositories/thecaringcove-prod` (uses your existing `repositories` folder)
-   - **Repository Name**: `the-caring-cove-prod` (or any label you prefer)
-5. Click **Create** and wait for the clone to finish
-
-#### 2. Switch to the `main` branch
-
-1. In the repository list, click **Manage** next to the repo you just created
-2. Open the **Pull or Deploy** tab
-3. Find **Checked-Out Branch**
-4. Select **main** from the dropdown
-5. Click **Update** — this checks out `main` and pulls the latest code
-
-#### 3. Deploy (build the app)
-
-1. Still in **Pull or Deploy**
-2. Click **Update from Remote** to pull the latest changes
-3. Click **Deploy HEAD Commit** — this runs the tasks in `.cpanel.yml` (`npm install` and `npm run build`)
-
-#### 4. Set up the Node.js app
-
-1. Go to **Software → Setup Node.js App**
-2. Click **Create Application**
-3. Configure:
-   - **Node.js version**: 18 or higher
-   - **Application root**: `repositories/thecaringcove-prod`
-   - **Application URL**: Select **thecaringcove.co.ke**
-   - **Application startup file**: `server.js` (or use `npm start` if your host has a Run script field)
-4. Click **Create**, then **Start** the app
-
-#### 5. Environment variables
-
-1. In **File Manager**, go to your repository folder
-2. Copy `.env.example` to `.env.local`
-3. Edit `.env.local` and add your production values (e.g. `NEXT_PUBLIC_WHATSAPP_NUMBER`)
-
----
-
-### Staging (dev.thecaringcove.co.ke) — uses `develop` branch
-
-#### 1. Clone the repository again
-
-1. Go to **Files → Git Version Control**
-2. Click **Create**
-3. Configure:
-   - **Clone a Repository**: Turn **ON**
-   - **Clone URL**: `https://github.com/felixodette/the-caring-cove.git`
-   - **Repository Path**: `repositories/thecaringcove-dev` (separate from production)
-   - **Repository Name**: `the-caring-cove-dev`
-4. Click **Create**
+   - **Repository Path**: `repositories/thecaringcove-dev`
+   - **Repository Name**: `the-caringcove-dev`
+5. Click **Create**
 
 #### 2. Switch to the `develop` branch
 
@@ -83,109 +32,137 @@ You will create **two separate Git repositories** in cPanel—one for each domai
 3. In **Checked-Out Branch**, select **develop**
 4. Click **Update**
 
-#### 3. Deploy
+#### 3. Build locally (recommended — server has 1GB limit)
 
-1. Click **Update from Remote**
-2. Click **Deploy HEAD Commit**
+The server's 1GB memory limit is too low for the Next.js build. Build on your machine:
 
-#### 4. Set up the Node.js app for the subdomain
+```bash
+git clone https://github.com/felixodette/the-caring-cove.git
+cd the-caring-cove
+git checkout develop
+npm install
+npm run build
+```
 
-1. Go to **cPanel → Software → Setup Node.js App**
-2. Click **Create Application**
-3. Fill in the form:
-   - **Node.js version**: Select **18** or higher
-   - **Application root**: Enter `repositories/thecaringcove-dev`  
-     (Path relative to your home directory. Some hosts show it as `/home/username/repositories/thecaringcove-dev`.)
-   - **Application URL**: Select **dev.thecaringcove.co.ke** from the dropdown
-   - **Application startup file**: Enter `server.js`  
-     (The repo includes a `server.js` for cPanel/Passenger. If your host has a "Run script" field instead, use `npm start`.)
-4. Click **Create**
-5. After creation, click **Run NPM Install** if that option appears (otherwise the deploy step handles it)
-6. Click **Start** or **Restart** to run the app
+This creates an `out/` folder with the static site.
 
-**Important:** Run **Deploy HEAD Commit** (step 3) before starting the app so `npm run build` has completed.
+#### 4. Upload the static site
 
-#### 5. Environment variables
+1. In **File Manager**, go to `repositories/thecaringcove-dev`
+2. Create an `out` folder if it doesn't exist
+3. Upload the **contents** of your local `out/` folder into it (index.html, _next/, images/, etc.)
 
-Copy `.env.example` to `.env.local` in the dev repo folder and configure staging values.
+Or use FTP/SFTP to upload the `out/` contents to `repositories/thecaringcove-dev/out/`.
 
----
+#### 5. Point the subdomain to the static output
 
-## Summary: Branch selection
+1. Go to **Domains → Subdomains**
+2. Find **dev.thecaringcove.co.ke** and click **Manage**
+3. Set **Document Root** to: `repositories/thecaringcove-dev/out`
+4. Save
 
-| Environment | Repository Path | Branch | Domain |
-|-------------|-----------------|--------|--------|
-| Production  | `repositories/thecaringcove-prod` | **main** | thecaringcove.co.ke |
-| Staging     | `repositories/thecaringcove-dev`  | **develop** | dev.thecaringcove.co.ke |
-
-The branch is chosen in **Manage → Pull or Deploy → Checked-Out Branch**. Each repo is independent, so production uses `main` and staging uses `develop`.
+The site is now live. **No Node.js app is required.**
 
 ---
 
-## Deploying updates
+### Production (thecaringcove.co.ke) — uses `main` branch
 
-### Deploy to dev.thecaringcove.co.ke
+Repeat the same steps with:
+- **Repository Path**: `repositories/thecaringcove-prod`
+- **Branch**: `main`
+- **Document Root**: `repositories/thecaringcove-prod/out`
 
-1. Push to GitHub: `git push origin develop`
-2. In cPanel: **Git Version Control → Manage** (dev repo) → **Pull or Deploy**
-3. Click **Update from Remote**
-4. Click **Deploy HEAD Commit**
+---
 
-### Deploy to thecaringcove.co.ke
+## Automatic deployment via GitHub Actions
 
-1. Push to GitHub: `git push origin main`
-2. In cPanel: **Git Version Control → Manage** (prod repo) → **Pull or Deploy**
-3. Click **Update from Remote**
-4. Click **Deploy HEAD Commit**
+Pushing to `develop` or `main` triggers a build and FTP upload. No manual upload needed.
+
+### One-time setup: Add FTP secrets
+
+1. In **GitHub**, go to your repo → **Settings → Secrets and variables → Actions**
+2. Click **New repository secret** and add:
+
+| Secret | Value |
+|--------|-------|
+| `FTP_SERVER` | Your FTP hostname (e.g. `ftp.thecaringcove.co.ke` or your cPanel server hostname) |
+| `FTP_USERNAME` | Your cPanel/FTP username |
+| `FTP_PASSWORD` | Your cPanel/FTP password |
+| `FTP_REMOTE_PATH_DEV` | Remote path for dev (e.g. `repositories/thecaringcove-dev/out` or `/home/thecarin/repositories/thecaringcove-dev/out`) |
+| `FTP_REMOTE_PATH_PROD` | Remote path for prod (e.g. `repositories/thecaringcove-prod/out`) |
+
+**Finding the FTP path:** In cPanel File Manager, the path is often relative to your home directory. If your home is `/home/thecarin`, the full path would be `/home/thecarin/repositories/thecaringcove-dev/out`. Some FTP servers use the home dir as root, so you may only need `repositories/thecaringcove-dev/out`.
+
+### How it works
+
+- **Push to `develop`** → Builds and deploys to dev.thecaringcove.co.ke
+- **Push to `main`** → Builds and deploys to thecaringcove.co.ke
+
+You can also run the workflow manually: **Actions** tab → select the workflow → **Run workflow**.
+
+---
+
+## Manual deployment (if not using GitHub Actions)
+
+1. **Build locally:**
+   ```bash
+   git pull origin develop   # or main for prod
+   npm install
+   npm run build
+   ```
+
+2. **Upload** the contents of the `out/` folder to `repositories/thecaringcove-dev/out/` (or `thecaringcove-prod/out/` for production) via File Manager or FTP.
+
+---
+
+## Optional: Try server-side build
+
+If you want to try building on the server (may fail with 1GB limit):
+
+1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy**
+2. Click **Update from Remote**
+3. Click **Deploy HEAD Commit**
+
+If the build succeeds, the `out/` folder will be created. Point the document root to `repositories/thecaringcove-dev/out` as in step 5 above.
+
+If it fails with "Out of memory", use the local build + upload method.
 
 ---
 
 ## What `.cpanel.yml` does
 
-The `.cpanel.yml` file in the repo defines deployment tasks. When you click **Deploy HEAD Commit**, cPanel runs:
+When you click **Deploy HEAD Commit**, cPanel runs:
 
 - `npm install` — install dependencies
-- `npm run build` — build the Next.js app
-
-After deployment, restart the Node.js app in **Setup Node.js App** if it doesn’t auto-restart.
+- `npm run build` — build the static export (output in `out/`)
 
 ---
 
 ## Troubleshooting
 
-### `next: command not found` / `node_modules missing`
+### Build fails on server: "Out of memory" / "WebAssembly"
 
-**Cause:** The app was started before dependencies were installed, or the Node.js app is running the wrong script.
+**Cause:** Safaricom shared hosting has a 1GB memory limit. The Next.js build needs more.
 
-**Fix:**
-1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to finish (this runs `npm install` and `npm run build`).
-2. In **Setup Node.js App**, ensure the **Application startup file** is `server.js` (or **Run script** is `npm start`), **not** `npm run dev`. Use `dev` only for local development.
+**Fix:** Build locally and upload the `out/` folder (see steps 3–4 above).
 
-### `Cannot find module '.../node_modules/next/dist/bin/next'`
+### GitHub Actions FTP deploy fails
 
-**Cause:** `node_modules` is missing or incomplete. The deploy may have failed or not run.
+**Cause:** Wrong credentials or path.
 
-**Fix:**
-1. In **Git Version Control → Manage** (your repo) → **Pull or Deploy** → click **Deploy HEAD Commit** and wait for it to complete. Check the deploy log for errors.
-2. In **Setup Node.js App**, click **Run NPM Install** if that button is available, then **Restart** the app.
-3. Via **File Manager**, verify `repositories/thecaringcove-dev/node_modules` exists. If not, the deploy failed—check the deploy log.
+**Fix:** Check the workflow run log. Verify `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, and `FTP_REMOTE_PATH_DEV`/`FTP_REMOTE_PATH_PROD` in repo secrets. Ensure the remote path exists on the server (create the `out` folder in File Manager if needed).
 
-### Node version too old (Node 10, etc.)
+### 404 on page refresh or direct URL
 
-**Cause:** Next.js 16 requires **Node 18 or higher**. The error path may show `/opt/alt/alt-nodejs10`.
+**Cause:** Apache needs to redirect all requests to `index.html` for client-side routing.
 
-**Fix:**
-1. Go to **Setup Node.js App**
-2. Click **Edit** on your application
-3. Change **Node.js version** to **18** or **20**
-4. Save, then **Restart** the app
+**Fix:** The `public/.htaccess` file is copied to `out/` during build. If missing, add it manually:
 
-If Node 18+ isn't available, ask your host to add it (most cPanel hosts support Node 18+).
-
-### Correct order of setup
-
-1. Clone repo and switch to the correct branch
-2. **Deploy HEAD Commit** (installs deps and builds) — wait for success
-3. Create/configure the Node.js app with `server.js` or `npm start`
-4. Set `NODE_ENV=production` in the app's environment variables (if your host allows)
-5. Start the app
+```apache
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+```
