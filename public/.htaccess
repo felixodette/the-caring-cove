@@ -1,4 +1,5 @@
 # Client-side routing for Next.js static export
+DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]

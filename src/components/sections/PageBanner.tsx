@@ -3,9 +3,10 @@ import Link from "next/link";
 interface PageBannerProps {
   title: string;
   breadcrumb: string;
+  subheadline?: string;
 }
 
-const PageBanner = ({ title, breadcrumb }: PageBannerProps) => (
+const PageBanner = ({ title, breadcrumb, subheadline }: PageBannerProps) => (
   <section className="relative bg-navy py-24 overflow-hidden">
     {/* Decorative elements */}
     <div className="absolute top-0 left-0 w-64 h-64 bg-primary/20 rounded-full -translate-x-1/3 -translate-y-1/4" />
@@ -30,6 +31,11 @@ const PageBanner = ({ title, breadcrumb }: PageBannerProps) => (
 
     <div className="container mx-auto text-center relative z-10">
       <h1 className="text-4xl md:text-5xl font-bold text-navy-foreground mb-4">{title}</h1>
+      {subheadline && (
+        <p className="text-navy-foreground/80 text-lg max-w-2xl mx-auto mb-6">
+          {subheadline}
+        </p>
+      )}
       <div className="flex items-center justify-center gap-2 text-navy-foreground/80 text-sm">
         <Link href="/" className="hover:text-primary transition-colors">Home</Link>
         <span>/</span>

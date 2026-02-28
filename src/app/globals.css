@@ -6,88 +6,91 @@
 
 @layer base {
   :root {
-    /* High-End Estate palette - Sage, Warm Sand, Cream, Deep Charcoal */
-    --background: 0 0% 100%; /* White - reverted from cream */
-    --foreground: 230 20% 20%; /* Deep Charcoal #2B2D42 - WCAG AA contrast */
+    /* Original blue theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%; /* White - contrast against cream sections */
-    --card-foreground: 230 20% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 230 20% 20%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 90 30% 40%; /* Sage Green #5D6D3E - nature & growth */
+    --primary: 221 83% 53%; /* Blue #2563EB */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 50% 60%; /* Warm Sand/Terracotta #D4A373 */
-    --secondary-foreground: 230 20% 20%;
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 30 45% 78%;
-    --muted-foreground: 230 15% 28%; /* Darker for WCAG AA on white cards */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 90 30% 40%;
+    --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 35% 80%;
-    --input: 30 35% 80%;
-    --ring: 90 30% 40%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
     --radius: 0.5rem;
 
-    --navy: 230 20% 20%; /* Deep Charcoal for headers/footer */
-    --navy-foreground: 30 60% 85%; /* Cream on dark */
-    --section-bg: 0 0% 100%; /* White - contrast between page sections */
-    --subtitle: 90 30% 40%; /* Sage for labels */
+    --navy: 222 47% 11%; /* Dark blue for headers/footer */
+    --navy-foreground: 210 40% 98%;
+    --section-bg: 0 0% 100%;
+    --subtitle: 221 83% 53%; /* Blue for labels */
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 230 20% 20%;
-    --sidebar-primary: 90 30% 40%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 50% 78%;
-    --sidebar-accent-foreground: 230 20% 20%;
-    --sidebar-border: 30 35% 80%;
-    --sidebar-ring: 90 30% 40%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 230 25% 12%;
-    --foreground: 30 60% 90%;
-    --card: 230 25% 15%;
-    --card-foreground: 30 60% 90%;
-    --popover: 230 25% 15%;
-    --popover-foreground: 30 60% 90%;
-    --primary: 90 35% 45%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 30 40% 35%;
-    --secondary-foreground: 30 60% 90%;
-    --muted: 230 20% 20%;
-    --muted-foreground: 30 40% 65%;
-    --accent: 90 35% 45%;
-    --accent-foreground: 0 0% 100%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 47% 11%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
-    --border: 230 20% 22%;
-    --input: 230 20% 22%;
-    --ring: 90 35% 45%;
-    --navy: 230 25% 12%;
-    --navy-foreground: 30 60% 90%;
-    --section-bg: 230 22% 16%;
-    --subtitle: 90 40% 55%;
-    --sidebar-background: 230 25% 12%;
-    --sidebar-foreground: 30 60% 90%;
-    --sidebar-primary: 90 35% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 230 20% 18%;
-    --sidebar-accent-foreground: 30 60% 90%;
-    --sidebar-border: 230 20% 22%;
-    --sidebar-ring: 90 35% 45%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+    --navy: 222 47% 11%;
+    --navy-foreground: 210 40% 98%;
+    --section-bg: 222 47% 15%;
+    --subtitle: 217 91% 60%;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }

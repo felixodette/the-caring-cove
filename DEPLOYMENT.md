@@ -46,20 +46,16 @@ npm run build
 
 This creates an `out/` folder with the static site.
 
-#### 4. Upload the static site
-
-1. In **File Manager**, go to `repositories/thecaringcove-dev`
-2. Create an `out` folder if it doesn't exist
-3. Upload the **contents** of your local `out/` folder into it (index.html, _next/, images/, etc.)
-
-Or use FTP/SFTP to upload the `out/` contents to `repositories/thecaringcove-dev/out/`.
-
-#### 5. Point the subdomain to the static output
+#### 4. Point the subdomain document root
 
 1. Go to **Domains → Subdomains**
 2. Find **dev.thecaringcove.co.ke** and click **Manage**
-3. Set **Document Root** to: `repositories/thecaringcove-dev/out`
+3. Set **Document Root** to: **`dev.thecaringcove.co.ke`** (the subdomain root folder)
 4. Save
+
+#### 5. Deploy the site
+
+The GitHub Action deploys directly to the subdomain root. Push to `develop` to trigger a deploy. The files (index.html, _next/, etc.) will be uploaded to `dev.thecaringcove.co.ke/` — they must be in the root itself, not in a subfolder.
 
 The site is now live. **No Node.js app is required.**
 
@@ -67,10 +63,10 @@ The site is now live. **No Node.js app is required.**
 
 ### Production (thecaringcove.co.ke) — uses `main` branch
 
-Repeat the same steps with:
-- **Repository Path**: `repositories/thecaringcove-prod`
-- **Branch**: `main`
-- **Document Root**: `repositories/thecaringcove-prod/out`
+1. **Clone** the repo to `repositories/thecaringcove-prod`, switch to `main` branch.
+2. **Document root:** Set the main domain's document root to `public_html` (or `thecaringcove.co.ke` if your host uses a separate folder for the main domain).
+3. **GitHub secrets:** Add `FTP_USERNAME_PROD` and `FTP_PASSWORD_PROD` for the production FTP account. The prod FTP root should be `public_html` (or the main domain folder).
+4. **Deploy:** Push to `main` — files upload to the prod FTP root.
 
 ---
 
@@ -85,13 +81,15 @@ Pushing to `develop` or `main` triggers a build and FTP upload. No manual upload
 
 | Secret | Value |
 |--------|-------|
-| `FTP_SERVER` | Your FTP hostname (e.g. `ftp.thecaringcove.co.ke` or your cPanel server hostname) |
-| `FTP_USERNAME` | Your cPanel/FTP username |
-| `FTP_PASSWORD` | Your cPanel/FTP password |
-| `FTP_REMOTE_PATH_DEV` | Remote path for dev (e.g. `repositories/thecaringcove-dev/out` or `/home/thecarin/repositories/thecaringcove-dev/out`) |
-| `FTP_REMOTE_PATH_PROD` | Remote path for prod (e.g. `repositories/thecaringcove-prod/out`) |
+| `FTP_SERVER` | Your FTP hostname (e.g. `ftp.thecaringcove.co.ke`) |
+| **Dev (develop branch)** | |
+| `FTP_USERNAME` | Dev FTP username (e.g. `dev-thecarin@thecaringcove.co.ke`) |
+| `FTP_PASSWORD` | Dev FTP password |
+| **Prod (main branch)** | |
+| `FTP_USERNAME_PROD` | Prod FTP username (e.g. main cPanel account or `thecarin@thecaringcove.co.ke`) |
+| `FTP_PASSWORD_PROD` | Prod FTP password |
 
-**Finding the FTP path:** In cPanel File Manager, the path is often relative to your home directory. If your home is `/home/thecarin`, the full path would be `/home/thecarin/repositories/thecaringcove-dev/out`. Some FTP servers use the home dir as root, so you may only need `repositories/thecaringcove-dev/out`.
+**Note:** Each FTP account's root is its document root. Dev account → `dev.thecaringcove.co.ke`. Prod account → `public_html` or `thecaringcove.co.ke`. Files deploy to the root (no subfolder).
 
 ### How it works
 
@@ -111,7 +109,7 @@ You can also run the workflow manually: **Actions** tab → select the workflow 
    npm run build
    ```
 
-2. **Upload** the contents of the `out/` folder to `repositories/thecaringcove-dev/out/` (or `thecaringcove-prod/out/` for production) via File Manager or FTP.
+2. **Upload** the contents of the `out/` folder to the document root (e.g. `dev.thecaringcove.co.ke/` for dev, `public_html/` for prod) via File Manager or FTP.
 
 ---
 
@@ -135,6 +133,32 @@ When you click **Deploy HEAD Commit**, cPanel runs:
 
 - `npm install` — install dependencies
 - `npm run build` — build the static export (output in `out/`)
+
+---
+
+## Contact Form (PHP Mail Bridge)
+
+The contact form uses a **PHP mail-bridge** script that deploys with your static site. The file `public/contact-handler.php` is copied to `out/contact-handler.php` during build and must be in your document root for the form to work.
+
+### How it works
+
+1. **Frontend:** The form uses progressive disclosure (2 steps) to reduce form fatigue. Step 1: Name, Phone, Email. Step 2: Primary Interest, Location (for lead qualification).
+2. **Backend:** Form submits to `/contact-handler.php`, which sends an email to `info@thecaringcove.co.ke`.
+3. **cPanel:** Ensure PHP is enabled for your domain. The script uses the standard `mail()` function.
+
+### Alternative: Formspree
+
+To use Formspree instead of PHP, set this environment variable before build:
+
+```
+NEXT_PUBLIC_CONTACT_FORM_ENDPOINT=https://formspree.io/f/YOUR_FORM_ID
+```
+
+Add it to `.env.local` for local dev, and to your GitHub Actions workflow (or build command) for production.
+
+### Auto-Responder (cPanel)
+
+Set up an Auto-Responder for `info@thecaringcove.co.ke` with your Dignity & Care Guide attached. Suggested message: *"Thank you for trusting us. While you wait for our call, please find our Dignity & Care Guide attached..."*
 
 ---
 

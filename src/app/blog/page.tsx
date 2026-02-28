@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import BlogSidebar from "@/components/sections/BlogSidebar";
 import BlogContent from "./BlogContent";
+
+export const metadata: Metadata = {
+  title: "Blog | Elder Care Insights & Memory Care Tips",
+  description:
+    "Articles on dementia care, senior living, and family support. Insights from The Caring Cove's UK-trained team in Karen, Nairobi.",
+  alternates: { canonical: "https://thecaringcove.co.ke/blog" },
+};
 
 export default function BlogPage() {
   return (

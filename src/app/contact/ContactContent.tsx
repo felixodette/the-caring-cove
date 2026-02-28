@@ -1,59 +1,109 @@
 "use client";
 
-import { MapPin, Mail, Phone } from "lucide-react";
+import { motion } from "framer-motion";
+import { getIcon } from "@/lib/icons";
+import siteContent from "@/content/site-content.json";
+import ContactForm from "@/components/ContactForm";
+import { MessageCircle, Clock } from "lucide-react";
 
-const contactInfo = [
-  { icon: MapPin, title: "Office address", lines: ["7895 Piermont, Albuquerque, NM 198866, USA"] },
-  { icon: Mail, title: "Email Address", lines: ["support@gmail.com", "www.infomar.net"] },
-  { icon: Phone, title: "Phone Number", lines: ["+012 (345) 678 99", "+12345678"] },
-];
+const content = siteContent.contactPage as {
+  title: string;
+  subheadline: string;
+  contactInfo: Array<{ icon: string; title: string; lines: string[] }>;
+};
 
 export default function ContactContent() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <p className="section-subtitle">Contact</p>
-          <h2 className="section-title">Get in touch</h2>
-          <p className="section-desc">
-            Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas augue atpellentesque laoreet
-          </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {contactInfo.map((c, i) => (
-            <div key={i} className="bg-card border border-border rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <c.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">{c.title}</h3>
-              {c.lines.map((l, j) => (
-                <p key={j} className="text-muted-foreground text-sm">{l}</p>
-              ))}
-            </div>
-          ))}
-        </div>
+    <>
+      {/* Contact Info Cards */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              We&apos;re Here to Help
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {content.subheadline}
+            </p>
+          </motion.div>
 
-        {/* Contact Form */}
-        <div className="max-w-3xl mx-auto bg-card border border-border rounded-lg p-8">
-          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Free consulting</h3>
-          <form className="space-y-4">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Your Name" className="w-full border border-border rounded px-4 py-3 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
-              <input type="email" placeholder="Email" className="w-full border border-border rounded px-4 py-3 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {content.contactInfo.map((c, i) => {
+              const Icon = getIcon(c.icon);
+              return (
+                <motion.a
+                  key={i}
+                  href={
+                    c.icon === "mail"
+                      ? `mailto:${c.lines[0]}`
+                      : c.icon === "phone"
+                        ? `tel:${c.lines[0].replace(/\s/g, "")}`
+                        : undefined
+                  }
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className={`bg-card border border-border rounded-xl p-8 text-center hover:shadow-lg hover:border-primary/30 transition-all ${
+                    c.icon === "mail" || c.icon === "phone"
+                      ? "cursor-pointer"
+                      : ""
+                  }`}
+                >
+                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">
+                    {c.title}
+                  </h3>
+                  {c.lines.map((l, j) => (
+                    <p
+                      key={j}
+                      className={`text-muted-foreground text-sm ${
+                        c.icon === "mail" || c.icon === "phone"
+                          ? "hover:text-primary transition-colors"
+                          : ""
+                      }`}
+                    >
+                      {l}
+                    </p>
+                  ))}
+                </motion.a>
+              );
+            })}
+          </div>
+
+          {/* Response time & WhatsApp CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+          >
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Clock className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">
+                We respond within 2 hours during business hours
+              </span>
             </div>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Phone" className="w-full border border-border rounded px-4 py-3 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
-              <input type="text" placeholder="Subject" className="w-full border border-border rounded px-4 py-3 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
+            <span className="hidden sm:inline text-muted-foreground">•</span>
+            <div className="flex items-center gap-2">
+              <MessageCircle className="w-5 h-5 text-green-600" />
+              <span className="text-sm font-medium text-foreground">
+                Diaspora? We prefer WhatsApp for time zone convenience
+              </span>
             </div>
-            <textarea rows={5} placeholder="Your Message" className="w-full border border-border rounded px-4 py-3 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary" />
-            <div className="text-center">
-              <button type="submit" className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold text-sm hover:bg-primary/90 transition-colors">
-                Submit Now
-              </button>
-            </div>
-          </form>
+          </motion.div>
+
+          {/* Contact Form */}
+          <ContactForm />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

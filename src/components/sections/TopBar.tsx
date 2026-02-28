@@ -1,11 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Mail, Facebook, Twitter, Instagram } from "lucide-react";
 
 const TopBar = () => (
   <div className="bg-background border-b border-border">
     <div className="container mx-auto flex flex-wrap items-center justify-between py-3 gap-4">
-      <Link href="/" className="text-2xl font-heading font-bold text-primary">
-        <span className="text-primary">i</span>techie
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/logo.png"
+          alt="The Caring Cove"
+          width={180}
+          height={40}
+          className="h-8 w-auto object-contain"
+          priority
+        />
       </Link>
       <div className="hidden md:flex items-center gap-8">
         <div className="flex items-center gap-3">
@@ -19,7 +27,7 @@ const TopBar = () => (
           <Mail className="w-5 h-5 text-primary" />
           <div>
             <p className="text-xs font-semibold text-foreground">Email Us</p>
-            <p className="text-xs text-muted-foreground">info@itechie.com</p>
+            <p className="text-xs text-muted-foreground">info@thecaringcove.co.ke</p>
           </div>
         </div>
       </div>

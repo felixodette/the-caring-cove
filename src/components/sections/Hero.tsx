@@ -1,6 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import siteContent from "@/content/site-content.json";
+
+const hero = siteContent.homepage.hero;
 
 const Hero = () => (
   <section
@@ -15,7 +18,7 @@ const Hero = () => (
         transition={{ duration: 0.5 }}
         className="text-primary font-semibold text-lg mb-4"
       >
-        Best IT Solution
+        {hero.tagline}
       </motion.p>
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
@@ -23,16 +26,15 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight mb-6 max-w-2xl"
       >
-        Creating a better{" "}
-        <span className="text-primary">IT solutions</span>
+        {hero.headline}
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-primary-foreground/70 text-lg max-w-lg mb-8"
+        className="text-primary-foreground/70 text-lg max-w-xl mb-8"
       >
-        Dcidunt eget semper nec quam. Sed hendrerit morbi ac felis. Nunc egestas augue pellentesque
+        {hero.subheadline}
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -40,11 +42,11 @@ const Hero = () => (
         transition={{ duration: 0.5, delay: 0.3 }}
         className="flex flex-wrap gap-4"
       >
-        <a href="#services" className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors">
-          Get Started
+        <a href={hero.cta.primary.href} className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors">
+          {hero.cta.primary.label}
         </a>
-        <a href="#contact" className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary-foreground/10 transition-colors">
-          Contact Us
+        <a href={hero.cta.secondary.href} className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary-foreground/10 transition-colors">
+          {hero.cta.secondary.label}
         </a>
       </motion.div>
     </div>
