@@ -1,9 +1,9 @@
 {
   "homepage": {
     "hero": {
-      "tagline": "Premium Memory Care",
-      "headline": "World-Class Care, Closer to Home.",
-      "subheadline": "Experience Kenya's most exclusive 1:1 memory care boutique. Guided by UK clinical standards and inspired by the warmth of home, we provide a dignified sanctuary for your loved one in the heart of Karen.",
+      "tagline": "Where longevity and senior living come together",
+      "headline": "Your Story. To Be Continued.",
+      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your next chapter in a place where new experiences happen daily, and a warm circle of friends is ready to grow with you.",
       "cta": {
         "primary": {
           "label": "Book a Private Tour",
@@ -20,41 +20,41 @@
       "goal": "Differentiate from \"big\" nursing homes.",
       "items": [
         {
-          "icon": "users",
-          "title": "1:1 Staff Ratio",
-          "description": "Personalized to the Minute. Unlike traditional facilities, our 1:1 ratio ensures your loved one never waits for assistance and always has a companion for engagement."
+          "icon": "timer",
+          "title": "Nursing Care",
+          "description": "Around-the-clock professional medical support and compassionate assistance tailored to your unique health requirements."
         },
         {
-          "icon": "award",
-          "title": "UK-Standard Excellence",
-          "description": "The Chelston Legacy. Founded on the \"Outstanding\" clinical protocols of Chelston Park (UK), we bring world-class geriatric expertise to Nairobi."
+          "icon": "flower-2",
+          "title": "Dementia Care",
+          "description": "A secure, sensory-rich environment led by specially trained staff, focused on dignity, comfort, and joyful moments"
         },
         {
-          "icon": "home",
-          "title": "Boutique Privacy",
-          "description": "A Haven, Not a Hospital. With only 4 residents, The Cove offers the security of a medical facility with the soul and comfort of a luxury private residence."
+          "icon": "letter-r",
+          "title": "Respite Care",
+          "description": "We offer long-term stays to support family caregivers, providing a welcoming, holiday-like experience for your loved one."
         },
         {
-          "icon": "brain",
-          "title": "Memory Specialists",
-          "description": "Empowering the Mind. Our specialized Alzheimer's and Dementia programs focus on what remains, not what is lost, through sensory and reminiscence therapy."
+          "icon": "letter-p",
+          "title": "Palliative Care",
+          "description": "Focuses on profound comfort, pain relief, and emotional support for residents and their families during life's final chapters."
         }
       ]
     },
     "services": {
-      "subtitle": "The Chelston Model",
+      "subtitle": "The Caring Cove Model",
       "title": "Our Services",
       "goal": "Show technical competence through the lens of lifestyle.",
       "items": [
         {
-          "icon": "brain",
+          "icon": "flower-2",
           "title": "Specialized Memory Care (Alzheimer's & Dementia)",
           "headline": "Expert Memory Support Guided by UK Standards.",
           "description": "We provide a \"failure-free\" environment for residents living with memory loss. Utilizing Reminiscence Therapy and sensory stimulation, we focus on what remains, not what is lost.",
-          "oneToOneEdge": "Dedicated companions who understand behavioral triggers, reducing the need for clinical sedation through engagement."
+          "oneToOneEdge": "Safety you can trust, in an environment that feels like a warm embrace."
         },
         {
-          "icon": "heart",
+          "icon": "letter-p",
           "title": "Compassionate Palliative Care",
           "headline": "Dignity and Comfort in Life's Final Chapters.",
           "description": "Modeled after the UK Gold Standard Framework, our palliative care focuses on total pain management and emotional peace. We provide a serene, home-like sanctuary for residents and their families.",
@@ -72,10 +72,10 @@
           "title": "Skilled Nursing & Complex Care",
           "headline": "Clinical Excellence in a Boutique Setting.",
           "description": "For residents with complex medical needs, including diabetes management, wound care, and chronic respiratory support. We maintain hospital-grade clinical standards without the institutional feel.",
-          "oneToOneEdge": "Meticulous medication management and vitals tracking via Nourish Digital Care (as used in the UK)."
+          "oneToOneEdge": "Round-the-clock clinical oversight with a focus on dignity and personal choice."
         },
         {
-          "icon": "sparkles",
+          "icon": "letter-r",
           "title": "Luxury Respite Stays (Short-Term Care)",
           "headline": "A Premium Retreat for Your Loved One.",
           "description": "Whether you are traveling or need a temporary break from caregiving, our respite program offers a \"five-star\" holiday for your loved one with full clinical oversight.",
@@ -86,7 +86,7 @@
           "title": "Holistic Wellness & Social Engagement",
           "headline": "Active Aging and Meaningful Living.",
           "description": "Wellness at The Cove isn't just medical; it's social. From farm-to-table nutrition to guided garden walks in Karen, we curate a lifestyle that keeps the mind and body active.",
-          "oneToOneEdge": "Activity schedules are 100% bespoke. If a resident wants to garden at 10 AM or listen to music at 8 PM, their dedicated carer makes it happen."
+          "oneToOneEdge": "Activity schedules are 100% bespoke. If a resident wants to garden at 10 AM or listen to music at 8 PM, we'll make it happen."
         }
       ]
     },
@@ -132,7 +132,7 @@
       "title": "Founder's Story",
       "goal": "Use the founder's UK background as the \"Reason to Believe.\"",
       "quote": "After years at Chelston Park in the UK—a facility recognized for its 'Outstanding' care—I realized that Nairobi families were searching for that same level of clinical rigor delivered with local heart. I created The Caring Cove to be that bridge: A place where 1:1 care isn't a luxury, but a standard.",
-      "founderName": "[Founder Name]"
+      "founderName": "Njeri Blagden"
     },
     "amenities": {
       "subtitle": "The Lifestyle",

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "The Caring Cove",
     title: "The Caring Cove | Luxury Memory Care Karen Nairobi",
     description:
-      "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care.",
+      "Kenya's most exclusive memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care, respite care, nursing care.",
     images: [
       {
         url: "/images/logo.png",
@@ -96,7 +96,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body suppressHydrationWarning>
         <Script
           id="organization-schema"
           type="application/ld+json"

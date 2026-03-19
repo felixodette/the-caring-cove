@@ -38,7 +38,7 @@ const Services = () => (
               </p>
               <div className="pt-3 border-t border-border">
                 <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary/90 mb-1">
-                  The 1:1 Edge
+                The Cove Commitment
                 </span>
                 <p className="text-foreground text-sm font-medium">
                   {item.oneToOneEdge}

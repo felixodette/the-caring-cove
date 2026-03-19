@@ -27,7 +27,7 @@ export default function Home() {
       <Features />
       <FounderStory />
       <Services />
-      <ProfessionalSkills />
+      {/* <ProfessionalSkills /> */}
       <Amenities />
       <TrustSignals />
       <CTABanner />
