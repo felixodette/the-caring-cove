@@ -176,6 +176,25 @@ Set up an Auto-Responder for `info@thecaringcove.co.ke` with your Dignity & Care
 
 **Fix:** Check the workflow run log. Verify `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, and `FTP_REMOTE_PATH_DEV`/`FTP_REMOTE_PATH_PROD` in repo secrets. Ensure the remote path exists on the server (create the `out` folder in File Manager if needed).
 
+### Timeout (control socket) during FTP upload
+
+**Cause:** Large first-time uploads (198 files, ~8MB) can exceed the default FTP connection timeout, especially on slower shared hosting.
+
+**Fix:** The workflows use `timeout: 120000` (2 minutes). If it still fails, increase it in `.github/workflows/deploy-prod.yml` and `deploy-dev.yml` (e.g. `timeout: 300000` for 5 minutes).
+
+### Prod shows "Index of /" or 530 Login authentication failed
+
+**Cause:** Production deploy uses separate secrets (`FTP_USERNAME_PROD`, `FTP_PASSWORD_PROD`). If these are missing or incorrect, the workflow fails and no files are uploaded.
+
+**Fix:**
+1. In **GitHub** → repo → **Settings → Secrets and variables → Actions**
+2. Ensure these **prod** secrets exist and are correct:
+   - `FTP_USERNAME_PROD` — prod FTP username (e.g. `thecarin@thecaringcove.co.ke` or main cPanel username)
+   - `FTP_PASSWORD_PROD` — prod FTP password
+3. Prod uses the same `FTP_SERVER` as dev.
+4. If your prod FTP root is not the document root, add `FTP_REMOTE_PATH_PROD` and update the workflow to use it (see workflow file).
+5. Re-run the workflow: **Actions** → **Deploy to thecaringcove.co.ke** → **Run workflow**
+
 ### 404 on page refresh or direct URL
 
 **Cause:** Apache needs to redirect all requests to `index.html` for client-side routing.

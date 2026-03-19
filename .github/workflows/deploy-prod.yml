@@ -34,3 +34,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD_PROD }}
           local-dir: ./out/
           server-dir: ./
+          timeout: 120000
