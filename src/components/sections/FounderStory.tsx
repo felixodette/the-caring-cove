@@ -15,7 +15,7 @@ const FounderStory = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <img src="/images/about-img.jpg" alt="Founder" className="rounded-lg shadow-xl w-full object-cover" />
+          <img src="/images/about-img.png" alt="Founder" className="rounded-lg shadow-xl w-full object-cover" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 40 }}
