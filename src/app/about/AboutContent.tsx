@@ -37,7 +37,7 @@ export default function AboutContent() {
               className="relative"
             >
               <img
-                src="/images/about-img.jpg"
+                src="/images/about-img.png"
                 alt="The Caring Cove"
                 className="rounded-2xl shadow-xl w-full object-cover"
               />
