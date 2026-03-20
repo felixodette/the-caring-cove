@@ -1,7 +1,13 @@
 "use client";
 
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
+
+import { XIcon } from "@/lib/icons";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582063697356";
+const TWITTER_URL = "https://x.com/thecaringcove";
+const INSTAGRAM_URL = "https://www.instagram.com/thecaringcove/";
 
 const skills = [
   { name: "Web development", percent: 85 },
@@ -31,8 +37,20 @@ export default function TeamDetailsContent() {
                 <p className="text-foreground"><strong>Experiences :</strong> <span className="text-muted-foreground">08 Years</span></p>
               </div>
               <div className="flex gap-3">
-                {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
-                  <a key={i} href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+                {[
+                  { Icon: Facebook, href: FACEBOOK_URL, label: "Facebook" },
+                  { Icon: XIcon, href: TWITTER_URL, label: "X (Twitter)" },
+                  { Icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
+                  { Icon: Youtube, href: "#", label: "YouTube" },
+                ].map(({ Icon, href, label }, i) => (
+                  <a
+                    key={`${label}-${i}`}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                  >
                     <Icon className="w-4 h-4" />
                   </a>
                 ))}
