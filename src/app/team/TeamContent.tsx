@@ -1,8 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
+
+import { XIcon } from "@/lib/icons";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582063697356";
+const TWITTER_URL = "https://x.com/thecaringcove";
 
 const members = [
   { name: "Karshin Kumar", role: "Founder", img: "/images/team-1.jpg" },
@@ -42,8 +47,19 @@ export default function TeamContent() {
                 </Link>
                 <p className="text-primary text-sm mb-4">{m.role}</p>
                 <div className="flex justify-center gap-3">
-                  {[Facebook, Twitter, Linkedin].map((Icon, j) => (
-                    <a key={j} href="#" className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
+                  {[
+                    { Icon: Facebook, href: FACEBOOK_URL, label: "Facebook" },
+                    { Icon: XIcon, href: TWITTER_URL, label: "X (Twitter)" },
+                    { Icon: Linkedin, href: "#", label: "LinkedIn" },
+                  ].map(({ Icon, href, label }, j) => (
+                    <a
+                      key={`${label}-${j}`}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
                       <Icon className="w-4 h-4" />
                     </a>
                   ))}
