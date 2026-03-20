@@ -30,7 +30,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/images/about-img.jpg" alt="About us" className="rounded-lg shadow-xl w-full" />
+            <img src="/images/about-img.png" alt="About us" className="rounded-lg shadow-xl w-full" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 40 }}
