@@ -140,6 +140,8 @@ When you click **Deploy HEAD Commit**, cPanel runs:
 
 The contact form uses a **PHP mail-bridge** script that deploys with your static site. The file `public/contact-handler.php` is copied to `out/contact-handler.php` during build and must be in your document root for the form to work.
 
+**→ Full cPanel deployment guide:** [docs/CONTACT-FORM-DEPLOYMENT.md](docs/CONTACT-FORM-DEPLOYMENT.md)
+
 ### How it works
 
 1. **Frontend:** The form uses progressive disclosure (2 steps) to reduce form fatigue. Step 1: Name, Phone, Email. Step 2: Primary Interest, Location (for lead qualification).

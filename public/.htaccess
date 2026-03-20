@@ -1,4 +1,5 @@
 # Client-side routing for Next.js static export
+Options -Indexes
 DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /

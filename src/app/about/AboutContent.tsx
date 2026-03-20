@@ -3,6 +3,10 @@
 import { motion } from "framer-motion";
 import siteContent from "@/content/site-content.json";
 import BoutiqueInfographic from "@/components/sections/BoutiqueInfographic";
+import ValuesBehavioursSection from "@/components/sections/ValuesBehavioursSection";
+import CultureSection from "@/components/sections/CultureSection";
+import ButterflyMomentsSection from "@/components/sections/ButterflyMomentsSection";
+import GoldenThreadSection from "@/components/sections/GoldenThreadSection";
 import Link from "next/link";
 import { Quote, Award, Users, Globe, MonitorSmartphone } from "lucide-react";
 
@@ -200,6 +204,18 @@ export default function AboutContent() {
           </motion.div>
         </div>
       </section>
+
+      {/* Values & Behaviours */}
+      <ValuesBehavioursSection />
+
+      {/* Culture */}
+      <CultureSection />
+
+      {/* Butterfly Moments */}
+      <ButterflyMomentsSection />
+
+      {/* Golden Thread */}
+      <GoldenThreadSection />
 
       {/* Boutique Advantage Interactive Infographic */}
       <section className="py-20 bg-white">

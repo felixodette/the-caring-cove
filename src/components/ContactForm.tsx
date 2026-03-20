@@ -112,6 +112,11 @@ export default function ContactForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">
+        {/* Honeypot - hidden from users, catches bots */}
+        <div className="absolute -left-[9999px] w-1 h-1 overflow-hidden" aria-hidden>
+          <label htmlFor="website">Website</label>
+          <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+        </div>
         <AnimatePresence mode="wait">
           {step === 1 ? (
             <motion.div
