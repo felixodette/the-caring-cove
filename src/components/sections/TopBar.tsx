@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Mail, Facebook, Twitter, Instagram } from "lucide-react";
+import { Clock, Mail, Facebook, Instagram } from "lucide-react";
+import { XIcon } from "@/lib/icons";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582063697356";
+const TWITTER_URL = "https://x.com/thecaringcove";
+const INSTAGRAM_URL = "https://www.instagram.com/thecaringcove/";
 
 const TopBar = () => (
   <div className="bg-background border-b border-border">
@@ -32,8 +37,19 @@ const TopBar = () => (
         </div>
       </div>
       <div className="hidden lg:flex items-center gap-3">
-        {[Facebook, Twitter, Instagram].map((Icon, i) => (
-          <a key={i} href="#" className="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-navy-foreground hover:bg-primary transition-colors">
+        {[
+          { Icon: Facebook, href: FACEBOOK_URL, label: "Facebook" },
+          { Icon: XIcon, href: TWITTER_URL, label: "X (Twitter)" },
+          { Icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
+        ].map(({ Icon, href, label }, i) => (
+          <a
+            key={`${label}-${i}`}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-navy-foreground hover:bg-primary transition-colors"
+          >
             <Icon className="w-4 h-4" />
           </a>
         ))}

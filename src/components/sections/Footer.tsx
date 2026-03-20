@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { XIcon } from "@/lib/icons";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582063697356";
+const TWITTER_URL = "https://x.com/thecaringcove";
+const INSTAGRAM_URL = "https://www.instagram.com/thecaringcove/";
 
 const Footer = () => (
   <footer id="contact" className="bg-navy text-navy-foreground">
@@ -20,8 +25,20 @@ const Footer = () => (
             Kenya&apos;s most exclusive 1:1 memory care boutique. Guided by UK clinical standards and inspired by the warmth of home, we provide a dignified sanctuary for your loved one in the heart of Karen.
           </p>
           <div className="flex gap-3">
-            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-              <a key={i} href="#" className="w-9 h-9 rounded-full bg-navy-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+            {[
+              { Icon: Facebook, href: FACEBOOK_URL, label: "Facebook" },
+              { Icon: XIcon, href: TWITTER_URL, label: "X (Twitter)" },
+              { Icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
+              { Icon: Linkedin, href: "#", label: "LinkedIn" },
+            ].map(({ Icon, href, label }, i) => (
+              <a
+                key={`${label}-${i}`}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-9 h-9 rounded-full bg-navy-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+              >
                 <Icon className="w-4 h-4" />
               </a>
             ))}

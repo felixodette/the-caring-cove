@@ -24,7 +24,11 @@ const organizationSchema = {
   telephone: "+254 XXX XXX XXX",
   areaServed: { "@type": "Country", name: "Kenya" },
   priceRange: "$$$",
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61582063697356",
+    "https://x.com/thecaringcove",
+    "https://www.instagram.com/thecaringcove/",
+  ],
 };
 
 export const metadata: Metadata = {
