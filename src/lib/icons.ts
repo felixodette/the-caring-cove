@@ -26,21 +26,27 @@ import React from "react";
 
 /** Letter "r" icon for Respite care - matches reference design */
 const LetterR = ({ className }: { className?: string }) =>
-  React.createElement("span", {
+  React.createElement(
+    "span",
+    {
     className: `inline-flex items-center justify-center font-semibold ${className ?? ""}`,
     style: { fontFamily: "system-ui, sans-serif", fontSize: "1.1em" },
     "aria-hidden": true,
-    children: "r",
-  });
+    },
+    "r",
+  );
 
 /** Letter "p" icon for Palliative care - matches reference design */
 const LetterP = ({ className }: { className?: string }) =>
-  React.createElement("span", {
+  React.createElement(
+    "span",
+    {
     className: `inline-flex items-center justify-center font-semibold ${className ?? ""}`,
     style: { fontFamily: "system-ui, sans-serif", fontSize: "1.1em" },
     "aria-hidden": true,
-    children: "p",
-  });
+    },
+    "p",
+  );
 
 export const contentIcons: Record<string, React.ComponentType<{ className?: string }>> = {
   heart: Heart,

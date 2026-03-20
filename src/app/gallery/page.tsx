@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import GalleryContent from "./GalleryContent";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     "Secure dementia garden Lavington elderly care",
     "Boutique senior dining room Kenya 1-on-1 care",
   ],
-  alternates: { canonical: "https://thecaringcove.co.ke/gallery" },
+  alternates: { canonical: `${SITE_URL}/gallery` },
 };
 
 export default function GalleryPage() {

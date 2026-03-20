@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import ServiceContent from "./ServiceContent";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     "respite care Nairobi",
     "skilled nursing Karen",
   ],
-  alternates: { canonical: "https://thecaringcove.co.ke/service" },
+  alternates: { canonical: `${SITE_URL}/service` },
 };
 
 export default function ServicePage() {

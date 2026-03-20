@@ -1,16 +1,29 @@
 "use client";
 
 import { User, Calendar, MessageCircle, Tag } from "lucide-react";
+import type { BlogPost } from "@/content/blog-posts";
 
-export default function BlogDetailsContent() {
+export default function BlogDetailsContent({ post }: { post: BlogPost }) {
   return (
     <>
-      <img src="/images/blog-1.jpg" alt="Blog post" className="w-full rounded-lg mb-6" />
+      <img
+        src={post.heroImage}
+        alt={post.heroAlt}
+        className="w-full rounded-lg mb-6"
+      />
       <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs mb-6">
-        <span className="flex items-center gap-1"><User className="w-3 h-3" /> By Admin</span>
-        <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> 25 May 2021</span>
-        <span className="flex items-center gap-1"><MessageCircle className="w-3 h-3" /> 22 Comment</span>
-        <span className="flex items-center gap-1"><Tag className="w-3 h-3" /> It Solution</span>
+        <span className="flex items-center gap-1">
+          <User className="w-3 h-3" /> {post.author}
+        </span>
+        <span className="flex items-center gap-1">
+          <Calendar className="w-3 h-3" /> {post.publishedDate}
+        </span>
+        <span className="flex items-center gap-1">
+          <MessageCircle className="w-3 h-3" /> {post.commentsCount} Comment
+        </span>
+        <span className="flex items-center gap-1">
+          <Tag className="w-3 h-3" /> {post.tag}
+        </span>
       </div>
       <p className="text-muted-foreground mb-6">
         Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget elementum acondimentum eget, diam. Nam at tortor in tellus interdum sagitliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet.
@@ -18,7 +31,11 @@ export default function BlogDetailsContent() {
       <blockquote className="border-l-4 border-primary bg-white p-6 italic text-muted-foreground mb-6 rounded-r-lg shadow-sm">
         Sollicitudin nisi nulla eget augue. Maecenas quis turpaliquet, portorem et, dictum purus. Cdimentfermentposuere world class service provider
       </blockquote>
-      <img src="/images/blog-detail.jpg" alt="Blog detail" className="w-full rounded-lg mb-6" />
+      <img
+        src={post.detailImage}
+        alt={post.detailAlt}
+        className="w-full rounded-lg mb-6"
+      />
       <h3 className="text-xl font-bold text-foreground mb-3">Pellentesque habita morbi tristique</h3>
       <p className="text-muted-foreground mb-4">
         Mauris turpis nunc, blandit et vat molestie pligula. aretra convallis urna. Quisque ut nisi.

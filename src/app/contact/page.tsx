@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import ContactContent from "./ContactContent";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Request a private tour of our boutique memory care facility in Karen. We're here for care consultations and family support. Contact The Caring Cove.",
   keywords: ["contact memory care Nairobi", "book tour Karen", "care consultation Kenya"],
-  alternates: { canonical: "https://thecaringcove.co.ke/contact" },
+  alternates: { canonical: `${SITE_URL}/contact` },
 };
 
 export default function ContactPage() {

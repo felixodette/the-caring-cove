@@ -3,9 +3,11 @@
  * Use this as the Application startup file if "npm start" doesn't work.
  * Set PassengerStartupFile to "server.js" in your Node.js app config.
  */
+/* eslint-disable @typescript-eslint/no-require-imports */
 const { createServer } = require("http");
 const { parse } = require("url");
 const next = require("next");
+/* eslint-enable @typescript-eslint/no-require-imports */
 
 // Always run in production mode on cPanel (serves built .next output)
 const dev = process.env.NODE_ENV === "development";

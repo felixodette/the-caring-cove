@@ -54,9 +54,6 @@ export const metadata: Metadata = {
     locale: "en_KE",
     url: SITE_URL,
     siteName: "The Caring Cove",
-    title: "The Caring Cove | Luxury Memory Care Karen Nairobi",
-    description:
-      "Kenya's most exclusive memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care, respite care, nursing care.",
     images: [
       {
         url: "/images/logo.png",
@@ -68,9 +65,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Caring Cove | Luxury Memory Care Karen Nairobi",
-    description:
-      "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen.",
   },
   robots: {
     index: true,

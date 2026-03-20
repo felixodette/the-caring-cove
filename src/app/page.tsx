@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import TopBar from "@/components/sections/TopBar";
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   title: "Luxury Memory Care Karen Nairobi",
   description:
     "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care. Book a private tour.",
-  alternates: { canonical: "https://thecaringcove.co.ke" },
+  alternates: { canonical: SITE_URL },
 };
 
 export default function Home() {

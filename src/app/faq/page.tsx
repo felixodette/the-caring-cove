@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import FAQContent from "./FAQContent";
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     "Elderly care Nairobi FAQ",
     "UK standard care Kenya",
   ],
-  alternates: { canonical: "https://thecaringcove.co.ke/faq" },
+  alternates: { canonical: `${SITE_URL}/faq` },
 };
 
 export default function FAQPage() {

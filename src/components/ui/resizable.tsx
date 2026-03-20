@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import { GripVertical } from "lucide-react";
 import * as ResizablePrimitive from "react-resizable-panels";

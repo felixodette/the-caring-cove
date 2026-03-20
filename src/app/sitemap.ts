@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
+import { blogPosts } from "@/content/blog-posts";
 
 export const dynamic = "force-static";
 
@@ -17,12 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/team-details`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
   ];
 
-  const blogPosts: MetadataRoute.Sitemap = [1, 2, 3].map((id) => ({
-    url: `${SITE_URL}/blog-details/${id}`,
-    lastModified: new Date(),
+  const blogPostUrls: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${SITE_URL}/blog-details/${post.id}`,
+    lastModified: new Date(post.lastModified),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
-  return [...basePages, ...blogPosts];
+  return [...basePages, ...blogPostUrls];
 }

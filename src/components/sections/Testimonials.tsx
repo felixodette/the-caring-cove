@@ -16,7 +16,7 @@ const Testimonials = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="section-title">We Care About Your Life's Important Things</h2>
+          <h2 className="section-title">We Care About Your Life&apos;s Important Things</h2>
         </div>
         <div className="max-w-3xl mx-auto relative">
           <AnimatePresence mode="wait">
@@ -38,7 +38,9 @@ const Testimonials = () => {
                   <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-muted-foreground italic mb-6">"{testimonials[idx].text}"</p>
+              <p className="text-muted-foreground italic mb-6">
+                &quot;{testimonials[idx].text}&quot;
+              </p>
               <h4 className="font-bold text-foreground text-lg">{testimonials[idx].name}</h4>
               <p className="text-muted-foreground text-sm">{testimonials[idx].role}</p>
             </motion.div>

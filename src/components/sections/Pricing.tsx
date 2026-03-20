@@ -22,7 +22,7 @@ const Pricing = () => (
     <div className="container mx-auto">
       <div className="text-center mb-12">
         <p className="section-subtitle">Pricing Plan</p>
-        <h2 className="section-title">Let's Check Our Latest Price</h2>
+        <h2 className="section-title">Let&apos;s Check Our Latest Price</h2>
         <p className="section-desc">
           Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas augue atpellentesque laoreet
         </p>

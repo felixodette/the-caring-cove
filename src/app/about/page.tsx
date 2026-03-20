@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
 import AboutContent from "./AboutContent";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "Private dementia care Lavington",
     "Boutique nursing home Kenya",
   ],
-  alternates: { canonical: "https://thecaringcove.co.ke/about" },
+  alternates: { canonical: `${SITE_URL}/about` },
 };
 
 export default function AboutPage() {
