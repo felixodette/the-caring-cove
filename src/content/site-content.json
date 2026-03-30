@@ -92,7 +92,7 @@
     },
     "professionalSkills": {
       "headline": "Clinical Excellence. Boutique Heart.",
-      "subheadline": "Our care team is trained to the \"Outstanding\" standards of the UK's Care Quality Commission (CQC), ensuring that specialized expertise is delivered with 1:1 devotion.",
+      "subheadline": "Our care team is trained to the \"Outstanding\" standards of the UK's Care Quality Commission (CQC), ensuring that specialized expertise is delivered with a high standard devotion.",
       "skills": [
         {
           "icon": "brain",
@@ -116,14 +116,14 @@
           "icon": "activity",
           "title": "Geriatric Physical Rehabilitation",
           "expertise": "Specialized competency in post-operative recovery (hips/knees) and stroke rehab, focusing on safe manual handling and mobility restoration.",
-          "whyItMatters": "Our 1:1 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
+          "whyItMatters": "Our 1:3 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
         }
       ],
       "stats": [
-        { "value": "1:1", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
+        { "value": "1:3", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
         { "value": "100%", "label": "Staff Trained in UK Clinical Protocols" },
         { "value": "24/7", "label": "Registered Nursing Oversight" },
-        { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique 1:1 care)" }
+        { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
       ],
       "badgeText": "Our internal training program is audited against the same standards that earned Chelston Park (UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
     },
@@ -131,7 +131,7 @@
       "subtitle": "The \"Why Us\"",
       "title": "Bridging Two Worlds of Care",
       "goal": "A Vision Born of Excellence",
-      "quote": "Having spent years at the UK’s award-winning Chelston Park, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
+      "quote": "Having spent years at the UK’s Chelston Park, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
       "founderName": "Njeri Blagden"
     },
     "amenities": {
@@ -182,7 +182,7 @@
   },
   "servicesPage": {
     "title": "Our Pillars of Clinical Excellence",
-    "subheadline": "Luxury boutique living in Karen, governed by international care standards and a 1:1 resident-to-staff devotion.",
+    "subheadline": "Luxury boutique living in Karen, governed by international care standards and a high standard of resident-to-staff devotion.",
     "services": [
       {
         "icon": "brain",
@@ -190,7 +190,7 @@
         "coreMission": "Moving beyond safety to \"Meaningful Moments.\"",
         "approach": "Based on the latest UK dementia protocols, we create a \"failure-free\" environment. We don't just manage symptoms; we use Reminiscence Therapy and sensory stimulation to connect with the person behind the diagnosis.",
         "keyFeatures": [
-          "1:1 Companionship: A dedicated carer who knows their resident's life history, favorite music, and behavioral cues.",
+          "Companionship: Carer givers who know their resident's life history, favorite music, and behavioral cues.",
           "Nourish Digital Tracking: Real-time monitoring of mood, hydration, and engagement levels.",
           "Safe Exploration: Secure, high-contrast living spaces and sensory gardens designed for wandering without worry."
         ]
@@ -210,7 +210,7 @@
         "icon": "activity",
         "title": "Geriatric Rehabilitation & Post-Op Recovery",
         "coreMission": "Bridging the gap between hospital and home.",
-        "approach": "Ideal for seniors recovering from hip/knee replacements or a stroke. Our 1:1 ratio ensures that physical therapy exercises are performed safely and consistently, significantly reducing recovery time.",
+        "approach": "Ideal for seniors recovering from hip/knee replacements or a stroke. We ensure that physical therapy exercises are performed safely and consistently, significantly reducing recovery time.",
         "keyFeatures": [
           "Mobility Restoration: Personalized \"Strength and Balance\" programs to prevent future falls.",
           "Wound Care & Monitoring: Clinical-grade management of surgical sites to prevent infection.",
@@ -232,7 +232,7 @@
         "icon": "sparkles",
         "title": "Luxury Respite Stays (Short-Term Care)",
         "coreMission": "A restorative retreat for the senior, a vital break for the family.",
-        "approach": "Perfect for families traveling abroad or local caregivers needing a reprieve. We treat respite guests as permanent residents, giving them full access to our 1:1 care and amenities.",
+        "approach": "Perfect for families traveling abroad or local caregivers needing a reprieve. We treat respite guests as permanent residents, giving them full access to our high standard of care and amenities.",
         "keyFeatures": [
           "Social Integration: Meaningful engagement in all home activities from day one.",
           "Care Assessment: A detailed \"Health Audit\" provided to the family at the end of the stay.",
@@ -254,14 +254,14 @@
     "comparisonTable": {
       "title": "Why Our Boutique Model Wins",
       "rows": [
-        { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:1 Guaranteed" },
+        { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:3 Guaranteed" },
         { "feature": "Medical Record", "largeFacilities": "Paper-based / Delayed", "theCove": "Nourish Digital (UK Standard)" },
         { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Luxury Residence" },
         { "feature": "Menu Choice", "largeFacilities": "Fixed \"Canteen\" Style", "theCove": "Chef-Prepared & Bespoke" }
       ]
     },
     "cta": {
-      "headline": "Is your loved one ready for the 1:1 care they deserve?",
+      "headline": "Is your loved one ready for the care they deserve?",
       "buttons": [
         { "label": "Request Our Dignity & Care Planning Guide", "href": "#care-guide" },
         { "label": "Schedule a Private Tour of our Karen Facility", "href": "#contact", "primary": true }
@@ -279,9 +279,9 @@
       "headline": "Why We Limited Our Vision to Just 4 Beds.",
       "copy": "Most care facilities measure success by the number of beds they can fill. We measure it by the depth of the relationship we can build. By intentionally limiting The Caring Cove to an exclusive boutique environment, we ensure:",
       "points": [
-        "Absolute Clinical Safety: 1:1 supervision means we catch the smallest changes in health before they become emergencies.",
+        "Absolute Clinical Safety: Dedicated supervision means we catch the smallest changes in health before they become emergencies.",
         "Zero Institutionalization: There are no 'wards' or 'shifts' here. There is only a home, a garden, and a dedicated companion.",
-        "The Power of Choice: Our residents decide when they wake up, what they eat, and how they spend their afternoon. In a 1:1 environment, the resident's schedule is the only schedule that matters."
+        "The Power of Choice: Our residents decide when they wake up, what they eat, and how they spend their afternoon. In a our environment, the resident's schedule is the only schedule that matters."
       ]
     },
     "coreValues": [
@@ -293,7 +293,7 @@
     "founderNote": "I spent years in the UK seeing what 'perfect' care looks like. I saw how the right environment and the right ratio could turn a person's final years into a season of peace rather than a season of decline. I opened The Caring Cove to give Kenyan families that same peace of mind. Here, your loved one isn't just cared for—they are cherished.",
     "experienceGrid": [
       { "value": "15+", "label": "Years of UK Geriatric Leadership" },
-      { "value": "1:1", "label": "The highest care standard in Nairobi" },
+      { "value": "1:3", "label": "The highest care standard in Nairobi" },
       { "value": "International", "label": "Standards – Clinical protocols audited against global benchmarks" },
       { "value": "Digital", "label": "Integration – Real-time updates via UK-standard care software" }
     ],
@@ -427,7 +427,7 @@
         "id": "lounge",
         "tag": "The Engagement Zone",
         "headline": "A Life of Purposeful Engagement.",
-        "copy": "This is where our 1:1 ratio truly shines. The lounge is a versatile space for music therapy, gentle \"Chair Yoga,\" and our signature \"Meaningful Moments\" sessions. It is a space designed for light, warmth, and community.",
+        "copy": "This is where our nurse to resident ratio truly shines. The lounge is a versatile space for music therapy, gentle \"Chair Yoga,\" and our signature \"Meaningful Moments\" sessions. It is a space designed for light, warmth, and community.",
         "image": "/images/skills-img.jpg",
         "imageAlt": "Wellness activity lounge boutique care Nairobi",
         "amenities": [
@@ -458,15 +458,15 @@
         "questions": [
           {
             "q": "How do you maintain \"UK Standards\" in a Kenyan boutique setting?",
-            "a": "Our clinical protocols are modeled after the Care Quality Commission (CQC) \"Outstanding\" framework. This includes digital medication administration records (eMAR), 1:1 staffing ratios, and a \"Person-Centered\" approach where the resident's dignity is the primary metric of success."
+            "a": "Our clinical protocols are modeled after the Care Quality Commission (CQC) \"Outstanding\" framework. This includes digital medication administration records (eMAR), 1:3 staffing ratios, and a \"Person-Centered\" approach where the resident's dignity is the primary metric of success."
           },
           {
             "q": "What happens in a medical emergency?",
-            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we have pre-established \"Fast-Track\" protocols with Nairobi's leading private hospitals. Our 1:1 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
+            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we have pre-established \"Fast-Track\" protocols with Nairobi's leading private hospitals. Our 1:3 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
           },
           {
             "q": "How do you prevent falls and pressure sores in a residential home?",
-            "a": "Unlike larger facilities with 1:10 ratios, our 1:1 model allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
+            "a": "Unlike larger facilities with 1:10 ratios, our 1:3 model allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
           }
         ]
       },
@@ -511,7 +511,7 @@
           },
           {
             "q": "What is the minimum stay for Respite Care?",
-            "a": "Our minimum respite stay is typically 14 days. This allows the resident to acclimate to our environment and benefit from our 1:1 engagement without the distress of a too-rapid transition."
+            "a": "Our minimum respite stay is typically 14 days. This allows the resident to acclimate to our environment and benefit from our dedicated engagement without the distress of a too-rapid transition."
           }
         ]
       }
