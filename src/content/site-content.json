@@ -1,8 +1,8 @@
 {
   "homepage": {
     "hero": {
-      "tagline": "Where longevity and senior living come together",
-      "headline": "Your Story. To Be Continued.",
+      "tagline": "Exceptional Personilized Care.",
+      "headline": "Where longevity and senior living come together.",
       "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your golden years in a place where new experiences happen daily.",
       "cta": {
         "primary": {
@@ -152,7 +152,7 @@
         {
           "icon": "music",
           "title": "Daily Enrichment",
-          "description": "From \"kneading dough\" sessions (reminiscent of Chelston's baking) to gentle music therapy and garden walks."
+          "description": "From \"kneading dough\" sessions to gentle music therapy and garden walks."
         }
       ]
     },
@@ -168,7 +168,7 @@
         },
         {
           "icon": "award",
-          "title": "From Chelston Park to The Caring Cove",
+          "title": "From the UK to The Caring Cove",
           "description": "Our founder didn't just work in care; they helped maintain the 'Outstanding' CQC rating at Chelston Park in the UK. We have imported those exact operational standards—from medication governance to 'Meaningful Moments' dementia training—to create a world-class sanctuary in Nairobi.",
           "badgeText": "UK Standards. Kenyan Heart."
         },
@@ -181,7 +181,7 @@
     }
   },
   "servicesPage": {
-    "title": "Our Pillars of Clinical Excellence",
+    "title": "The Philosophy of Care",
     "subheadline": "Luxury boutique living in Karen, governed by international care standards and a high standard of resident-to-staff devotion.",
     "services": [
       {
