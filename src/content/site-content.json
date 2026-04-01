@@ -3,15 +3,15 @@
     "hero": {
       "tagline": "Where longevity and senior living come together",
       "headline": "Your Story. To Be Continued.",
-      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your next chapter in a place where new experiences happen daily, and a warm circle of friends is ready to grow with you.",
+      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your golden years in a place where new experiences happen daily.",
       "cta": {
         "primary": {
           "label": "Book a Private Tour",
           "href": "/contact"
         },
         "secondary": {
-          "label": "Download Our Care Guide",
-          "href": "#care-guide"
+          "label": "Download Our Brochure",
+          "href": "/the-caring-cove-brochure.pdf"
         }
       }
     },
