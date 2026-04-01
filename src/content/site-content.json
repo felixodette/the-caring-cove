@@ -3,15 +3,15 @@
     "hero": {
       "tagline": "Where longevity and senior living come together",
       "headline": "Your Story. To Be Continued.",
-      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your next chapter in a place where new experiences happen daily, and a warm circle of friends is ready to grow with you.",
+      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your golden years in a place where new experiences happen daily.",
       "cta": {
         "primary": {
           "label": "Book a Private Tour",
           "href": "/contact"
         },
         "secondary": {
-          "label": "Download Our Care Guide",
-          "href": "#care-guide"
+          "label": "Download Our Brochure",
+          "href": "/the-caring-cove-brochure.pdf"
         }
       }
     },
@@ -76,7 +76,7 @@
         },
         {
           "icon": "letter-r",
-          "title": "Luxury Respite Stays (Short-Term Care)",
+          "title": "Respite Stays (Short-Term Care)",
           "headline": "A Premium Retreat for Your Loved One.",
           "description": "Whether you are traveling or need a temporary break from caregiving, our respite program offers a \"five-star\" holiday for your loved one with full clinical oversight.",
           "oneToOneEdge": "Seamless integration into our community, ensuring the transition is stress-free and restorative for both resident and family."
@@ -272,8 +272,8 @@
     "title": "Our Story: A Vision for Dignity",
     "subheadline": "Bringing decades of \"Outstanding\" UK clinical experience to the heart of Nairobi.",
     "visionary": {
-      "headline": "From London to Karen: A Journey of Care.",
-      "copy": "Our founder's journey began in the United Kingdom, working within facilities recognized by the Care Quality Commission (CQC) for 'Outstanding' clinical excellence. After years of managing complex memory care and geriatric wards in the UK, a clear realization emerged: Nairobi families were looking for more than just a room; they were looking for a standard of care that didn't yet exist locally. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture."
+      "headline": "From UK to Karen: A Journey of Care.",
+      "copy": "Our founder's journey began in the United Kingdom, working within facilities recognized by the Care Quality Commission (CQC) for 'Outstanding' clinical excellence. After years of wroking in dementia and nursing care in the UK, a clear realization emerged: Nairobi families were looking for more than just a room; they were looking for a standard of care that didn't yet exist locally. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture."
     },
     "philosophy": {
       "headline": "Why We Limited Our Vision to Just 4 Beds.",
