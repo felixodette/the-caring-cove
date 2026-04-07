@@ -200,7 +200,7 @@ export default function AboutContent() {
               The Experience Behind the Care
             </h2>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-              Decades of UK clinical excellence, now in the heart of Nairobi.
+              Over 10 years experience in the UK, now in the heart of Nairobi.
             </p>
           </motion.div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -274,7 +274,7 @@ export default function AboutContent() {
       </section>
 
       {/* Internal Link to Services */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto text-center">
           <motion.p
             initial={{ opacity: 0 }}
@@ -292,7 +292,7 @@ export default function AboutContent() {
             <span className="text-sm">→</span>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA */}
       <section className="py-20 bg-primary">
