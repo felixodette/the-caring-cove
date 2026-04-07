@@ -116,11 +116,11 @@
           "icon": "activity",
           "title": "Physical Rehabilitation",
           "expertise": "Specialized competency in post-operative recovery (hips/knees) and stroke rehab, focusing on safe manual handling and mobility restoration.",
-          "whyItMatters": "Our 1:3 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
+          "whyItMatters": "Our 1:4 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
         }
       ],
       "stats": [
-        { "value": "1:3", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
+        { "value": "1:4", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
         { "value": "100%", "label": "Staff Trained in UK Clinical Protocols" },
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
@@ -254,7 +254,7 @@
     "comparisonTable": {
       "title": "Why Our Boutique Model Wins",
       "rows": [
-        { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:3 Guaranteed" },
+        { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:4 Guaranteed" },
         { "feature": "Medical Record", "largeFacilities": "Paper-based / Delayed", "theCove": "Nourish Digital (UK Standard)" },
         { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Residence" },
         { "feature": "Menu Choice", "largeFacilities": "Fixed \"Canteen\" Style", "theCove": "Chef-Prepared & Bespoke" }
@@ -297,7 +297,7 @@
     "founderNote": "I spent years in the UK seeing what 'perfect' care looks like. I saw how the right environment and the right ratio could turn a person's final years into a season of peace rather than a season of decline. I opened The Caring Cove to give Kenyan families that same peace of mind. Here, your loved one isn't just cared for—they are cherished.",
     "experienceGrid": [
       { "value": "15+", "label": "Years of UK Leadership in dementia and nursing care." },
-      { "value": "1:3", "label": "The highest care standard in Nairobi" },
+      { "value": "1:4", "label": "The highest care standard in Nairobi" },
       { "value": "International", "label": "Standards – Clinical protocols audited against global benchmarks" },
       { "value": "Digital", "label": "Integration – Real-time updates via UK-standard care software" }
     ],
@@ -522,15 +522,15 @@
         "questions": [
           {
             "q": "How do you maintain \"UK Standards\" in a Kenyan boutique setting?",
-            "a": "Our clinical protocols are modeled after the Care Quality Commission (CQC) \"Outstanding\" framework. This includes digital medication administration records (eMAR), 1:3 staffing ratios, and a \"Person-Centered\" approach where the resident's dignity is the primary metric of success."
+            "a": "Our clinical protocols are modeled after the Care Quality Commission (CQC) \"Outstanding\" framework. This includes digital medication administration records (eMAR), 1:4 staffing ratios, and a \"Person-Centered\" approach where the resident's dignity is the primary metric of success."
           },
           {
             "q": "What happens in a medical emergency?",
-            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we have pre-established \"Fast-Track\" protocols with Nairobi's leading private hospitals. Our 1:3 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
+            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we have pre-established \"Fast-Track\" protocols with Nairobi's leading private hospitals. Our 1:4 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
           },
           {
             "q": "How do you prevent falls and pressure sores in a residential home?",
-            "a": "Unlike larger facilities with 1:10 ratios, our 1:3 model allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
+            "a": "Unlike larger facilities with 1:10 ratios, our 1:4 model allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
           }
         ]
       },
