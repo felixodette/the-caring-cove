@@ -31,7 +31,7 @@ export default function ServicePage() {
         subheadline={content.subheadline}
       />
       <Services />
-      <ServiceContent />
+      {/* <ServiceContent /> */}
     </PageLayout>
   );
 }
