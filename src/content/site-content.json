@@ -1,17 +1,17 @@
 {
   "homepage": {
     "hero": {
-      "tagline": "Where longevity and senior living come together",
-      "headline": "Your Story. To Be Continued.",
-      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your next chapter in a place where new experiences happen daily, and a warm circle of friends is ready to grow with you.",
+      "tagline": "Exceptional Personilized Care.",
+      "headline": "Where longevity and senior living come together.",
+      "subheadline": "Welcome to The Caring Cove. We’ve built a community designed to honor every resident's journey. Start your golden years in a place where new experiences happen daily.",
       "cta": {
         "primary": {
           "label": "Book a Private Tour",
           "href": "/contact"
         },
         "secondary": {
-          "label": "Download Our Care Guide",
-          "href": "#care-guide"
+          "label": "Download Our Brochure",
+          "href": "/the-caring-cove-brochure.pdf"
         }
       }
     },
@@ -27,7 +27,7 @@
         {
           "icon": "flower-2",
           "title": "Dementia Care",
-          "description": "A secure, sensory-rich environment led by specially trained staff, focused on dignity, comfort, and joyful moments"
+          "description": "A safe, sensory-rich environment led by specially trained staff, focused on dignity, comfort, and joyful moments"
         },
         {
           "icon": "letter-r",
@@ -62,7 +62,7 @@
         },
         {
           "icon": "activity",
-          "title": "Geriatric Rehabilitation & Convalescence",
+          "title": "Rehabilitation & Convalescence",
           "headline": "The Bridge to Recovery and Independence.",
           "description": "Specialized post-operative care for seniors recovering from hip/knee replacements or stroke. We offer a high-intensity recovery environment that hospital wards cannot provide.",
           "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 monitoring to prevent post-surgical complications or falls."
@@ -76,7 +76,7 @@
         },
         {
           "icon": "letter-r",
-          "title": "Luxury Respite Stays (Short-Term Care)",
+          "title": "Respite Stays (Short-Term Care)",
           "headline": "A Premium Retreat for Your Loved One.",
           "description": "Whether you are traveling or need a temporary break from caregiving, our respite program offers a \"five-star\" holiday for your loved one with full clinical oversight.",
           "oneToOneEdge": "Seamless integration into our community, ensuring the transition is stress-free and restorative for both resident and family."
@@ -109,12 +109,12 @@
         {
           "icon": "pill",
           "title": "Polypharmacy & Medication Governance",
-          "expertise": "Meticulous management of multi-drug regimens using Nourish Digital Care tracking to prevent adverse interactions—a common risk in geriatric care.",
+          "expertise": "Meticulous management of multi-drug regimens using Nourish Digital Care tracking to prevent adverse interactions—a common risk in nursing care.",
           "whyItMatters": "Precise clinical oversight ensures that every dose is optimized for the aging body's changing metabolism."
         },
         {
           "icon": "activity",
-          "title": "Geriatric Physical Rehabilitation",
+          "title": "Physical Rehabilitation",
           "expertise": "Specialized competency in post-operative recovery (hips/knees) and stroke rehab, focusing on safe manual handling and mobility restoration.",
           "whyItMatters": "Our 1:3 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
         }
@@ -125,13 +125,13 @@
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
       ],
-      "badgeText": "Our internal training program is audited against the same standards that earned Chelston Park (UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
+      "badgeText": "Our internal training program is audited against the same standards that earned institutions (in the UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
     },
     "founderStory": {
       "subtitle": "The \"Why Us\"",
       "title": "Bridging Two Worlds of Care",
       "goal": "A Vision Born of Excellence",
-      "quote": "Having spent years at the UK’s Chelston Park, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
+      "quote": "Having spent years working in the UK, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
       "founderName": "Njeri Blagden"
     },
     "amenities": {
@@ -142,7 +142,7 @@
         {
           "icon": "utensils",
           "title": "Farm-to-Table Nutrition",
-          "description": "Geriatric-specialized menus using organic Karen produce."
+          "description": "Specialized menus using organic Karen produce."
         },
         {
           "icon": "tree-pine",
@@ -152,7 +152,7 @@
         {
           "icon": "music",
           "title": "Daily Enrichment",
-          "description": "From \"kneading dough\" sessions (reminiscent of Chelston's baking) to gentle music therapy and garden walks."
+          "description": "From \"kneading dough\" sessions to gentle music therapy and garden walks."
         }
       ]
     },
@@ -168,21 +168,21 @@
         },
         {
           "icon": "award",
-          "title": "From Chelston Park to The Caring Cove",
-          "description": "Our founder didn't just work in care; they helped maintain the 'Outstanding' CQC rating at Chelston Park in the UK. We have imported those exact operational standards—from medication governance to 'Meaningful Moments' dementia training—to create a world-class sanctuary in Nairobi.",
+          "title": "From the UK to The Caring Cove",
+          "description": "Our founder didn't just work in care; they helped maintain the 'Outstanding' CQC rating at various facilities in the UK. We have imported those exact operational standards—from medication governance to 'Meaningful Moments' dementia training—to create a world-class sanctuary in Nairobi.",
           "badgeText": "UK Standards. Kenyan Heart."
         },
         {
           "icon": "stethoscope",
           "title": "Doctor-Approved Care",
-          "description": "We work in partnership with Nairobi's leading geriatricians and neurologists. Our care plans are clinical documents, reviewed regularly by medical professionals to ensure the highest standard of chronic disease management."
+          "description": "We work in partnership with Nairobi's doctors. Our care plans are clinical documents, reviewed regularly by medical professionals to ensure the highest standard of chronic disease management."
         }
       ]
     }
   },
   "servicesPage": {
-    "title": "Our Pillars of Clinical Excellence",
-    "subheadline": "Luxury boutique living in Karen, governed by international care standards and a high standard of resident-to-staff devotion.",
+    "title": "The Philosophy of Care",
+    "subheadline": "The Caring Cove focuses on a person-centered, holistic approach to ensure we deliver skilled, tailored, and compassionate care to all our residents. We strive to enhance the quality of life, well-being and fulfillment of our residents.",
     "services": [
       {
         "icon": "brain",
@@ -201,14 +201,14 @@
         "coreMission": "A dignified, pain-free journey in a home-like sanctuary.",
         "approach": "We implement the UK Gold Standard Framework (GSF) for palliative care. Our focus is on the \"Total Patient\"—addressing physical pain, emotional anxiety, and spiritual peace.",
         "keyFeatures": [
-          "Expert Pain Management: 24/7 nursing oversight specialized in geriatric pharmacology and comfort measures.",
+          "Expert Pain Management: 24/7 nursing oversight with oversight in pharmacology and comfort measures.",
           "Family-Centered Support: We handle the clinical \"heavy lifting\" so you can spend your time as a son or daughter, not a medical monitor.",
           "Bereavement Support: Guidance and compassionate counseling for families during and after the transition."
         ]
       },
       {
         "icon": "activity",
-        "title": "Geriatric Rehabilitation & Post-Op Recovery",
+        "title": "Rehabilitation & Post-Op Recovery",
         "coreMission": "Bridging the gap between hospital and home.",
         "approach": "Ideal for seniors recovering from hip/knee replacements or a stroke. We ensure that physical therapy exercises are performed safely and consistently, significantly reducing recovery time.",
         "keyFeatures": [
@@ -230,7 +230,7 @@
       },
       {
         "icon": "sparkles",
-        "title": "Luxury Respite Stays (Short-Term Care)",
+        "title": "Respite Stays (Short-Term Care)",
         "coreMission": "A restorative retreat for the senior, a vital break for the family.",
         "approach": "Perfect for families traveling abroad or local caregivers needing a reprieve. We treat respite guests as permanent residents, giving them full access to our high standard of care and amenities.",
         "keyFeatures": [
@@ -246,7 +246,7 @@
         "approach": "Wellness at The Cove is proactive. We believe an active mind and a nourished body are the best forms of medicine.",
         "keyFeatures": [
           "Bespoke Activity Calendars: 100% personalized—from garden walks and \"Baking for the Soul\" to music therapy and pet visits.",
-          "Farm-to-Table Dining: High-protein, nutrient-dense menus tailored to geriatric dietary needs.",
+          "Farm-to-Table Dining: High-protein, nutrient-dense menus tailored to dietary needs.",
           "Spiritual Care: Coordination with local clergy for those who value faith-based reflection."
         ]
       }
@@ -256,7 +256,7 @@
       "rows": [
         { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:3 Guaranteed" },
         { "feature": "Medical Record", "largeFacilities": "Paper-based / Delayed", "theCove": "Nourish Digital (UK Standard)" },
-        { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Luxury Residence" },
+        { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Residence" },
         { "feature": "Menu Choice", "largeFacilities": "Fixed \"Canteen\" Style", "theCove": "Chef-Prepared & Bespoke" }
       ]
     },
@@ -272,16 +272,20 @@
     "title": "Our Story: A Vision for Dignity",
     "subheadline": "Bringing decades of \"Outstanding\" UK clinical experience to the heart of Nairobi.",
     "visionary": {
-      "headline": "From London to Karen: A Journey of Care.",
-      "copy": "Our founder's journey began in the United Kingdom, working within facilities recognized by the Care Quality Commission (CQC) for 'Outstanding' clinical excellence. After years of managing complex memory care and geriatric wards in the UK, a clear realization emerged: Nairobi families were looking for more than just a room; they were looking for a standard of care that didn't yet exist locally. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture."
+      "headline": "From UK to Karen: A Journey of Care.",
+      "copy": "Our founder's journey began in the United Kingdom, working within facilities recognized by the Care Quality Commission (CQC) for 'Outstanding' clinical excellence. After years of wroking in dementia and nursing care in the UK, a clear realization emerged: Nairobi families were looking for more than just a room; they were looking for a standard of care that didn't yet exist locally. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture."
     },
     "philosophy": {
-      "headline": "Why We Limited Our Vision to Just 4 Beds.",
-      "copy": "Most care facilities measure success by the number of beds they can fill. We measure it by the depth of the relationship we can build. By intentionally limiting The Caring Cove to an exclusive boutique environment, we ensure:",
+      "headline": "Our Mission and Objectives.",
+      "copy": "The mission statement of the company is to provide person centered support to every individual that we provided a service to provide a secure, relaxed and homely environment in which the care, well-being and comfort of all service users are of prime importance. We aim to eliminate loneliness by creating an enviornment where older people can experience a better quality of life and well being.",
       "points": [
-        "Absolute Clinical Safety: Dedicated supervision means we catch the smallest changes in health before they become emergencies.",
-        "Zero Institutionalization: There are no 'wards' or 'shifts' here. There is only a home, a garden, and a dedicated companion.",
-        "The Power of Choice: Our residents decide when they wake up, what they eat, and how they spend their afternoon. In a our environment, the resident's schedule is the only schedule that matters."
+        "Offering you courtesy, respect and privacy.",
+        "Providing individualised care and support based on personal needs and preferences.",
+        "Involving residents, family and friends in individualising a care plan.",
+        "Ensuring the right of every person to independence and choice.",
+        "Delivering high quality care to eeryone, respecting ethnic origins, religious or life choices.",
+        "Communicating effectively with residents, family and friends, to ensure they have the information needed to make informed choices.",
+        "Regularly re-evaluating care to access its effective."
       ]
     },
     "coreValues": [
@@ -292,7 +296,7 @@
     ],
     "founderNote": "I spent years in the UK seeing what 'perfect' care looks like. I saw how the right environment and the right ratio could turn a person's final years into a season of peace rather than a season of decline. I opened The Caring Cove to give Kenyan families that same peace of mind. Here, your loved one isn't just cared for—they are cherished.",
     "experienceGrid": [
-      { "value": "15+", "label": "Years of UK Geriatric Leadership" },
+      { "value": "15+", "label": "Years of UK Leadership in dementia and nursing care." },
       { "value": "1:3", "label": "The highest care standard in Nairobi" },
       { "value": "International", "label": "Standards – Clinical protocols audited against global benchmarks" },
       { "value": "Digital", "label": "Integration – Real-time updates via UK-standard care software" }
@@ -304,7 +308,7 @@
         { "title": "Duty and Diligence", "description": "Upholding the highest standards of clinical excellence and accountability in every interaction." },
         { "title": "Kindness and Compassion", "description": "Treating every resident with dignity, warmth, and the respect they deserve." }
       ],
-      "attribution": "Inspired by Netherclay Home Care, Chelston Gardens and Chelston Park"
+      "attribution": "Guided by the high standards of excellence in assisted living and care."
     },
     "culture": {
       "title": "Culture",
@@ -385,55 +389,115 @@
     "subheadline": "Designed for intimacy. Engineered for safety. Nestled in the tranquil greenery of Karen.",
     "sections": [
       {
-        "id": "suites",
+        "id": "suite-1",
         "tag": "The Sleep Sanctuary",
-        "headline": "Your Private Haven of Rest.",
-        "copy": "We believe that dignity begins with a private space that feels like home. Our four exclusive suites are sun-drenched, spacious, and fully accessible. Each room is a \"Low-Arousal\" environment, designed to reduce the agitation often associated with memory loss while maintaining a high-end boutique aesthetic.",
+        "headline": "Suite One: Calm, Privacy, and Dignity.",
+        "copy": "Every suite is designed to feel like home—quiet, sun-lit, and fully accessible. Our boutique model means staff notice the small changes that matter: sleep quality, comfort, appetite, and mood—day and night.",
+        "images": ["/images/suite-1.jpeg"],
+        "image": "/images/suite-1.jpeg",
+        "imageAlt": "Private senior suite Karen Nairobi",
+        "amenities": [
+          { "title": "Low-Arousal Design", "description": "A calm layout and gentle lighting to reduce agitation and support rest." },
+          { "title": "Pressure-Relieving Comfort", "description": "High-spec bedding and positioning support for safer, deeper sleep." },
+          { "title": "Accessible by Design", "description": "Easy movement, discreet safety features, and space that feels open—not clinical." }
+        ]
+      },
+      {
+        "id": "suite-2",
+        "tag": "The Sleep Sanctuary",
+        "headline": "Suite Two: Boutique Comfort, Clinical Peace of Mind.",
+        "copy": "We combine a refined residential feel with professional consistency—medication routines, hydration prompts, mobility support, and skin integrity checks delivered discreetly, without disrupting comfort or privacy.",
+        "images": ["/images/suite-2.jpeg"],
         "image": "/images/suite-2.jpeg",
-        "imageAlt": "Luxury private senior suite Karen Nairobi",
+        "imageAlt": "Private senior suite Karen Nairobi",
         "amenities": [
-          { "title": "Orthopedic Comfort", "description": "High-spec pressure-relieving bedding as standard." },
-          { "title": "Adaptive Safety", "description": "Discreet grab rails and fall-prevention sensors that don't compromise the room's elegance." },
-          { "title": "Personal Touches", "description": "Encouraged \"Reminiscence Corners\" where residents can display their own cherished photos and mementos." }
-        ]
-      },
-      {
-        "id": "garden",
-        "tag": "The Outdoor Haven",
-        "headline": "Nature as Medicine.",
-        "copy": "Our secure, landscaped gardens are more than just a view; they are a therapeutic tool. Designed for safe wandering, the \"Cove Garden\" features level pathways, fragrant local blooms for sensory stimulation, and shaded seating areas for quiet reflection or family visits.",
-        "image": "/images/sensory-garden.jpeg",
-        "imageAlt": "Secure dementia garden Lavington elderly care",
-        "amenities": [
-          { "title": "Circular Pathways", "description": "Designed to prevent \"dead-end\" frustration for residents with dementia." },
-          { "title": "Raised Garden Beds", "description": "Allowing residents to engage in light gardening and soil therapy without bending." },
-          { "title": "Bird-Song Serenity", "description": "A quiet Karen ecosystem that provides a natural soundtrack for afternoon tea." }
-        ]
-      },
-      {
-        "id": "dining",
-        "tag": "The Social Hub",
-        "headline": "Farm-to-Table Nutrition.",
-        "copy": "Nutrition is a pillar of our clinical care. In our boutique kitchen, our chef prepares meals using organic produce sourced directly from Karen and Lavington farmers. Dining at The Cove is a social occasion—a time for storytelling and connection around a communal table.",
-        "image": "/images/dining-area.jpeg",
-        "imageAlt": "Boutique senior dining room Kenya 1-on-3 care",
-        "amenities": [
-          { "title": "Bespoke Menus", "description": "Tailored to geriatric dental and digestive needs (Soft-foods, Low-sodium, Diabetic-friendly)." },
-          { "title": "Hydration Stations", "description": "Infused waters and juices available 24/7 to prevent senior dehydration." },
-          { "title": "Open Kitchen Policy", "description": "The comforting aromas of home-cooked meals to stimulate appetite and memory." }
+          { "title": "Personalized Setup", "description": "Bring familiar touches that reduce relocation stress and support memory cues." },
+          { "title": "Fall-Prevention Ready", "description": "Safety built in—without an institutional look or feel." },
+          { "title": "Quiet, Restorative Atmosphere", "description": "A suite that protects sleep, reduces stress, and supports wellbeing." }
         ]
       },
       {
         "id": "lounge",
-        "tag": "The Engagement Zone",
-        "headline": "A Life of Purposeful Engagement.",
-        "copy": "This is where our nurse to resident ratio truly shines. The lounge is a versatile space for music therapy, gentle \"Chair Yoga,\" and our signature \"Meaningful Moments\" sessions. It is a space designed for light, warmth, and community.",
+        "tag": "The Engagement Lounge",
+        "headline": "Connection, Comfort, and Gentle Activity.",
+        "copy": "This is where days feel full—without feeling overwhelming. From music and reminiscence to calm conversation and supervised relaxation, we design engagement around dignity, familiarity, and individual energy levels.",
+        "images": ["/images/sitting-area-1.jpeg"],
         "image": "/images/sitting-area-1.jpeg",
-        "imageAlt": "Wellness activity lounge boutique care Nairobi",
+        "imageAlt": "Comfortable living room lounge for seniors in Karen Nairobi",
         "amenities": [
-          { "title": "Adaptive Tech", "description": "High-contrast screens for video calls with Diaspora family members." },
-          { "title": "Acoustic Comfort", "description": "Sound-softening materials to reduce \"echo-anxiety\" for those with hearing sensitivities." },
-          { "title": "Library & Reminiscence Tools", "description": "A curated collection of tactile books and memory boxes." }
+          { "title": "Meaningful Moments", "description": "Purposeful activities that support cognition, mood, and confidence." },
+          { "title": "Diaspora-Friendly Updates", "description": "Comfortable spaces for video calls and family connection." },
+          { "title": "Supervised Comfort", "description": "A warm communal area with attentive support always close by." }
+        ]
+      },
+      {
+        "id": "beverage-area",
+        "tag": "The Hospitality Corner",
+        "headline": "Small Touches That Feel Like Home.",
+        "copy": "Care is more than tasks—it’s hospitality, reassurance, and the feeling of being welcomed. This space supports daily routines: tea, hydration prompts, and calm check-ins that help prevent avoidable health dips.",
+        "images": ["/images/beverage-area.jpeg"],
+        "image": "/images/beverage-area.jpeg",
+        "imageAlt": "Tea and beverage area in boutique care home Karen Nairobi",
+        "amenities": [
+          { "title": "Hydration Support", "description": "A simple, consistent way to encourage fluids throughout the day." },
+          { "title": "Routine & Reassurance", "description": "Familiar rituals that reduce anxiety and promote calm." },
+          { "title": "Warm Family Visits", "description": "A welcoming corner for conversations that feel private and respectful." }
+        ]
+      },
+      {
+        "id": "dining",
+        "tag": "The Social Table",
+        "headline": "Nutrition You Can Trust—Served With Community.",
+        "copy": "Nutrition is clinical care. We prioritize appetite, hydration, and enjoyment with meals that are tailored, familiar, and safe—served in a setting that invites conversation and connection.",
+        "images": ["/images/dining-area.jpeg"],
+        "image": "/images/dining-area.jpeg",
+        "imageAlt": "Boutique senior dining room in Karen Nairobi",
+        "amenities": [
+          { "title": "Bespoke Menus", "description": "Soft foods, low-sodium, diabetic-friendly options—guided by individual needs." },
+          { "title": "Appetite & Mood Cues", "description": "Staff notice changes early and respond before they become emergencies." },
+          { "title": "Dignified Dining", "description": "Support that is discreet, respectful, and never rushed." }
+        ]
+      },
+      {
+        "id": "sensory-garden",
+        "tag": "The Sensory Garden",
+        "headline": "Nature as Medicine.",
+        "copy": "Our secure gardens are therapeutic—not just beautiful. Safe wandering routes, local blooms, and shaded seating help reduce restlessness, lift mood, and create moments of quiet joy for residents and families.",
+        "images": ["/images/sensory-garden.jpeg"],
+        "image": "/images/sensory-garden.jpeg",
+        "imageAlt": "Secure sensory garden for dementia care in Karen Nairobi",
+        "amenities": [
+          { "title": "Safe Wandering Paths", "description": "Designed to support independence while reducing frustration." },
+          { "title": "Shaded Seating", "description": "Comfortable places for family visits and peaceful reflection." },
+          { "title": "Sensory Stimulation", "description": "Fragrance, greenery, and calm outdoor time to support wellbeing." }
+        ]
+      },
+      {
+        "id": "raised-gardens",
+        "tag": "The Garden Beds",
+        "headline": "Hands-in-Soil Joy—Without the Strain.",
+        "copy": "Raised beds make gardening accessible and safe. Light planting and touch-based activities can be deeply grounding—especially for residents living with memory loss—while maintaining comfort and dignity.",
+        "images": ["/images/raised-gardening-bed.jpeg"],
+        "image": "/images/raised-gardening-bed.jpeg",
+        "imageAlt": "Raised garden beds for senior engagement in Karen Nairobi",
+        "amenities": [
+          { "title": "Accessible Engagement", "description": "Enjoy gardening without bending, strain, or risk." },
+          { "title": "Grounding Routine", "description": "A calm activity that supports mood and reduces loneliness." },
+          { "title": "Gentle Supervision", "description": "Support nearby to keep every moment safe and enjoyable." }
+        ]
+      },
+      {
+        "id": "gazebo",
+        "tag": "The Outdoor Pavilion",
+        "headline": "A Breath of Fresh Air, Whenever You Need It.",
+        "copy": "Outdoor time improves sleep, appetite, and wellbeing. Our shaded pavilion offers a safe, serene space for morning light, afternoon tea, and family moments—supported by attentive staff.",
+        "images": ["/images/gazebo-bees.jpeg"],
+        "image": "/images/gazebo-bees.jpeg",
+        "imageAlt": "Shaded gazebo pavilion in boutique care home garden Karen Nairobi",
+        "amenities": [
+          { "title": "Calm, Shaded Comfort", "description": "A restful outdoor space that stays cool and inviting." },
+          { "title": "Family-Friendly Setting", "description": "A peaceful place to connect without noise or rush." },
+          { "title": "Wellbeing by Design", "description": "Outdoor routines that support mood, sleep, and quality of life." }
         ]
       }
     ],
@@ -448,7 +512,7 @@
     }
   },
   "faqPage": {
-    "title": "Knowledge Base",
+    "title": "FAQ",
     "subheadline": "Answers for families near and far. Clinical rigor, transparency, and peace of mind.",
     "sections": [
       {
@@ -505,6 +569,10 @@
         "tag": "Admissions & Pricing",
         "subtag": "The \"Logistics\" Category",
         "questions": [
+          {
+            "q": "When to Consider a Care Home",
+            "a": "• Struggling to live alone even with help from friends, family and paid carers\n• Had a needs assessment and care home is the best choice\n• Have complex, medical conditions that needs specialist attention during the day and night\n• Care home can reduce the stress of looking after your health and care and focus on your social life and general well being"
+          },
           {
             "q": "Why don't you display prices on the website?",
             "a": "Because we only have 4 suites, every care plan is 100% bespoke. Costs are determined by the level of clinical support required (e.g., Palliative vs. Respite). Following an initial clinical assessment, we provide a transparent, all-inclusive monthly fee with no \"hidden\" medical surcharges."

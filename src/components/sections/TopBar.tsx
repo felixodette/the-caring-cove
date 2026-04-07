@@ -24,8 +24,8 @@ const TopBar = () => (
         <div className="flex items-center gap-3">
           <Clock className="w-5 h-5 text-primary" />
           <div>
-            <p className="text-xs font-semibold text-foreground">Office time</p>
-            <p className="text-xs text-muted-foreground">Opening Hour 9:00am - 10:00pm</p>
+            <p className="text-xs font-semibold text-foreground">Office Hours</p>
+            <p className="text-xs text-muted-foreground">Opening Hour 8:00am - 5:00pm</p>
           </div>
         </div>
         <div className="flex items-center gap-3">

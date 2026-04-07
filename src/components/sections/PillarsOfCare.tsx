@@ -40,7 +40,7 @@ const content = siteContent.servicesPage as {
   };
 };
 
-export default function ServiceContent() {
+export default function PillarsOfCare() {
   return (
     <>
       {/* Services Accordion Section */}
@@ -55,16 +55,16 @@ export default function ServiceContent() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
               <Award className="w-4 h-4" />
-              UK CQC Standards
-            </div>
-            <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">
               The Caring Cove Model
-            </p>
+            </div>
+            {/* <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">
+              The Caring Cove Model
+            </p> */}
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Six Pillars of Care
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Explore each service to discover how we deliver world-class care in
+              Explore each pillar to discover how we deliver care in
               a boutique setting.
             </p>
             {/* Quick jump links */}
@@ -159,7 +159,7 @@ export default function ServiceContent() {
       </section>
 
       {/* Comparison Table Section */}
-      <section className="py-20 bg-slate-50">
+      {/* <section className="py-20 bg-slate-50">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -222,10 +222,10 @@ export default function ServiceContent() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-primary/5">
+      {/* <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-primary/5">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -255,7 +255,7 @@ export default function ServiceContent() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -11,6 +11,7 @@ import Amenities from "@/components/sections/Amenities";
 import TrustSignals from "@/components/sections/TrustSignals";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/sections/Footer";
+import PillarsOfCare from "@/components/sections/PillarsOfCare";
 
 export const metadata: Metadata = {
   title: "Luxury Memory Care Karen Nairobi",
@@ -27,10 +28,10 @@ export default function Home() {
       <Hero />
       <Features />
       <FounderStory />
-      <Services />
+      <PillarsOfCare />
       {/* <ProfessionalSkills /> */}
-      <Amenities />
-      <TrustSignals />
+      {/* <Amenities />
+      <TrustSignals /> */}
       <CTABanner />
       <Footer />
     </div>

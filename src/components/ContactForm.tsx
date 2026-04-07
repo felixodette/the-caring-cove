@@ -7,7 +7,7 @@ import siteContent from "@/content/site-content.json";
 
 const defaultForm = {
   headline: "Request a Private Tour",
-  subheadline: "Our boutique home has only 4 suites. Secure your priority viewing today.",
+  subheadline: "Secure your priority viewing today.",
   cta: "Check Availability & Book Tour",
   successMessage: "Inquiry Sent. We will contact you within 2 hours.",
   errorMessage: "Something went wrong. Please call us directly.",

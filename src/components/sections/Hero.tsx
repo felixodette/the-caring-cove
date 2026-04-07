@@ -5,6 +5,8 @@ import siteContent from "@/content/site-content.json";
 
 const hero = siteContent.homepage.hero;
 
+const isDownloadHref = (href: string) => href.toLowerCase().endsWith(".pdf");
+
 const Hero = () => (
   <section
     className="relative min-h-[600px] flex items-center bg-cover bg-center"
@@ -45,7 +47,11 @@ const Hero = () => (
         <a href={hero.cta.primary.href} className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors">
           {hero.cta.primary.label}
         </a>
-        <a href={hero.cta.secondary.href} className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary-foreground/10 transition-colors">
+        <a
+          href={hero.cta.secondary.href}
+          download={isDownloadHref(hero.cta.secondary.href) ? "" : undefined}
+          className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary-foreground/10 transition-colors"
+        >
           {hero.cta.secondary.label}
         </a>
       </motion.div>
