@@ -5,7 +5,7 @@ const CTABanner = () => (
     <div className="container mx-auto text-center">
       <p className="section-subtitle text-primary-foreground/80">We&apos;re here to support families—near and far</p>
       <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-        Ready to see the 1:1 difference for yourself?
+        Ready to see the 1:4 difference for yourself?
       </h2>
       <Link
         href="/contact"

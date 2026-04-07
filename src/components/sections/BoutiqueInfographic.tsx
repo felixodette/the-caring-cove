@@ -10,7 +10,7 @@ const features = [
     title: "Care Ratio",
     icon: Users,
     standard: "1:12 Resident to Staff",
-    cove: "1:1 Dedicated Companion",
+    cove: "1:4 Dedicated Care",
     description:
       "In large homes, residents wait for help. At The Cove, your loved one has a dedicated shadow for safety and engagement.",
   },
@@ -51,7 +51,7 @@ const BoutiqueInfographic = () => {
           Why Boutique Care Wins
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Compare the standard institutional model against our high-touch, 1:1
+          Compare the standard institutional model against our high-touch, 1:4
           clinical approach.
         </p>
       </div>
@@ -134,7 +134,7 @@ const BoutiqueInfographic = () => {
         </div>
       </div>
 
-      <div className="mt-8 text-center">
+      {/* <div className="mt-8 text-center">
         <p className="text-sm text-muted-foreground mb-4 italic">
           *Clinical protocols modeled after &quot;Outstanding&quot; UK care
           standards.
@@ -145,7 +145,7 @@ const BoutiqueInfographic = () => {
         >
           Book a Private Tour
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
