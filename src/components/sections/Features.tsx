@@ -7,7 +7,7 @@ import siteContent from "@/content/site-content.json";
 const coveDifference = siteContent.homepage.coveDifference;
 
 const Features = () => (
-  <section className="relative z-10 -mt-[6.75rem] pt-4 pb-20">
+  <section className="relative z-10 -mt-16 pt-4 pb-20">
     <div className="container mx-auto">
       {coveDifference.title && (
         <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
