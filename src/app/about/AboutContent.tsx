@@ -274,7 +274,7 @@ export default function AboutContent() {
       </section>
 
       {/* Internal Link to Services */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto text-center">
           <motion.p
             initial={{ opacity: 0 }}
@@ -292,7 +292,7 @@ export default function AboutContent() {
             <span className="text-sm">→</span>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA */}
       <section className="py-20 bg-primary">
