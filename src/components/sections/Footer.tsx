@@ -52,7 +52,7 @@ const Footer = () => (
               { label: "About Us", href: "/about" },
               { label: "Service", href: "/service" },
               { label: "Gallery", href: "/gallery" },
-              { label: "Knowledge Base", href: "/faq" },
+              { label: "FAQ", href: "/faq" },
               // { label: "Blog", href: "/blog" },
               { label: "Contact Us", href: "/contact" },
             ].map(({ label, href }) => (

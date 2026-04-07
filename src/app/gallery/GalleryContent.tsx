@@ -82,7 +82,7 @@ export default function GalleryContent() {
       <aside className="hidden lg:block fixed left-6 top-1/2 -translate-y-1/2 z-30">
         <nav className="flex flex-col gap-2">
           {content.sections.map((s, i) => {
-            const Icon = sectionIcons[i];
+            const Icon = sectionIcons[i % sectionIcons.length] ?? Shield;
             const isActive = activeSection === i;
             const isExpanded = isActive || hoveredNav === i;
             return (
@@ -131,7 +131,7 @@ export default function GalleryContent() {
       {/* Main Content */}
       <main className="lg:pl-24">
         {content.sections.map((section, i) => {
-          const Icon = sectionIcons[i];
+          const Icon = sectionIcons[i % sectionIcons.length] ?? Shield;
           const isEven = i % 2 === 0;
 
           return (
@@ -264,13 +264,22 @@ export default function GalleryContent() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg hover:-translate-y-0.5"
-              >
-                Book a Private Tour
-                <ChevronRight className="w-5 h-5" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/gallery-tour"
+                  className="inline-flex items-center justify-center gap-2 bg-navy text-navy-foreground px-8 py-4 rounded-xl font-bold hover:bg-navy/90 transition-all shadow-lg hover:-translate-y-0.5"
+                >
+                  Start Virtual Tour
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  href="/contact#request-tour"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg hover:-translate-y-0.5"
+                >
+                  Book a Private Tour
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
+              </div>
             </motion.div>
           </div>
         </section>

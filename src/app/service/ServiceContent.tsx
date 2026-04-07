@@ -58,7 +58,7 @@ export default function ServiceContent() {
               UK CQC Standards
             </div>
             <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">
-              The Chelston Model
+              The Caring Cove Model
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Six Pillars of Care

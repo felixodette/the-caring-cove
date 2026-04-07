@@ -62,6 +62,55 @@ export default function AboutContent() {
         </div>
       </section>
 
+      {/* Clinical Operations & Management */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-2">
+                Clinical Leadership
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                Alyaa Mufid
+              </h2>
+              <p className="text-muted-foreground font-semibold mb-6">
+                Clinical Operations and Management
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Blending a nursing background from Australia with over six years
+                of expertise in clinical operations management, healthcare
+                compliance and systems design from the heathcare tech firm in
+                the USA, Alyaa provides the operational rigor and evidence-based
+                leadership required for our boutique residence, ensuring it
+                meets the highest international standards of care, right here at
+                home in Kenya. She is deeply committed to fostering a sanctuary
+                defined by unwavering dignity, genuine compassion, and
+                professional consistency.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="relative"
+            >
+              <img
+                src="/images/alyaa-mufid.png"
+                alt="Alyaa Mufid"
+                className="rounded-2xl shadow-xl w-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Philosophy */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto">
@@ -264,7 +313,7 @@ export default function AboutContent() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
-              href="/#contact"
+              href="/contact#request-tour"
               className="inline-block bg-navy px-8 py-3 rounded font-semibold text-navy-foreground hover:bg-navy/80 transition-colors"
             >
               Book a Private Tour
