@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
-import PageLayout from "@/layouts/PageLayout";
-import GalleryTourContent from "./GalleryTourContent";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Gallery Tour | The Caring Cove - Luxury Senior Care Karen Nairobi",
@@ -11,10 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryTourPage() {
-  return (
-    <PageLayout>
-      <GalleryTourContent />
-    </PageLayout>
-  );
+  redirect("/gallery");
 }
 

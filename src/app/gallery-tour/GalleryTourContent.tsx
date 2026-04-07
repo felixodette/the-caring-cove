@@ -11,6 +11,7 @@ type GallerySection = {
   tag: string;
   headline: string;
   copy: string;
+  images?: string[];
   image: string;
   imageAlt: string;
   amenities: Array<{ title: string; description: string }>;
@@ -31,6 +32,9 @@ export default function GalleryTourContent() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [showHelp, setShowHelp] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
+  const [activeImageById, setActiveImageById] = useState<Record<string, number>>(
+    {}
+  );
 
   const ids = useMemo(() => sections.map((s) => s.id), [sections]);
 
@@ -187,6 +191,16 @@ export default function GalleryTourContent() {
         className="h-[calc(100vh-56px)] sm:h-[calc(100vh-60px)] overflow-y-auto scroll-smooth snap-y snap-mandatory"
       >
         {sections.map((section, idx) => (
+          // allow multiple images per stop; defaults to first
+          (() => {
+            const images = section.images?.length ? section.images : [section.image];
+            const activeImageIdx = Math.max(
+              0,
+              Math.min(activeImageById[section.id] ?? 0, images.length - 1)
+            );
+            const activeImageSrc = images[activeImageIdx] ?? section.image;
+
+            return (
           <section
             key={section.id}
             id={section.id}
@@ -195,11 +209,13 @@ export default function GalleryTourContent() {
             {/* Background image */}
             <div className="absolute inset-0">
               <img
-                src={section.image}
+                src={activeImageSrc}
                 alt={section.imageAlt}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/75 via-navy/25 to-transparent" />
+              {/* Mask for readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/60 to-navy/20" />
+              <div className="absolute inset-0 bg-black/10" />
             </div>
 
             {/* Content overlay */}
@@ -209,7 +225,7 @@ export default function GalleryTourContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: 0.6, once: false }}
                 transition={{ duration: 0.35 }}
-                className="max-w-3xl"
+                className="max-w-3xl rounded-2xl bg-navy/45 backdrop-blur-md border border-white/10 p-6 md:p-8 shadow-xl"
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 bg-primary/10 text-primary-foreground/95 font-semibold text-sm mb-5 backdrop-blur">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -221,6 +237,48 @@ export default function GalleryTourContent() {
                 <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
                   {section.copy}
                 </p>
+
+                {images.length > 1 && (
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-white/80 text-sm font-semibold">
+                        Photos
+                      </p>
+                      <p className="text-white/60 text-xs font-semibold">
+                        {activeImageIdx + 1} / {images.length}
+                      </p>
+                    </div>
+                    <div className="flex gap-2 overflow-x-auto pb-1">
+                      {images.map((src, i) => {
+                        const isActive = i === activeImageIdx;
+                        return (
+                          <button
+                            key={`${section.id}-img-${i}`}
+                            type="button"
+                            onClick={() =>
+                              setActiveImageById((prev) => ({
+                                ...prev,
+                                [section.id]: i,
+                              }))
+                            }
+                            className={`shrink-0 rounded-lg border transition-all ${
+                              isActive
+                                ? "border-primary shadow-md"
+                                : "border-white/15 hover:border-white/35"
+                            }`}
+                            aria-label={`Show photo ${i + 1} for ${section.tag}`}
+                          >
+                            <img
+                              src={src}
+                              alt=""
+                              className="w-16 h-12 object-cover rounded-lg"
+                            />
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
                 <div className="grid sm:grid-cols-2 gap-4 mb-10">
                   {section.amenities.slice(0, 4).map((a, i) => (
@@ -244,24 +302,28 @@ export default function GalleryTourContent() {
                     Book a Private Tour
                     <ChevronRight className="w-5 h-5" />
                   </Link>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const root = rootRef.current;
-                      const next = sections[idx + 1];
-                      if (!root || !next) return;
-                      root
-                        .querySelector<HTMLElement>(`#${CSS.escape(next.id)}`)
-                        ?.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }}
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-white/25 text-white font-semibold hover:bg-white/10 transition-colors"
-                  >
-                    Next
-                    <ChevronDown className="w-5 h-5" />
-                  </button>
                 </div>
               </motion.div>
             </div>
+
+            {/* Floating "next" arrow */}
+            {idx < sections.length - 1 && (
+              <button
+                type="button"
+                onClick={() => {
+                  const root = rootRef.current;
+                  const next = sections[idx + 1];
+                  if (!root || !next) return;
+                  root
+                    .querySelector<HTMLElement>(`#${CSS.escape(next.id)}`)
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="absolute left-1/2 -translate-x-1/2 bottom-6 z-20 w-12 h-12 rounded-full bg-white/85 backdrop-blur border border-border flex items-center justify-center hover:bg-white transition-colors animate-bounce"
+                aria-label="Next section"
+              >
+                <ChevronDown className="w-6 h-6 text-foreground" />
+              </button>
+            )}
 
             {/* Up/Down quick buttons (desktop) */}
             <div className="hidden md:flex flex-col gap-2 fixed left-6 bottom-6 z-30">
@@ -297,6 +359,8 @@ export default function GalleryTourContent() {
               </button>
             </div>
           </section>
+            );
+          })()
         ))}
       </div>
 

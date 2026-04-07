@@ -82,7 +82,7 @@ export default function GalleryContent() {
       <aside className="hidden lg:block fixed left-6 top-1/2 -translate-y-1/2 z-30">
         <nav className="flex flex-col gap-2">
           {content.sections.map((s, i) => {
-            const Icon = sectionIcons[i];
+            const Icon = sectionIcons[i % sectionIcons.length] ?? Shield;
             const isActive = activeSection === i;
             const isExpanded = isActive || hoveredNav === i;
             return (
@@ -131,7 +131,7 @@ export default function GalleryContent() {
       {/* Main Content */}
       <main className="lg:pl-24">
         {content.sections.map((section, i) => {
-          const Icon = sectionIcons[i];
+          const Icon = sectionIcons[i % sectionIcons.length] ?? Shield;
           const isEven = i % 2 === 0;
 
           return (
