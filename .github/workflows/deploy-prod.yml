@@ -26,7 +26,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_WHATSAPP_NUMBER: "254757549970"
+          NEXT_PUBLIC_WHATSAPP_NUMBER: "254748583879"
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6

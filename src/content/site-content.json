@@ -131,7 +131,7 @@
       "subtitle": "The \"Why Us\"",
       "title": "Bridging Two Worlds of Care",
       "goal": "A Vision Born of Excellence",
-      "quote": "Having spent years at the UK’s Chelston Park, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
+      "quote": "Having spent years working in the UK, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
       "founderName": "Njeri Blagden"
     },
     "amenities": {
@@ -169,7 +169,7 @@
         {
           "icon": "award",
           "title": "From the UK to The Caring Cove",
-          "description": "Our founder didn't just work in care; they helped maintain the 'Outstanding' CQC rating at Chelston Park in the UK. We have imported those exact operational standards—from medication governance to 'Meaningful Moments' dementia training—to create a world-class sanctuary in Nairobi.",
+          "description": "Our founder didn't just work in care; they helped maintain the 'Outstanding' CQC rating at various facilities in the UK. We have imported those exact operational standards—from medication governance to 'Meaningful Moments' dementia training—to create a world-class sanctuary in Nairobi.",
           "badgeText": "UK Standards. Kenyan Heart."
         },
         {
@@ -182,7 +182,7 @@
   },
   "servicesPage": {
     "title": "The Philosophy of Care",
-    "subheadline": "Luxury boutique living in Karen, governed by international care standards and a high standard of resident-to-staff devotion.",
+    "subheadline": "Boutique living in Karen, governed by international care standards and a high standard of resident-to-staff devotion.",
     "services": [
       {
         "icon": "brain",
@@ -230,7 +230,7 @@
       },
       {
         "icon": "sparkles",
-        "title": "Luxury Respite Stays (Short-Term Care)",
+        "title": "Respite Stays (Short-Term Care)",
         "coreMission": "A restorative retreat for the senior, a vital break for the family.",
         "approach": "Perfect for families traveling abroad or local caregivers needing a reprieve. We treat respite guests as permanent residents, giving them full access to our high standard of care and amenities.",
         "keyFeatures": [
@@ -256,7 +256,7 @@
       "rows": [
         { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:3 Guaranteed" },
         { "feature": "Medical Record", "largeFacilities": "Paper-based / Delayed", "theCove": "Nourish Digital (UK Standard)" },
-        { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Luxury Residence" },
+        { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Residence" },
         { "feature": "Menu Choice", "largeFacilities": "Fixed \"Canteen\" Style", "theCove": "Chef-Prepared & Bespoke" }
       ]
     },
@@ -390,7 +390,7 @@
         "headline": "Your Private Haven of Rest.",
         "copy": "We believe that dignity begins with a private space that feels like home. Our four exclusive suites are sun-drenched, spacious, and fully accessible. Each room is a \"Low-Arousal\" environment, designed to reduce the agitation often associated with memory loss while maintaining a high-end boutique aesthetic.",
         "image": "/images/suite-2.jpeg",
-        "imageAlt": "Luxury private senior suite Karen Nairobi",
+        "imageAlt": "Private senior suite Karen Nairobi",
         "amenities": [
           { "title": "Orthopedic Comfort", "description": "High-spec pressure-relieving bedding as standard." },
           { "title": "Adaptive Safety", "description": "Discreet grab rails and fall-prevention sensors that don't compromise the room's elegance." },

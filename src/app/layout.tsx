@@ -21,7 +21,7 @@ const organizationSchema = {
     addressCountry: "KE",
   },
   email: "info@thecaringcove.co.ke",
-  telephone: "+254 XXX XXX XXX",
+  telephone: "+254748583879",
   areaServed: { "@type": "Country", name: "Kenya" },
   priceRange: "$$$",
   sameAs: [

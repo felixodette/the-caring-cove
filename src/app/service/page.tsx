@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import Services from "@/components/sections/Services";
 import ServiceContent from "./ServiceContent";
 import siteContent from "@/content/site-content.json";
 
@@ -29,7 +30,8 @@ export default function ServicePage() {
         breadcrumb="Services"
         subheadline={content.subheadline}
       />
-      <ServiceContent />
+      <Services />
+      {/* <ServiceContent /> */}
     </PageLayout>
   );
 }
