@@ -125,7 +125,7 @@
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
       ],
-      "badgeText": "Our internal training program is audited against the same standards that earned Chelston Park (UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
+      "badgeText": "Our internal training program is audited against the same standards that earned institutions (in the UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
     },
     "founderStory": {
       "subtitle": "The \"Why Us\"",
@@ -308,7 +308,7 @@
         { "title": "Duty and Diligence", "description": "Upholding the highest standards of clinical excellence and accountability in every interaction." },
         { "title": "Kindness and Compassion", "description": "Treating every resident with dignity, warmth, and the respect they deserve." }
       ],
-      "attribution": "Inspired by Netherclay Home Care, Chelston Gardens and Chelston Park"
+      "attribution": "Guided by the high standards of excellence in assisted living and care."
     },
     "culture": {
       "title": "Culture",
@@ -452,7 +452,7 @@
     }
   },
   "faqPage": {
-    "title": "Knowledge Base",
+    "title": "FAQ",
     "subheadline": "Answers for families near and far. Clinical rigor, transparency, and peace of mind.",
     "sections": [
       {
@@ -509,6 +509,10 @@
         "tag": "Admissions & Pricing",
         "subtag": "The \"Logistics\" Category",
         "questions": [
+          {
+            "q": "When to Consider a Care Home",
+            "a": "• Struggling to live alone even with help from friends, family and paid carers\n• Had a needs assessment and care home is the best choice\n• Have complex, medical conditions that needs specialist attention during the day and night\n• Care home can reduce the stress of looking after your health and care and focus on your social life and general well being"
+          },
           {
             "q": "Why don't you display prices on the website?",
             "a": "Because we only have 4 suites, every care plan is 100% bespoke. Costs are determined by the level of clinical support required (e.g., Palliative vs. Respite). Following an initial clinical assessment, we provide a transparent, all-inclusive monthly fee with no \"hidden\" medical surcharges."

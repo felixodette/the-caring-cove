@@ -225,7 +225,7 @@ export default function PillarsOfCare() {
       </section> */}
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-primary/5">
+      {/* <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-primary/5">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -255,7 +255,7 @@ export default function PillarsOfCare() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

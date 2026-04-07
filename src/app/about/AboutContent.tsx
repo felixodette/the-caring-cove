@@ -264,7 +264,7 @@ export default function AboutContent() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
-              href="/#contact"
+              href="/contact#request-tour"
               className="inline-block bg-navy px-8 py-3 rounded font-semibold text-navy-foreground hover:bg-navy/80 transition-colors"
             >
               Book a Private Tour

@@ -176,7 +176,7 @@ export default function FAQContent() {
                             <span className="font-semibold pr-4">{q.q}</span>
                           </AccordionTrigger>
                           <AccordionContent className="pb-5 pt-0">
-                            <p className="text-muted-foreground leading-relaxed pl-0">
+                            <p className="text-muted-foreground leading-relaxed pl-0 whitespace-pre-line">
                               {q.a}
                             </p>
                           </AccordionContent>

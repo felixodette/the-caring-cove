@@ -264,13 +264,22 @@ export default function GalleryContent() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg hover:-translate-y-0.5"
-              >
-                Book a Private Tour
-                <ChevronRight className="w-5 h-5" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/gallery-tour"
+                  className="inline-flex items-center justify-center gap-2 bg-navy text-navy-foreground px-8 py-4 rounded-xl font-bold hover:bg-navy/90 transition-all shadow-lg hover:-translate-y-0.5"
+                >
+                  Start Virtual Tour
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  href="/contact#request-tour"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg hover:-translate-y-0.5"
+                >
+                  Book a Private Tour
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
+              </div>
             </motion.div>
           </div>
         </section>

@@ -34,7 +34,7 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Knowledge Base | The Caring Cove - Dementia Care Karen Nairobi",
+  title: "FAQ | The Caring Cove - Dementia Care Karen Nairobi",
   description:
     "FAQ for families. UK-standard clinical care, Diaspora updates, boutique lifestyle, admissions. Dementia care Karen, Lavington.",
   keywords: [
@@ -57,7 +57,7 @@ export default function FAQPage() {
       <PageLayout>
         <PageBanner
           title={content.title}
-          breadcrumb="Knowledge Base"
+          breadcrumb="FAQ"
           subheadline={content.subheadline}
         />
         <FAQContent />
