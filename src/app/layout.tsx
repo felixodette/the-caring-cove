@@ -5,6 +5,8 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import Script from "next/script";
 import { SITE_URL } from "@/lib/constants";
 
+const GA_MEASUREMENT_ID = "G-G2NK1PYSKZ";
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "NursingHome",
@@ -95,6 +97,24 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="google-tag-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');
+`,
+          }}
+        />
+
         <Script
           id="organization-schema"
           type="application/ld+json"

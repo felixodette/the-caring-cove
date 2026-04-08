@@ -1,22 +1,6 @@
 export default function Head() {
   return (
     <>
-      {/* Google tag (gtag.js) */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-G2NK1PYSKZ"
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G2NK1PYSKZ');
-`,
-        }}
-      />
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link
         rel="icon"
