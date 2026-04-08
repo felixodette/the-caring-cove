@@ -33,7 +33,11 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex items-center">
-          <button className="p-4 text-primary-foreground hover:bg-primary-foreground/10 transition-colors">
+          <button
+            type="button"
+            aria-label="Search"
+            className="p-4 text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
+          >
             <Search className="w-5 h-5" />
           </button>
           <Link
@@ -43,6 +47,8 @@ const Navbar = () => {
             Get Started
           </Link>
           <button
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
             className="md:hidden p-4 text-primary-foreground"
             onClick={() => setOpen(!open)}
           >
