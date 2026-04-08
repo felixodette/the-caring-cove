@@ -4,6 +4,11 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
+
+# Normalize accidental trailing-slash requests for non-HTML assets
+RewriteRule ^robots\.txt/$ /robots.txt [R=301,L]
+RewriteRule ^sitemap\.xml/$ /sitemap.xml [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
