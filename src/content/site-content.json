@@ -22,7 +22,7 @@
         {
           "icon": "timer",
           "title": "Nursing Care",
-          "description": "Around-the-clock professional medical support and compassionate assistance tailored to your unique health requirements."
+          "description": "Around-the-clock professional support and compassionate assistance tailored to your unique health requirements."
         },
         {
           "icon": "flower-2",
@@ -32,7 +32,7 @@
         {
           "icon": "letter-r",
           "title": "Respite Care",
-          "description": "We offer long-term stays to support family caregivers, providing a welcoming, holiday-like experience for your loved one."
+          "description": "We offer long and short-term stays to support family caregivers, providing a welcoming, holiday-like experience for your loved one."
         },
         {
           "icon": "letter-p",
@@ -64,29 +64,29 @@
           "icon": "activity",
           "title": "Rehabilitation & Convalescence",
           "headline": "The Bridge to Recovery and Independence.",
-          "description": "Specialized post-operative care for seniors recovering from hip/knee replacements or stroke. We offer a high-intensity recovery environment that hospital wards cannot provide.",
-          "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 monitoring to prevent post-surgical complications or falls."
+          "description": "Specialized post-operative care for seniors recovering from hip/knee replacements or stroke. We offer a suitable recovery environment.",
+          "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 monitoring to prevent or falls."
         },
         {
           "icon": "shield",
-          "title": "Skilled Nursing & Complex Care",
+          "title": "Skilled Nursing & Care",
           "headline": "Clinical Excellence in a Boutique Setting.",
-          "description": "For residents with complex medical needs, including diabetes management, wound care, and chronic respiratory support. We maintain hospital-grade clinical standards without the institutional feel.",
-          "oneToOneEdge": "Round-the-clock clinical oversight with a focus on dignity and personal choice."
+          "description": "For residents with medical needs, including diabetes management, and wound care. We maintain clinical standards without the institutional feel.",
+          "oneToOneEdge": "Clinical oversight with a focus on dignity and personal choice."
         },
         {
           "icon": "letter-r",
           "title": "Respite Stays (Short-Term Care)",
           "headline": "A Premium Retreat for Your Loved One.",
-          "description": "Whether you are traveling or need a temporary break from caregiving, our respite program offers a \"five-star\" holiday for your loved one with full clinical oversight.",
-          "oneToOneEdge": "Seamless integration into our community, ensuring the transition is stress-free and restorative for both resident and family."
+          "description": "Whether you are traveling or need a temporary break from caregiving, our respite program offers suitable accommodation for your loved one with full clinical oversight.",
+          "oneToOneEdge": "Seamless integration into our community, ensuring the transition is restorative for both resident and family."
         },
         {
           "icon": "tree-pine",
           "title": "Holistic Wellness & Social Engagement",
           "headline": "Active Aging and Meaningful Living.",
-          "description": "Wellness at The Cove isn't just medical; it's social. From farm-to-table nutrition to guided garden walks in Karen, we curate a lifestyle that keeps the mind and body active.",
-          "oneToOneEdge": "Activity schedules are 100% bespoke. If a resident wants to garden at 10 AM or listen to music at 8 PM, we'll make it happen."
+          "description": "Wellness at The Cove isn't just medical; it's social. From farm-to-table nutrition to garden walks, we curate a lifestyle that keeps the mind and body active.",
+          "oneToOneEdge": "Activity schedules are flexible. If a resident wants to garden at 10 AM or listen to music at 8 PM, we'll make it happen."
         }
       ]
     },
@@ -131,7 +131,7 @@
       "subtitle": "The \"Why Us\"",
       "title": "Bridging Two Worlds of Care",
       "goal": "A Vision Born of Excellence",
-      "quote": "Having spent years working in the UK, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
+      "quote": "Having spent 10 years working in the UK, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
       "founderName": "Njeri Blagden"
     },
     "amenities": {
