@@ -121,7 +121,7 @@
       ],
       "stats": [
         { "value": "1:4", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
-        { "value": "100%", "label": "Staff Trained in UK Clinical Protocols" },
+        { "value": "100%", "label": "Staff Trained in Clinical Protocols" },
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
       ],
