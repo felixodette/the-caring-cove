@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import GalleryTourContent from "../gallery-tour/GalleryTourContent";
 
 export const metadata: Metadata = {
@@ -12,8 +13,17 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <PageLayout>
-      <GalleryTourContent />
-    </PageLayout>
+    <>
+      <BreadcrumbJsonLd
+        id="breadcrumb-schema-gallery"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "Gallery", item: `${SITE_URL}/gallery` },
+        ]}
+      />
+      <PageLayout>
+        <GalleryTourContent />
+      </PageLayout>
+    </>
   );
 }

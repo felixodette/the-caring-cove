@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import Services from "@/components/sections/Services";
 import FundingAndFees from "@/components/sections/FundingAndFees";
 import ServiceContent from "./ServiceContent";
@@ -25,15 +26,24 @@ export const metadata: Metadata = {
 
 export default function ServicePage() {
   return (
-    <PageLayout>
-      <PageBanner
-        title={content.title}
-        breadcrumb="Services"
-        subheadline={content.subheadline}
+    <>
+      <BreadcrumbJsonLd
+        id="breadcrumb-schema-services"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "Services", item: `${SITE_URL}/service` },
+        ]}
       />
-      <Services />
-      <FundingAndFees />
-      {/* <ServiceContent /> */}
-    </PageLayout>
+      <PageLayout>
+        <PageBanner
+          title={content.title}
+          breadcrumb="Services"
+          subheadline={content.subheadline}
+        />
+        <Services />
+        <FundingAndFees />
+        {/* <ServiceContent /> */}
+      </PageLayout>
+    </>
   );
 }

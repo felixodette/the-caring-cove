@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import BlogSidebar from "@/components/sections/BlogSidebar";
 import BlogDetailsContent from "./BlogDetailsContent";
 import { SITE_URL } from "@/lib/constants";
@@ -61,18 +62,32 @@ export default async function BlogDetailsPage({
   }
 
   return (
-    <PageLayout>
-      <PageBanner title={post.title} breadcrumb="Blog Details" subheadline={post.listExcerpt} />
-      <section className="py-20 bg-background">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
-              <BlogDetailsContent post={post} />
+    <>
+      <BreadcrumbJsonLd
+        id={`breadcrumb-schema-blog-${id}`}
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "Blog", item: `${SITE_URL}/blog` },
+          { name: post.title, item: `${SITE_URL}/blog-details/${id}` },
+        ]}
+      />
+      <PageLayout>
+        <PageBanner
+          title={post.title}
+          breadcrumb="Blog"
+          subheadline={post.listExcerpt}
+        />
+        <section className="py-20 bg-background">
+          <div className="container mx-auto">
+            <div className="grid lg:grid-cols-3 gap-8">
+              <div className="lg:col-span-2">
+                <BlogDetailsContent post={post} />
+              </div>
+              <BlogSidebar />
             </div>
-            <BlogSidebar />
           </div>
-        </div>
-      </section>
-    </PageLayout>
+        </section>
+      </PageLayout>
+    </>
   );
 }

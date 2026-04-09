@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import BlogSidebar from "@/components/sections/BlogSidebar";
 import BlogContent from "./BlogContent";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Blog | Elder Care Insights & Memory Care Tips",
@@ -13,33 +13,15 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: SITE_URL,
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Blog",
-      item: `${SITE_URL}/blog`,
-    },
-  ],
-};
-
 export default function BlogPage() {
   return (
     <>
-      <Script
+      <BreadcrumbJsonLd
         id="breadcrumb-schema-blog"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        strategy="afterInteractive"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "Blog", item: `${SITE_URL}/blog` },
+        ]}
       />
       <PageLayout>
         <PageBanner title="Blog" breadcrumb="Blog" />

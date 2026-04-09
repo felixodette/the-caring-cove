@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import CTABanner from "@/components/sections/CTABanner";
 import TeamDetailsContent from "./TeamDetailsContent";
 
@@ -14,10 +15,20 @@ export const metadata: Metadata = {
 
 export default function TeamDetailsPage() {
   return (
-    <PageLayout>
-      <PageBanner title="Team Details" breadcrumb="Team Details" />
-      <TeamDetailsContent />
-      <CTABanner />
-    </PageLayout>
+    <>
+      <BreadcrumbJsonLd
+        id="breadcrumb-schema-team-details"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "Team", item: `${SITE_URL}/team` },
+          { name: "Team Member", item: `${SITE_URL}/team-details` },
+        ]}
+      />
+      <PageLayout>
+        <PageBanner title="Team Details" breadcrumb="Team Details" />
+        <TeamDetailsContent />
+        <CTABanner />
+      </PageLayout>
+    </>
   );
 }
