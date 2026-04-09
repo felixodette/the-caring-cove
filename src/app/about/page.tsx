@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import AboutContent from "./AboutContent";
 import siteContent from "@/content/site-content.json";
 
@@ -22,13 +23,22 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <PageLayout>
-      <PageBanner
-        title={content.title}
-        breadcrumb="About Us"
-        subheadline={content.subheadline}
+    <>
+      <BreadcrumbJsonLd
+        id="breadcrumb-schema-about"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "About", item: `${SITE_URL}/about` },
+        ]}
       />
-      <AboutContent />
-    </PageLayout>
+      <PageLayout>
+        <PageBanner
+          title={content.title}
+          breadcrumb="About Us"
+          subheadline={content.subheadline}
+        />
+        <AboutContent />
+      </PageLayout>
+    </>
   );
 }

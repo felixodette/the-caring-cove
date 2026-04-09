@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import PageBanner from "@/components/sections/PageBanner";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import FAQContent from "./FAQContent";
 import siteContent from "@/content/site-content.json";
 import Script from "next/script";
@@ -48,6 +49,13 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        id="breadcrumb-schema-faq"
+        items={[
+          { name: "Home", item: SITE_URL },
+          { name: "FAQ", item: `${SITE_URL}/faq` },
+        ]}
+      />
       <Script
         id="faq-schema"
         type="application/ld+json"
