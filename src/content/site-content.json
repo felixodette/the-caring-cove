@@ -266,6 +266,44 @@
         { "label": "Request Our Dignity & Care Planning Guide", "href": "#care-guide" },
         { "label": "Schedule a Private Tour of our Karen Facility", "href": "#contact", "primary": true }
       ]
+    },
+    "fundingAndFees": {
+      "title": "Fees",
+      "subtitle": "What’s included?",
+      "pricingTitle": "Monthly charges are per person. Fees depend on the care package and accommodation option required.",
+      "columns": {
+        "package": "Care Package",
+        "standard": "Standard Room",
+        "ensuite": "En‑suite Room",
+        "note": "Best For"
+      },
+      "rows": [
+        {
+          "package": "Residential Care",
+          "standardFrom": 200000,
+          "ensuiteFrom": 236000,
+          "note": "Standard personal care support (no nursing procedures)."
+        },
+        {
+          "package": "Nursing Care",
+          "standardFrom": 250000,
+          "ensuiteFrom": 295000,
+          "note": "Registered Nursing-led clinical interventions and medication management."
+        },
+        {
+          "package": "Dementia Care",
+          "standardFrom": 280000,
+          "ensuiteFrom": 330400,
+          "note": "Specialist dementia care with enhanced observation."
+        },
+        {
+          "package": "Palliative Care",
+          "standardFrom": 320000,
+          "ensuiteFrom": 377600,
+          "note": "Comfort-focused care with intensive symptom management."
+        }
+      ],
+      "disclaimer": "Fees are tailored to your loved one’s care needs and room choice. Fees are typically reviewed once per year; any change is usually driven by factors such as inflation, regulatory requirements, or changes in the level of care and services needed. In exceptional circumstances, fees may be reviewed more frequently to maintain safe staffing and clinical standards."
     }
   },
   "aboutPage": {
