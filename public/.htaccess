@@ -5,6 +5,10 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 
+# Canonical host: non-www (301 redirect www -> non-www)
+RewriteCond %{HTTP_HOST} ^www\.thecaringcove\.co\.ke$ [NC]
+RewriteRule ^ https://thecaringcove.co.ke%{REQUEST_URI} [R=301,L]
+
 # Normalize accidental trailing-slash requests for non-HTML assets
 RewriteRule ^robots\.txt/$ /robots.txt [R=301,L]
 RewriteRule ^sitemap\.xml/$ /sitemap.xml [R=301,L]
