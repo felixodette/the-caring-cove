@@ -12,16 +12,23 @@ const ButterflyMomentsSection = () => {
   const [isButterflyFlapping, setIsButterflyFlapping] = useState(false);
 
   return (
-    <section className="py-24 relative overflow-hidden bg-gradient-to-br from-slate-900 via-primary/20 to-slate-900">
-      {/* Futuristic grid background */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `linear-gradient(rgba(59,130,246,0.5) 1px, transparent 1px),
-                         linear-gradient(90deg, rgba(59,130,246,0.5) 1px, transparent 1px)`,
-        backgroundSize: "40px 40px",
-      }} />
-      {/* Glow orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+    <section className="py-24 relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+      {/* Contrast-first overlays */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(15,23,42,0.35)_0%,rgba(2,6,23,0.92)_70%)]" />
+
+      {/* Subtle grid texture */}
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(59,130,246,0.35) 1px, transparent 1px),
+                         linear-gradient(90deg, rgba(59,130,246,0.35) 1px, transparent 1px)`,
+          backgroundSize: "44px 44px",
+        }}
+      />
+
+      {/* Controlled glow orbs (kept subtle for readability) */}
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-[28rem] h-[28rem] bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto relative z-10">
         <motion.div
@@ -42,7 +49,7 @@ const ButterflyMomentsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             {content.title}
           </h2>
-          <p className="text-primary-foreground/80 max-w-2xl mx-auto text-lg">
+          <p className="text-primary-foreground/90 max-w-2xl mx-auto text-lg drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]">
             {content.tagline}
           </p>
         </motion.div>
@@ -76,10 +83,10 @@ const ButterflyMomentsSection = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl scale-150" />
-                <div className="relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10">
+                <div className="relative p-4 rounded-full bg-white/5 backdrop-blur-md border border-white/15 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]">
                   <AnimatedButterfly size={140} isFlapping={isButterflyFlapping} />
                 </div>
-                <p className="text-center text-primary-foreground/60 text-xs mt-2 font-medium">
+                <p className="text-center text-primary-foreground/70 text-xs mt-2 font-medium">
                   Hover to see it fly
                 </p>
               </div>
@@ -140,7 +147,7 @@ function FeatureCard({
       className={`relative w-full min-w-[200px] max-w-[260px] rounded-2xl p-6 text-left transition-all duration-300 border backdrop-blur-sm ${
         isActive
           ? "bg-white/95 border-primary shadow-2xl shadow-primary/20 scale-[1.03]"
-          : "bg-white/10 border-white/20 hover:bg-white/20 hover:border-primary/40"
+          : "bg-slate-950/35 border-white/18 hover:bg-slate-950/55 hover:border-primary/40 shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
       }`}
     >
       {isActive && (
