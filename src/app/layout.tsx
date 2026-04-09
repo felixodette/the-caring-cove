@@ -7,6 +7,9 @@ import { SITE_URL } from "@/lib/constants";
 
 const GA_MEASUREMENT_ID = "G-G2NK1PYSKZ";
 
+const GOOGLE_MAPS_LOCATION_URL =
+  "https://www.google.com/maps/place/The+Caring+Cove/@-1.3132311,36.6938284,17z/data=!3m1!4b1!4m6!3m5!1s0x182f1dfd4e60c0f9:0x963d4e77eebdf65b!8m2!3d-1.3132311!4d36.6964033!16s%2Fg%2F11z2lltw6d?entry=ttu";
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "NursingHome",
@@ -22,8 +25,23 @@ const organizationSchema = {
     addressRegion: "Nairobi",
     addressCountry: "KE",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -1.3132311,
+    longitude: 36.6964033,
+  },
+  hasMap: GOOGLE_MAPS_LOCATION_URL,
   email: "info@thecaringcove.co.ke",
   telephone: "+254748583879",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+254748583879",
+      contactType: "customer service",
+      areaServed: "KE",
+      availableLanguage: ["en"],
+    },
+  ],
   areaServed: { "@type": "Country", name: "Kenya" },
   priceRange: "$$$",
   sameAs: [
