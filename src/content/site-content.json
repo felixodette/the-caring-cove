@@ -96,7 +96,7 @@
       "skills": [
         {
           "icon": "brain",
-          "title": "Advanced Memory Care & Reminiscence",
+          "title": "Memory Care & Reminiscence",
           "expertise": "Mastery in de-escalation, cognitive stimulation, and \"Meaningful Moments\" intervention for all stages of Alzheimer's and Dementia.",
           "whyItMatters": "We don't just \"supervise\"; we actively engage the brain to slow decline and reduce anxiety without over-reliance on sedation."
         },
@@ -186,12 +186,12 @@
     "services": [
       {
         "icon": "brain",
-        "title": "Specialized Memory Care (Alzheimer's & Dementia)",
+        "title": "Memory Care (Alzheimer's & Dementia)",
         "coreMission": "Moving beyond safety to \"Meaningful Moments.\"",
-        "approach": "Based on the latest UK dementia protocols, we create a \"failure-free\" environment. We don't just manage symptoms; we use Reminiscence Therapy and sensory stimulation to connect with the person behind the diagnosis.",
+        "approach": "Based on the latest dementia protocols, we create a suitable environment for residents. We don't just manage symptoms, we connect with the person behind the diagnosis.",
         "keyFeatures": [
           "Companionship: Carer givers who know their resident's life history, favorite music, and behavioral cues.",
-          "Nourish Digital Tracking: Real-time monitoring of mood, hydration, and engagement levels.",
+          "Nourishment Tracking: Monitoring of mood, hydration, and engagement levels.",
           "Safe Exploration: Secure, high-contrast living spaces and sensory gardens designed for wandering without worry."
         ]
       },

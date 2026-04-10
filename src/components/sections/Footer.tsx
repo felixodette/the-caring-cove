@@ -22,7 +22,7 @@ const Footer = () => (
             />
           </Link>
           <p className="text-navy-foreground/60 text-sm mb-6">
-            Kenya&apos;s most exclusive 1:1 memory care boutique. Guided by UK clinical standards and inspired by the warmth of home, we provide a dignified sanctuary for your loved one in the heart of Karen.
+            Kenya&apos;s most exclusive 1:4 memory care boutique. Guided by UK clinical standards and inspired by the warmth of home, we provide a dignified sanctuary for your loved one in the heart of Karen.
           </p>
           <div className="flex gap-3">
             {[
