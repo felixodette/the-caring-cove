@@ -70,7 +70,7 @@ const Footer = () => (
             {[
               { label: "Memory Care (Alzheimer's & Dementia)", href: "/service#service-0" },
               { label: "Palliative & End-of-Life Care", href: "/service#service-1" },
-              { label: "Geriatric Rehabilitation", href: "/service#service-2" },
+              { label: "Convalescence & Rehabilitation", href: "/service#service-2" },
               { label: "Skilled Nursing & Complex Care", href: "/service#service-3" },
               { label: "Respite Stays", href: "/service#service-4" },
               { label: "Wellness & Lifestyle", href: "/service#service-5" },

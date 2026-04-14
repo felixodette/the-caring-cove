@@ -62,10 +62,10 @@
         },
         {
           "icon": "activity",
-          "title": "Rehabilitation & Convalescence",
+          "title": "Restorative Care & Convalescence",
           "headline": "The Bridge to Recovery and Independence.",
-          "description": "Specialized post-operative care for seniors recovering from hip/knee replacements or stroke. We offer a suitable recovery environment.",
-          "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 monitoring to prevent or falls."
+          "description": "Specialized post-operative support for those recovering from surgeries or neurological events. We offer a dedicated, tranquil recovery environment designed to provide the focus and personal attention required for a successful transition home.",
+          "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 attentive oversight to support surgical recovery and promote safe mobility"
         },
         {
           "icon": "shield",
@@ -175,7 +175,7 @@
         {
           "icon": "stethoscope",
           "title": "Doctor-Approved Care",
-          "description": "We work in partnership with Nairobi's doctors. Our care plans are clinical documents, reviewed regularly by medical professionals to ensure the highest standard of chronic disease management."
+          "description": "We work in partnership with Nairobi's doctors. Our care plans are clinical documents, reviewed regularly by medical professionals to ensure the high standard of disease management."
         }
       ]
     }
