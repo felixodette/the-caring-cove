@@ -92,13 +92,13 @@
     },
     "professionalSkills": {
       "headline": "Clinical Excellence. Boutique Heart.",
-      "subheadline": "Our care team is trained to the \"Outstanding\" standards of the UK's Care Quality Commission (CQC), ensuring that specialized expertise is delivered with a high standard devotion.",
+      "subheadline": "Exceeding standard care is our baseline. Our team undergoes rigorous training that aligns with top-tier UK regulatory frameworks, combining clinical precision with a deeply personal touch.",
       "skills": [
         {
           "icon": "brain",
           "title": "Memory Care & Reminiscence",
           "expertise": "Mastery in de-escalation, cognitive stimulation, and \"Meaningful Moments\" intervention for all stages of Alzheimer's and Dementia.",
-          "whyItMatters": "We don't just \"supervise\"; we actively engage the brain to slow decline and reduce anxiety without over-reliance on sedation."
+          "whyItMatters": "We go beyond routine observation, using active engagement to promote cognitive well-being and reduce anxiety, prioritising non-pharmacological support.."
         },
         {
           "icon": "heart",
@@ -109,8 +109,8 @@
         {
           "icon": "pill",
           "title": "Polypharmacy & Medication Governance",
-          "expertise": "Meticulous management of multi-drug regimens using Nourish Digital Care tracking to prevent adverse interactions—a common risk in nursing care.",
-          "whyItMatters": "Precise clinical oversight ensures that every dose is optimized for the aging body's changing metabolism."
+          "expertise": "We utilize digital monitoring to oversee multi-drug regimens, ensuring every interaction is accounted for and risks are mitigated.",
+          "whyItMatters": "Precise clinical oversight ensure medication and nutrition are carefully reviewed to meet the evolving needs and requirements of each resident."
         },
         {
           "icon": "activity",
@@ -125,7 +125,7 @@
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
       ],
-      "badgeText": "Our internal training program is audited against the same standards that earned institutions (in the UK) an 'Outstanding' CQC rating. We bring world-class healthcare home to Kenya."
+      "badgeText": "Our internal training program is audited for 'Outstanding' performance. We bring world-class healthcare home to Kenya."
     },
     "founderStory": {
       "subtitle": "The \"Why Us\"",
@@ -142,12 +142,12 @@
         {
           "icon": "utensils",
           "title": "Farm-to-Table Nutrition",
-          "description": "Specialized menus using organic Karen produce."
+          "description": "Locally sourced produce/ingredients."
         },
         {
           "icon": "tree-pine",
           "title": "Sensory Gardens",
-          "description": "Secure, beautifully landscaped outdoor spaces designed for wandering and peace."
+          "description": "Secure, beautifully landscaped garden that is peaceful and wheelchair accessible."
         },
         {
           "icon": "music",
@@ -163,8 +163,8 @@
       "items": [
         {
           "icon": "monitor-smartphone",
-          "title": "Nourish Digital Care Integration",
-          "description": "We use Nourish, the UK's leading digital care management system. Every meal, medication, and mood is recorded in real-time. Families (including those in the Diaspora) can receive secure updates, ensuring you are never 'out of the loop' regarding your loved one's health."
+          "title": "Care Management Integration",
+          "description": "We use a care management system. Every meal, medication, and mood is recorded. Families (including those in the Diaspora) can receive secure updates, ensuring you are never 'out of the loop' regarding your loved one's health."
         },
         {
           "icon": "award",
