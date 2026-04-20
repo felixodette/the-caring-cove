@@ -559,12 +559,36 @@
         "subtag": "The \"Fear\" Category",
         "questions": [
           {
-            "q": "How do you maintain \"UK Standards\" in a Kenyan boutique setting?",
-            "a": "Our clinical protocols are modeled after the Care Quality Commission (CQC) \"Outstanding\" framework. This includes digital medication administration records (eMAR), 1:4 staffing ratios, and a \"Person-Centered\" approach where the resident's dignity is the primary metric of success."
+            "q": "How do you support residents’ overall well-being?",
+            "a": "We’re here to make life as easy and enjoyable as possible for our residents. That means providing the care and support they need with things like mobility, personal care, and medical needs, so they don’t have to worry. But well-being is about more than just care – we also offer plenty of ways to stay active, social, and engaged. Whether it’s joining in on activities, picking up a new hobby, or just spending time with others, we make sure there’s always something to look forward to."
+          },
+          {
+            "q": "What is the difference between residential care and nursing care?",
+            "a": "Residential care offers 24-hour support with daily tasks like personal care and mobility for those who don’t need ongoing medical attention. Nursing care, on the other hand, also provides round-the-clock support but includes the expertise of a registered nurse available at all times to manage medical needs. The main difference is the level of medical care provided, with nursing care offering that extra layer of medical expertise."
+          },
+          {
+            "q": "What happens if a resident’s care needs change?",
+            "a": "Every care plan is tailored to the individual and reviewed monthly, with a formal review with family every 6 months, to ensure it continues to meet their needs. We recognise that health and well-being requirements can change over time, so our approach is very flexible and adaptable. We work closely with residents and their families to create personalised care plans, making adjustments as needed to ensure ongoing comfort and support."
+          },
+          {
+            "q": "What kind of food do you provide at your home and do you cater to special diets?",
+            "a": "Our in-house chef and kitchen team ensure that all dietary needs are catered to, offering a varied seasonal menu for breakfast, lunch, and dinner. Snacks and drinks are available throughout the day. Residents can enjoy their meals in the dining rooms, their own rooms, or even outside in the garden during the warmer months."
+          },
+          {
+            "q": "Are pets allowed in your home?",
+            "a": "We understand how important pets can be to our residents. Whether pets can be brought into the home depends on any allergies among our other residents. Please contact us to discuss this in more detail and explore how we can accommodate your needs."
+          },
+          {
+            "q": "Can we take a tour of your home before making a final decision?",
+            "a": "Yes, of course! We encourage all potential residents and their families to visit and take a tour of our home. It’s a great opportunity to meet our friendly team and see firsthand if our care home is the right fit for you or your loved one. Book Your Tour Today."
+          },
+          {
+            "q": "Can I bring my own furniture or personal items?",
+            "a": "We do encourage all our residents to bring personal items to make their rooms feel like home. Whether it’s photographs, decorations, or small pieces of furniture, adding personal touches can truly transform a room. These little additions help create a familiar and comfortable space, making each resident’s bedroom their own."
           },
           {
             "q": "What happens in a medical emergency?",
-            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we have pre-established \"Fast-Track\" protocols with Nairobi's leading private hospitals. Our 1:4 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
+            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we are within reach of Nairobi's leading hospitals. Our 1:4 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
           },
           {
             "q": "How do you prevent falls and pressure sores in a residential home?",
