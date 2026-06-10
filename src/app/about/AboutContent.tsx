@@ -63,7 +63,7 @@ export default function AboutContent() {
       </section>
 
       {/* Clinical Operations & Management */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -109,7 +109,7 @@ export default function AboutContent() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Philosophy */}
       <section className="py-20 bg-slate-50">

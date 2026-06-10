@@ -115,5 +115,5 @@ if ($sent) {
     echo json_encode(["message" => "Success"]);
 } else {
     http_response_code(500);
-    echo json_encode(["message" => "Unable to send. Please call +254 748 583 879."]);
+    echo json_encode(["message" => "Unable to send. Please call +254 143 292 223."]);
 }
