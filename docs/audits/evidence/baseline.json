@@ -1,0 +1,48 @@
+{
+  "phase": "B",
+  "source_git_sha": "3b4fc2b68ddf166087fc10f81977e01b0450317d",
+  "capture_time_utc": "2026-08-17T08:07:26Z",
+  "commands": {
+    "lint": {
+      "exit": 1,
+      "summary": "29 problems (4 errors, 25 warnings)"
+    },
+    "typecheck": {
+      "exit": 0
+    },
+    "build": {
+      "exit": 0,
+      "routes": 19,
+      "html_files": 17,
+      "parent_lockfile_warning": true
+    },
+    "php_lint": {
+      "exit": 0,
+      "file": "public/contact-handler.php"
+    },
+    "npm_audit_full": {
+      "total": 10,
+      "high": 9,
+      "low": 1
+    },
+    "npm_audit_production": {
+      "total": 5,
+      "high": 5
+    },
+    "generated_link_scan": {
+      "missing_local_targets": 0,
+      "banned_placeholder_hits": 74
+    },
+    "production_http": {
+      "homepage": 200,
+      "unknown_and_policy_paths": "HTTP 200 identical homepage HTML (soft 404)",
+      "contact_handler_GET": 405,
+      "gtag_present_on_homepage": true
+    }
+  },
+  "notes": [
+    "Failures captured without alteration.",
+    "No secrets or environment values captured.",
+    "Production HTML identity: /privacy, /terms, /cookies and unknown path SHA-256 match homepage."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tcc-prohibited-public-content-v1",
+  "aud": ["AUD-004", "AUD-014", "AUD-015", "AUD-018"],
+  "phrases": [
+    "lorem ipsum",
+    "sollicitudin",
+    "cras varius",
+    "donec vitae orci",
+    "sarah johnson",
+    "michael davis",
+    "emma wilson",
+    "it consulting",
+    "it service",
+    "web design",
+    "graphic design",
+    "customer, usa",
+    "customer, uk",
+    "customer, ca"
+  ],
+  "controls": ["href=\"#\"", "href='#'"],
+  "analytics": ["G-G2NK1PYSKZ", "googletagmanager.com/gtag/js"]
+}

@@ -1,0 +1,11 @@
+node_modules
+out
+.next
+coverage
+artifacts
+package-lock.json
+docs/audits/evidence
+graphify-out
+*.min.js
+*.md
+package.json

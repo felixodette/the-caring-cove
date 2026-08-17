@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://thecaringcove.co.ke/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/contact/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/contact/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/f9d7cc3ec57c",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/privacy/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/privacy/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/terms/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/terms/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/cookies/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/cookies/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/accessibility/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/accessibility/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/this-path-does-not-exist-tcc-probe-20260817/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/this-path-does-not-exist-tcc-probe-20260817/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/tcc-living-room.jpeg\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/d47eefd09509f88f.css\" data-precedence=\"next\"/><link rel=\"preload\" as=",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/blog/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/blog/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/blog-1.jpg\"/><link rel=\"preload\" as=\"image\" href=\"/images/blog-2.jpg\"/><link rel=\"preload\" as=\"image\" href=\"/images/blog-3.jpg\"/><link rel=\"st",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/team/",
+    "status": 200,
+    "final_url": "https://thecaringcove.co.ke/team/",
+    "content_type": "text/html",
+    "body_prefix": "<!DOCTYPE html><!--jAI_1ABDBmGjh_BB0_CKS--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/logo.png\"/><link rel=\"preload\" as=\"image\" href=\"/images/team-1.jpg\"/><link rel=\"preload\" as=\"image\" href=\"/images/team-2.jpg\"/><link rel=\"preload\" as=\"image\" href=\"/images/team-3.jpg\"/><link rel=\"pr",
+    "looks_like_homepage": false
+  },
+  {
+    "url": "https://thecaringcove.co.ke/contact-handler.php",
+    "error": "HTTP Error 405: Method Not Allowed",
+    "status": 405
+  }
+]

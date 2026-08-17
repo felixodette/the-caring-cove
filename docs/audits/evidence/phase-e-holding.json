@@ -1,0 +1,22 @@
+{
+  "phase": "E",
+  "recorded_at_utc": "2026-08-17T11:00:00Z",
+  "git_branch": "remediation/phase-e-emergency",
+  "holding_artifact": {
+    "file_count": 127,
+    "aggregate_sha256": "1ab131cda02a931681e9b17239513d03017b7675deb6dfe8b0f68b486f9c74fe",
+    "html_routes": ["/", "/about/", "/service/", "/gallery/", "/faq/", "/contact/", "/404.html"],
+    "removed_routes": ["/blog/", "/team/", "/team-details/", "/blog-details/*", "/service-details/", "/gallery-tour/"]
+  },
+  "verification": {
+    "scan:emergency-public": "pass",
+    "test:routes": "pass",
+    "lint:containment_source": "fail — unused source files still contain legacy placeholder strings until Phase 1",
+    "production_deploy": "not authorized — release authority approval required"
+  },
+  "controls": {
+    "google_analytics": "removed from layout",
+    "contact_form": "disabled by default (NEXT_PUBLIC_CONTACT_FORM_DISABLED !== enabled)",
+    "apache_soft_404": "removed — ErrorDocument 404 /404.html"
+  }
+}

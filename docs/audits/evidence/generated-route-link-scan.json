@@ -1,0 +1,374 @@
+{
+  "html_file_count": 17,
+  "routes": [
+    {
+      "file": "404/index.html",
+      "bytes": 16881
+    },
+    {
+      "file": "404.html",
+      "bytes": 16881
+    },
+    {
+      "file": "_not-found/index.html",
+      "bytes": 16881
+    },
+    {
+      "file": "about/index.html",
+      "bytes": 102500
+    },
+    {
+      "file": "blog/index.html",
+      "bytes": 88284
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "bytes": 83625
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "bytes": 83694
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "bytes": 83659
+    },
+    {
+      "file": "contact/index.html",
+      "bytes": 71931
+    },
+    {
+      "file": "faq/index.html",
+      "bytes": 107325
+    },
+    {
+      "file": "gallery/index.html",
+      "bytes": 97575
+    },
+    {
+      "file": "gallery-tour/index.html",
+      "bytes": 14107
+    },
+    {
+      "file": "index.html",
+      "bytes": 103139
+    },
+    {
+      "file": "service/index.html",
+      "bytes": 74026
+    },
+    {
+      "file": "service-details/index.html",
+      "bytes": 74590
+    },
+    {
+      "file": "team/index.html",
+      "bytes": 85487
+    },
+    {
+      "file": "team-details/index.html",
+      "bytes": 71844
+    }
+  ],
+  "missing_local_targets": [],
+  "missing_count": 0,
+  "banned_placeholder_hits": [
+    {
+      "file": "about/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "Cras varius"
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "lorem"
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "Sollicitudin"
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "Lorem"
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/1/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "Cras varius"
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "lorem"
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "Sollicitudin"
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "Lorem"
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/2/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "Cras varius"
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "lorem"
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "Sollicitudin"
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "Lorem"
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "blog-details/3/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "contact/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "faq/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "gallery/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "Cras varius"
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "lorem"
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "ipsum"
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "ipsum"
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "ipsum"
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "service-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team-details/index.html",
+      "match": "href=\"#\""
+    },
+    {
+      "file": "team-details/index.html",
+      "match": "href=\"#\""
+    }
+  ],
+  "banned_count": 74
+}

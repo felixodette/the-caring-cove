@@ -1,0 +1,5 @@
+node=v20.20.2
+npm=11.15.0
+PHP 8.5.1 (cli) (built: Dec 16 2025 15:59:07) (NTS)
+uname=Darwin 25.6.0 arm64
+cwd=/Users/felixodette/Development/the-caring-cove

@@ -1,0 +1,7 @@
+{
+  "phase": "B",
+  "source_git_sha": "3b4fc2b68ddf166087fc10f81977e01b0450317d",
+  "execution_git_sha": "fc44d8fdff537b3627e5ab1a97443dea909e092a",
+  "recorded_at_utc": "2026-08-17T08:20:13Z",
+  "note": "Execution baseline is the bootstrap commit. Evidence files under docs/audits/evidence/ were not rewritten after that commit."
+}
