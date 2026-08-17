@@ -3,6 +3,13 @@
 import { useId, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, ChevronLeft, Check, Loader2 } from "lucide-react";
+import {
+  CONTACT_EMAIL,
+  CONTACT_FORM_DISABLED,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  CONTACT_WHATSAPP,
+} from "@/lib/constants";
 import siteContent from "@/content/site-content.json";
 
 const defaultForm = {
@@ -193,6 +200,40 @@ export default function ContactForm() {
     backgroundSize: "1.25rem",
     paddingRight: "2.5rem",
   };
+
+  if (CONTACT_FORM_DISABLED) {
+    return (
+      <div className="bg-white p-8 rounded-2xl shadow-2xl border border-border max-w-xl mx-auto">
+        <h3 className="text-2xl font-bold text-foreground mb-2">Contact us directly</h3>
+        <p className="text-muted-foreground mb-6 text-sm">
+          The online inquiry form is temporarily unavailable. We are not collecting details through
+          this page right now. Please phone, email, or WhatsApp us instead.
+        </p>
+        <ul className="space-y-3 text-sm text-foreground">
+          <li>
+            <a className="text-primary font-semibold hover:underline" href={`tel:${CONTACT_PHONE_TEL}`}>
+              Phone: {CONTACT_PHONE_DISPLAY}
+            </a>
+          </li>
+          <li>
+            <a className="text-primary font-semibold hover:underline" href={`mailto:${CONTACT_EMAIL}`}>
+              Email: {CONTACT_EMAIL}
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-primary font-semibold hover:underline"
+              href={`https://wa.me/${CONTACT_WHATSAPP}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    );
+  }
 
   if (status === "success") {
     return (

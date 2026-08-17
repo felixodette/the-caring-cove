@@ -1,6 +1,7 @@
 # Client-side routing for Next.js static export
 Options -Indexes
 DirectoryIndex index.html
+ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
@@ -13,6 +14,11 @@ RewriteRule ^ https://thecaringcove.co.ke%{REQUEST_URI} [R=301,L]
 RewriteRule ^robots\.txt/$ /robots.txt [R=301,L]
 RewriteRule ^sitemap\.xml/$ /sitemap.xml [R=301,L]
 
+# Legacy path redirects (static export has no Next.js redirect support)
+RewriteRule ^service-details/?$ /service/ [R=301,L]
+RewriteRule ^gallery-tour/?$ /gallery/ [R=301,L]
+
+# True 404 for unknown paths (no soft homepage fallback)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . /404.html [L]

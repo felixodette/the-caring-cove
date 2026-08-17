@@ -29,7 +29,9 @@
     "deploy:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command deploy:staging",
     "smoke:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command smoke:staging",
     "rollback:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command rollback:staging",
-    "ci": "node scripts/quality/cli.mjs ci"
+    "ci": "node scripts/quality/cli.mjs ci",
+    "scan:emergency-public": "node scripts/emergency-public-scan.mjs out",
+    "scan:emergency-routes": "node scripts/emergency-route-check.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

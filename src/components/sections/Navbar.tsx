@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Search, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
 const navItems = [
@@ -10,7 +10,6 @@ const navItems = [
   { label: "Services", href: "/service" },
   { label: "Gallery", href: "/gallery" },
   { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -28,23 +27,15 @@ const Navbar = () => {
               className="hidden md:flex items-center gap-1 px-5 py-4 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
             >
               {item.label}
-              <ChevronDown className="w-3 h-3" />
             </Link>
           ))}
         </div>
         <div className="flex items-center">
-          <button
-            type="button"
-            aria-label="Search"
-            className="p-4 text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
-          >
-            <Search className="w-5 h-5" />
-          </button>
           <Link
             href="/contact"
             className="hidden md:block bg-navy px-6 py-4 text-sm font-semibold text-navy-foreground hover:bg-navy/80 transition-colors"
           >
-            Get Started
+            Book a Private Tour
           </Link>
           <button
             type="button"
@@ -68,6 +59,13 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/contact"
+            className="block px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+            onClick={() => setOpen(false)}
+          >
+            Book a Private Tour
+          </Link>
         </div>
       )}
     </nav>

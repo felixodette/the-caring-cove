@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, ArrowRight } from "lucide-react";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from "@/lib/constants";
 import { XIcon } from "@/lib/icons";
 
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582063697356";
@@ -22,14 +23,13 @@ const Footer = () => (
             />
           </Link>
           <p className="text-navy-foreground/60 text-sm mb-6">
-            Kenya&apos;s most exclusive 1:4 memory care boutique. Guided by UK clinical standards and inspired by the warmth of home, we provide a dignified sanctuary for your loved one in the heart of Karen.
+            Memory care and senior living in Karen, Nairobi. Contact us to arrange a private tour.
           </p>
           <div className="flex gap-3">
             {[
               { Icon: Facebook, href: FACEBOOK_URL, label: "Facebook" },
               { Icon: XIcon, href: TWITTER_URL, label: "X (Twitter)" },
               { Icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
-              { Icon: Linkedin, href: "#", label: "LinkedIn" },
             ].map(({ Icon, href, label }, i) => (
               <a
                 key={`${label}-${i}`}
@@ -92,11 +92,13 @@ const Footer = () => (
             </div>
             <div className="flex items-center gap-3 text-navy-foreground/60 text-sm">
               <Phone className="w-4 h-4 shrink-0 text-primary" />
-              +254 143 292 223
+              <a href={`tel:${CONTACT_PHONE_TEL}`} className="hover:text-primary transition-colors">
+                {CONTACT_PHONE_DISPLAY}
+              </a>
             </div>
             <div className="flex items-center gap-3 text-navy-foreground/60 text-sm">
               <Mail className="w-4 h-4 shrink-0 text-primary" />
-              <a href="mailto:info@thecaringcove.co.ke" className="hover:text-primary transition-colors">info@thecaringcove.co.ke</a>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary transition-colors">{CONTACT_EMAIL}</a>
             </div>
           </div>
         </div>

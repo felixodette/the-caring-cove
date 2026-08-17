@@ -3,9 +3,11 @@ import "./globals.css";
 import { Providers } from "@/components/providers";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import Script from "next/script";
-import { SITE_URL } from "@/lib/constants";
-
-const GA_MEASUREMENT_ID = "G-G2NK1PYSKZ";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_TEL,
+  SITE_URL,
+} from "@/lib/constants";
 
 const GOOGLE_MAPS_LOCATION_URL =
   "https://www.google.com/maps/place/The+Caring+Cove/@-1.3132311,36.6938284,17z/data=!3m1!4b1!4m6!3m5!1s0x182f1dfd4e60c0f9:0x963d4e77eebdf65b!8m2!3d-1.3132311!4d36.6964033!16s%2Fg%2F11z2lltw6d?entry=ttu";
@@ -18,7 +20,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   description:
-    "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care.",
+    "Memory care and senior living in Karen, Nairobi. Private tours and family inquiries welcome.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Karen",
@@ -31,19 +33,18 @@ const organizationSchema = {
     longitude: 36.6964033,
   },
   hasMap: GOOGLE_MAPS_LOCATION_URL,
-  email: "info@thecaringcove.co.ke",
-  telephone: "+254748583879",
+  email: CONTACT_EMAIL,
+  telephone: CONTACT_PHONE_TEL,
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+254748583879",
+      telephone: CONTACT_PHONE_TEL,
       contactType: "customer service",
       areaServed: "KE",
       availableLanguage: ["en"],
     },
   ],
   areaServed: { "@type": "Country", name: "Kenya" },
-  priceRange: "$$$",
   sameAs: [
     "https://www.facebook.com/profile.php?id=61582063697356",
     "https://x.com/thecaringcove",
@@ -54,20 +55,17 @@ const organizationSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "The Caring Cove | Luxury Memory Care Karen Nairobi",
+    default: "The Caring Cove | Memory Care in Karen, Nairobi",
     template: "%s | The Caring Cove",
   },
   description:
-    "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care.",
+    "Memory care and senior living in Karen, Nairobi. Learn about our services and book a private tour.",
   keywords: [
     "memory care Nairobi",
     "dementia care Karen",
-    "Alzheimer's care Kenya",
-    "palliative care Nairobi",
+    "senior living Nairobi",
     "elderly care Karen",
-    "1:1 care Kenya",
-    "UK standard care Nairobi",
-    "boutique nursing home Kenya",
+    "palliative care Nairobi",
   ],
   authors: [{ name: "The Caring Cove", url: SITE_URL }],
   creator: "The Caring Cove",
@@ -83,7 +81,7 @@ export const metadata: Metadata = {
         url: "/images/logo.png",
         width: 512,
         height: 512,
-        alt: "The Caring Cove - Luxury Memory Care Karen Nairobi",
+        alt: "The Caring Cove - Memory care in Karen, Nairobi",
       },
     ],
   },
@@ -115,24 +113,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        {/* Google tag (gtag.js) */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="google-tag-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${GA_MEASUREMENT_ID}');
-`,
-          }}
-        />
-
         <Script
           id="organization-schema"
           type="application/ld+json"
