@@ -3,8 +3,8 @@
   "spec_id": "TCC-SPEC-001",
   "spec_version": "1.2.0",
   "source_git_sha": "3b4fc2b68ddf166087fc10f81977e01b0450317d",
-  "execution_git_sha": null,
-  "execution_git_sha_note": "Filled after bootstrap commit. Do not mutate evidence files; append only.",
+  "execution_git_sha": "fc44d8fdff537b3627e5ab1a97443dea909e092a",
+  "execution_git_sha_note": "Bootstrap commit containing spec, audits and evidence. This field was filled in a follow-up commit; evidence files were not rewritten.",
   "capture_time_utc": "2026-08-17T08:07:26Z",
   "tool_versions": {
     "node": "v20.20.2",
