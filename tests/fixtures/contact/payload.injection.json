@@ -1,0 +1,7 @@
+{
+  "sender_name": "Synthetic\r\nBcc: attacker@example.test",
+  "sender_email": "synthetic.family@example.test",
+  "sender_phone": "+254700000000",
+  "interest": "General Inquiry",
+  "location_context": "Nairobi (Karen/Lavington)"
+}

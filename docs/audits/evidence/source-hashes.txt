@@ -1,0 +1,3 @@
+1f9e588aecde826ae0e0fec13ddf53db5e5b03310e8194353e03c7d752401fb7  plans/cursor-full-remediation-spec.md
+91130ed280e28a992d45eb7cf8cb09b1459c90fccbdcaab496a5a45c7a342d9f  docs/audits/2026-08-17-content-strategy-audit.md
+dec4b3ace5dafa197d3c7c030a0e666544867e96c465c6bae431dc20a134fe64  docs/audits/2026-08-17-systems-completeness-audit.md

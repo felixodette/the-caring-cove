@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import PageLayout from "@/layouts/PageLayout";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
-import GalleryTourContent from "../gallery-tour/GalleryTourContent";
+import GalleryContent from "./GalleryContent";
 
 export const metadata: Metadata = {
-  title: "Gallery Tour | The Caring Cove - Luxury Senior Care Karen Nairobi",
-  description:
-    "An immersive, room-by-room tour of our boutique care home: suites, sensory garden, dining, and lounge.",
+  title: "Gallery | The Caring Cove",
+  description: "View photos of The Caring Cove in Karen, Nairobi.",
   alternates: { canonical: `${SITE_URL}/gallery` },
 };
 
@@ -22,7 +21,7 @@ export default function GalleryPage() {
         ]}
       />
       <PageLayout>
-        <GalleryTourContent />
+        <GalleryContent />
       </PageLayout>
     </>
   );

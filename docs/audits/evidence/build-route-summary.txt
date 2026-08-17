@@ -1,0 +1,20 @@
+Next.js 16.1.6 static export at source SHA 3b4fc2b68ddf166087fc10f81977e01b0450317d
+Turbopack parent-lockfile warning present (AUD-024)
+Generated 19 routes / 17 HTML files
+Routes:
+  /
+  /_not-found
+  /about
+  /blog
+  /blog-details/[id] -> /blog-details/1, /blog-details/2, /blog-details/3
+  /contact
+  /faq
+  /gallery
+  /gallery-tour
+  /robots.txt
+  /service
+  /service-details
+  /sitemap.xml
+  /team
+  /team-details
+build_exit=0

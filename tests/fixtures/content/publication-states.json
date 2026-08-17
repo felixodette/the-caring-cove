@@ -1,0 +1,4 @@
+{
+  "states": ["draft", "in_review", "approved", "rejected", "expired", "withdrawn"],
+  "public_allowed": ["approved"]
+}

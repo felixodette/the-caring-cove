@@ -1,0 +1,31 @@
+{
+  "phase": "7A",
+  "recorded_at_utc": "2026-08-17T10:45:00Z",
+  "node": "v20.20.2",
+  "npm": "11.15.0",
+  "harness_ok": true,
+  "gated_commands_exit": 2,
+  "baseline_failures_mapped_to_aud": {
+    "lint:containment": ["AUD-002", "AUD-004", "AUD-015"],
+    "lint": ["AUD-008"],
+    "content:check": ["AUD-003", "AUD-004", "AUD-014"],
+    "test:routes": ["AUD-012"],
+    "test:privacy-lifecycle": ["AUD-001"],
+    "test:integration": ["AUD-011", "AUD-009"],
+    "test:links": ["AUD-004", "AUD-015"],
+    "test:security": ["AUD-007"]
+  },
+  "passing_harness_commands": [
+    "format:check",
+    "typecheck",
+    "docs:check",
+    "traceability:check",
+    "spell:check",
+    "test:unit",
+    "test:php",
+    "test:e2e",
+    "test:a11y",
+    "build"
+  ],
+  "note": "Product baseline failures are expected and mapped. Phase-gated release/deploy commands fail closed with exit 2."
+}

@@ -14,9 +14,9 @@ import Footer from "@/components/sections/Footer";
 import PillarsOfCare from "@/components/sections/PillarsOfCare";
 
 export const metadata: Metadata = {
-  title: "Luxury Memory Care Karen Nairobi",
+  title: "Memory Care in Karen, Nairobi",
   description:
-    "Kenya's most exclusive 1:1 memory care boutique. UK clinical standards, boutique living in Karen. Alzheimer's, dementia, palliative care. Book a private tour.",
+    "Memory care and senior living in Karen, Nairobi. Learn about our services and book a private tour.",
   alternates: { canonical: SITE_URL },
 };
 
