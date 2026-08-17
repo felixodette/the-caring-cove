@@ -57,7 +57,10 @@ const Footer = () => (
               { label: "Contact Us", href: "/contact" },
             ].map(({ label, href }) => (
               <li key={label}>
-                <Link href={href} className="text-navy-foreground/60 text-sm hover:text-primary transition-colors flex items-center gap-2">
+                <Link
+                  href={href}
+                  className="text-navy-foreground/60 text-sm hover:text-primary transition-colors flex items-center gap-2"
+                >
                   <ArrowRight className="w-3 h-3" /> {label}
                 </Link>
               </li>
@@ -76,7 +79,10 @@ const Footer = () => (
               { label: "Wellness & Lifestyle", href: "/service#service-5" },
             ].map(({ label, href }) => (
               <li key={label}>
-                <Link href={href} className="text-navy-foreground/60 text-sm hover:text-primary transition-colors flex items-center gap-2">
+                <Link
+                  href={href}
+                  className="text-navy-foreground/60 text-sm hover:text-primary transition-colors flex items-center gap-2"
+                >
                   <ArrowRight className="w-3 h-3" /> {label}
                 </Link>
               </li>
@@ -98,7 +104,9 @@ const Footer = () => (
             </div>
             <div className="flex items-center gap-3 text-navy-foreground/60 text-sm">
               <Mail className="w-4 h-4 shrink-0 text-primary" />
-              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary transition-colors">{CONTACT_EMAIL}</a>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary transition-colors">
+                {CONTACT_EMAIL}
+              </a>
             </div>
           </div>
         </div>

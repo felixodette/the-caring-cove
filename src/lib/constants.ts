@@ -9,5 +9,4 @@ export const CONTACT_WHATSAPP =
   process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/\D/g, "") ?? "254748583879";
 
 /** Phase E holding: web form disabled until privacy and transport gates pass */
-export const CONTACT_FORM_DISABLED =
-  process.env.NEXT_PUBLIC_CONTACT_FORM_DISABLED !== "enabled";
+export const CONTACT_FORM_DISABLED = process.env.NEXT_PUBLIC_CONTACT_FORM_DISABLED !== "enabled";

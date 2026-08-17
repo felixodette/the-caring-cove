@@ -26,18 +26,13 @@ const defaultForm = {
     "Skilled Nursing / Complex Care",
     "General Inquiry",
   ],
-  locations: [
-    "Nairobi (Karen/Lavington)",
-    "Other parts of Kenya",
-    "Diaspora (Europe/UK/Americas)",
-  ],
+  locations: ["Nairobi (Karen/Lavington)", "Other parts of Kenya", "Diaspora (Europe/UK/Americas)"],
 };
 
 const content = (siteContent.contactPage as { form?: typeof defaultForm })?.form;
 const formContent = content ?? defaultForm;
 
-const CONTACT_ENDPOINT =
-  process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT || "/contact-handler.php";
+const CONTACT_ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT || "/contact-handler.php";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -158,8 +153,7 @@ export default function ContactForm() {
     }
     setFieldErrors({});
 
-    const honeypot =
-      (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "";
+    const honeypot = (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "";
 
     const body = new FormData();
     body.append("sender_name", senderName.trim());
@@ -211,12 +205,18 @@ export default function ContactForm() {
         </p>
         <ul className="space-y-3 text-sm text-foreground">
           <li>
-            <a className="text-primary font-semibold hover:underline" href={`tel:${CONTACT_PHONE_TEL}`}>
+            <a
+              className="text-primary font-semibold hover:underline"
+              href={`tel:${CONTACT_PHONE_TEL}`}
+            >
               Phone: {CONTACT_PHONE_DISPLAY}
             </a>
           </li>
           <li>
-            <a className="text-primary font-semibold hover:underline" href={`mailto:${CONTACT_EMAIL}`}>
+            <a
+              className="text-primary font-semibold hover:underline"
+              href={`mailto:${CONTACT_EMAIL}`}
+            >
               Email: {CONTACT_EMAIL}
             </a>
           </li>
@@ -266,18 +266,10 @@ export default function ContactForm() {
       animate={{ opacity: 1, y: 0 }}
       className="bg-white p-8 rounded-2xl shadow-2xl border border-border max-w-xl mx-auto"
     >
-      <h3 className="text-2xl font-bold text-foreground mb-2">
-        {formContent.headline}
-      </h3>
-      <p className="text-muted-foreground mb-6 text-sm">
-        {formContent.subheadline}
-      </p>
+      <h3 className="text-2xl font-bold text-foreground mb-2">{formContent.headline}</h3>
+      <p className="text-muted-foreground mb-6 text-sm">{formContent.subheadline}</p>
 
-      <div
-        className="flex gap-2 mb-2"
-        role="group"
-        aria-label="Tour request form progress"
-      >
+      <div className="flex gap-2 mb-2" role="group" aria-label="Tour request form progress">
         {[1, 2].map((s) => (
           <div
             key={s}
@@ -291,15 +283,8 @@ export default function ContactForm() {
         Step {step} of 2
       </p>
 
-      <form
-        onSubmit={handleSubmit}
-        className="relative space-y-5"
-        noValidate
-      >
-        <div
-          className="absolute -left-[9999px] top-0 w-px h-px overflow-hidden"
-          aria-hidden
-        >
+      <form onSubmit={handleSubmit} className="relative space-y-5" noValidate>
+        <div className="absolute -left-[9999px] top-0 w-px h-px overflow-hidden" aria-hidden>
           <label htmlFor={`${baseId}-website`}>Website</label>
           <input
             type="text"
@@ -345,9 +330,7 @@ export default function ContactForm() {
                       }
                     }}
                     aria-invalid={Boolean(fieldErrors.sender_name)}
-                    aria-describedby={
-                      fieldErrors.sender_name ? `${nameId}-error` : undefined
-                    }
+                    aria-describedby={fieldErrors.sender_name ? `${nameId}-error` : undefined}
                     className="w-full p-4 bg-muted/30 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-base"
                     placeholder="Jane Doe"
                   />
@@ -385,9 +368,7 @@ export default function ContactForm() {
                       }
                     }}
                     aria-invalid={Boolean(fieldErrors.sender_phone)}
-                    aria-describedby={
-                      fieldErrors.sender_phone ? `${phoneId}-error` : undefined
-                    }
+                    aria-describedby={fieldErrors.sender_phone ? `${phoneId}-error` : undefined}
                     className="w-full p-4 bg-muted/30 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-base"
                     placeholder="+254 7XX XXX XXX"
                   />
@@ -427,9 +408,7 @@ export default function ContactForm() {
                     }
                   }}
                   aria-invalid={Boolean(fieldErrors.sender_email)}
-                  aria-describedby={
-                    fieldErrors.sender_email ? `${emailId}-error` : undefined
-                  }
+                  aria-describedby={fieldErrors.sender_email ? `${emailId}-error` : undefined}
                   className="w-full p-4 bg-muted/30 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-base"
                   placeholder="jane@example.com"
                 />
@@ -507,8 +486,7 @@ export default function ContactForm() {
                   ))}
                 </select>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Diaspora leads receive WhatsApp-first follow-up for time zone
-                  convenience.
+                  Diaspora leads receive WhatsApp-first follow-up for time zone convenience.
                 </p>
               </div>
 
