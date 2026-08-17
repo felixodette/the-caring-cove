@@ -1,0 +1,61 @@
+{
+  "document": "TCC-SPEC-001 Phase B execution baseline manifest",
+  "spec_id": "TCC-SPEC-001",
+  "spec_version": "1.2.0",
+  "source_git_sha": "3b4fc2b68ddf166087fc10f81977e01b0450317d",
+  "execution_git_sha": null,
+  "execution_git_sha_note": "Filled after bootstrap commit. Do not mutate evidence files; append only.",
+  "capture_time_utc": "2026-08-17T08:07:26Z",
+  "tool_versions": {
+    "node": "v20.20.2",
+    "npm": "11.15.0",
+    "uname": "Darwin 25.6.0 arm64",
+    "cwd": "/Users/felixodette/Development/the-caring-cove"
+  },
+  "php": "PHP 8.5.1 (cli) (built: Dec 16 2025 15:59:07) (NTS)",
+  "uname": "Darwin 25.6.0 arm64",
+  "spec_sha256": "1f9e588aecde826ae0e0fec13ddf53db5e5b03310e8194353e03c7d752401fb7",
+  "source_audits": {
+    "systems": {
+      "path": "docs/audits/2026-08-17-systems-completeness-audit.md",
+      "audit_id": "TCC-AUD-SYS-20260817",
+      "sha256": "dec4b3ace5dafa197d3c7c030a0e666544867e96c465c6bae431dc20a134fe64"
+    },
+    "content": {
+      "path": "docs/audits/2026-08-17-content-strategy-audit.md",
+      "audit_id": "TCC-AUD-CNT-20260817",
+      "sha256": "91130ed280e28a992d45eb7cf8cb09b1459c90fccbdcaab496a5a45c7a342d9f"
+    },
+    "finding_map": {
+      "path": "docs/audits/FINDING-MAP.md",
+      "sha256": "d4d792764cf8fbdc2c419e33246a37f2ad2cfcb9a5cc0e4d3e6a80a631a9ff08"
+    }
+  },
+  "evidence_files": {
+    "docs/audits/evidence/baseline.json": "18aa88190b391675ba2979d97b1780d5cc022d7d1cd978514e32de520edbaa43",
+    "docs/audits/evidence/build-route-summary.txt": "91811c61b3f465bf2d24fd14e20b80946bb76f9d2eb0f93ea21db8eff8e580c4",
+    "docs/audits/evidence/build.txt": "4e7169b022189c75025f881a3d811c7052bd89fbf164cfac802482882502700c",
+    "docs/audits/evidence/capture-time.txt": "97f294983cf6c593fb7a3550f9e74143a21dbbe7cc88121cd76122187b8ef1d3",
+    "docs/audits/evidence/generated-route-link-scan.json": "f6e0ab7ec64ebd203b19b24bb952f3904e8e11390445b8a0e6d6cc0c02e1196b",
+    "docs/audits/evidence/git-head.txt": "d1da1d7f40b918c01f78471f6de5487e8c3a69226dfa58268121a4cc2b1823aa",
+    "docs/audits/evidence/git-sha.txt": "d81990c10909f4a00c7e0d8e88213ce9acb55f52219739a8229aa7c196f86028",
+    "docs/audits/evidence/git-status.txt": "073e694d77e01f56b346ba3a38c98273cf5a50dfe2d595f374f1e797eb165e6d",
+    "docs/audits/evidence/lint-summary.txt": "a08930b564ac433310c2739f738551aff8c2836f1253a792993e715bc0f1ea75",
+    "docs/audits/evidence/lint.txt": "b8b9817fa8e577d46959a3dc7e57b80265d765d177b667c1ea6ca788c34780ce",
+    "docs/audits/evidence/lockfile.sha256": "75f1f99bbe86da4fc0f64dc89d751d18d95ea7725f923ca3d5df5fd6a583d5e8",
+    "docs/audits/evidence/npm-audit-full.exit.txt": "647c238838ac507be1739ec2bace257ace564da9b39bd647766920f5310efdec",
+    "docs/audits/evidence/npm-audit-full.json": "4bdc05fb8b0bf76eef62fc0495f7843b70bc601622c57911f80b523708299def",
+    "docs/audits/evidence/npm-audit-full.stderr.txt": "ff63851439f41c4bd0169f582040e068eea30757f1f0e32317dee7f0f14672eb",
+    "docs/audits/evidence/npm-audit-production.exit.txt": "4c4b7105b310808335092796b5bd8c12a4fa42c0e7481636db6f8cd395b64ddd",
+    "docs/audits/evidence/npm-audit-production.json": "aeb5e2f3bb80f2b0b0ac7182d163ed4096ce0629c5d57c30f5d7b9807a7d7fd2",
+    "docs/audits/evidence/npm-audit-production.stderr.txt": "ff63851439f41c4bd0169f582040e068eea30757f1f0e32317dee7f0f14672eb",
+    "docs/audits/evidence/npm-audit-summary.json": "39b200cc4584870bdf0fd1f851754d0f3c466a025fe952f256dcd2624084f10c",
+    "docs/audits/evidence/package.json": "8b1b7004aead3b9b809718eb9a9685a11f235db5de5ebe4ff38f63ac106b5a9f",
+    "docs/audits/evidence/php-lint.txt": "c9c4b555b2367b038a39c6af627589547b5a219658a1b2ebb74f497e7182c69b",
+    "docs/audits/evidence/production-html-identity.json": "09636dd75b1f6495e3c0a0fcb76ed31d587a31f527f0da1533c5fa8b077a04e7",
+    "docs/audits/evidence/production-http-probes.json": "5d8b527f1dc494116272bf4eed1a02dd4b7e1819224b9fa49218ee0e17b14008",
+    "docs/audits/evidence/source-hashes.txt": "4f94f7cb546fc44763aa10ad4f294cb69bc0d8eb13474b47f27766f41e3700ba",
+    "docs/audits/evidence/tool-versions.txt": "f5cc305f94ecf6ae17625b8388b61b2ca154e72cd1839a16faaf075fc4c664fd",
+    "docs/audits/evidence/typecheck.txt": "25b9bed86301f2a596f5007af4b1560c07c7f641f6832fbb1799addc869d35af"
+  }
+}

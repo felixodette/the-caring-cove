@@ -1,0 +1,4 @@
+npm run lint
+✖ 29 problems (4 errors, 25 warnings)
+lint_exit=1
+Matches systems audit: four errors and 25 warnings (AUD-008).

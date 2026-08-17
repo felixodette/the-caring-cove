@@ -1,0 +1,108 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> the-caring-cove@0.1.0 lint
+> eslint
+
+
+/Users/felixodette/Development/the-caring-cove/src/app/about/AboutContent.tsx
+  39:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/blog-details/[id]/BlogDetailsContent.tsx
+   9:7  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  34:7  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/blog/BlogContent.tsx
+  13:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/gallery-tour/GalleryTourContent.tsx
+   88:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/felixodette/Development/the-caring-cove/src/app/gallery-tour/GalleryTourContent.tsx:88:5
+  86 |     const el = root.querySelector<HTMLElement>(`#${CSS.escape(hash)}`);
+  87 |     el?.scrollIntoView({ behavior: "instant" as ScrollBehavior, block: "start" });
+> 88 |     setActiveIdx(idx);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  89 |   }, [ids]);
+  90 |
+  91 |   useEffect(() => {  react-hooks/set-state-in-effect
+  106:58  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  117:69  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  211:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+  271:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/gallery/GalleryContent.tsx
+  155:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/page.tsx
+  8:8  warning  'Services' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/felixodette/Development/the-caring-cove/src/app/service-details/ServiceDetailsContent.tsx
+  18:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/service/page.tsx
+  7:8  warning  'FundingAndFees' is defined but never used  @typescript-eslint/no-unused-vars
+  8:8  warning  'ServiceContent' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/felixodette/Development/the-caring-cove/src/app/team-details/TeamDetailsContent.tsx
+  26:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/app/team/TeamContent.tsx
+  38:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/About.tsx
+  33:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/Blog.tsx
+  32:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/BlogSidebar.tsx
+  52:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/BoutiqueInfographic.tsx
+  5:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/FounderStory.tsx
+  18:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/PillarsOfCare.tsx
+  12:17  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+  13:8   warning  'Link' is defined but never used          @typescript-eslint/no-unused-vars
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/Skills.tsx
+  53:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/Team.tsx
+  38:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/sections/Testimonials.tsx
+  31:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/felixodette/Development/the-caring-cove/src/components/ui/AnimatedButterfly.tsx
+  173:41  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+/Users/felixodette/Development/the-caring-cove/src/components/ui/AnimatedButterfly.tsx:173:41
+  171 |                     opacity: [0, 1, 0.85, 0],
+  172 |                     scale: [0.65, 1, 0.95, 0.8],
+> 173 |                     rotate: b.rotate + (Math.random() - 0.5) * 40,
+      |                                         ^^^^^^^^^^^^^ Cannot call impure function
+  174 |                   }}
+  175 |                   transition={{
+  176 |                     delay: b.delay,  react-hooks/purity
+
+/Users/felixodette/Development/the-caring-cove/src/components/ui/chart.tsx
+  64:55  warning  '_' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/felixodette/Development/the-caring-cove/src/hooks/use-toast.ts
+  15:7  warning  'actionTypes' is assigned a value but only used as a type  @typescript-eslint/no-unused-vars
+
+✖ 29 problems (4 errors, 25 warnings)
+
+lint_exit=1
