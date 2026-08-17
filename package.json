@@ -6,7 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "node node_modules/next/dist/bin/next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:containment": "node scripts/quality/cli.mjs lint:containment",
+    "format:check": "node scripts/quality/cli.mjs format:check",
+    "typecheck": "tsc --noEmit",
+    "docs:check": "node scripts/quality/cli.mjs docs:check",
+    "traceability:check": "node scripts/quality/cli.mjs traceability:check",
+    "spell:check": "node scripts/quality/cli.mjs spell:check",
+    "content:check": "node scripts/quality/cli.mjs content:check",
+    "test:routes": "node scripts/quality/cli.mjs test:routes",
+    "test:content": "node scripts/quality/cli.mjs test:content",
+    "test:privacy-lifecycle": "node scripts/quality/cli.mjs test:privacy-lifecycle",
+    "test:unit": "vitest run",
+    "test:integration": "node scripts/quality/cli.mjs test:integration",
+    "test:e2e": "playwright test --project=chromium",
+    "test:a11y": "playwright test --project=a11y",
+    "test:links": "node scripts/quality/cli.mjs test:links",
+    "test:php": "node scripts/quality/cli.mjs test:php",
+    "test:security": "node scripts/quality/cli.mjs test:security",
+    "release:build": "node scripts/quality/cli.mjs unmet --phase 9 --command release:build",
+    "release:verify": "node scripts/quality/cli.mjs unmet --phase 9 --command release:verify",
+    "deploy:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command deploy:staging",
+    "smoke:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command smoke:staging",
+    "rollback:staging": "node scripts/quality/cli.mjs unmet --phase 9 --command rollback:staging",
+    "ci": "node scripts/quality/cli.mjs ci"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -68,9 +91,16 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "axe-core": "^4.10.3",
+    "cspell": "^9.2.0",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   }
 }
