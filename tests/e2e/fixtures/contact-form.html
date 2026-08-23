@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Private tour request fixture</title>
+  </head>
+  <body>
+    <main>
+      <h1>Request a Private Tour</h1>
+      <p>Four suites. We will tell you honestly if we are a fit.</p>
+      <form action="#" method="post" novalidate>
+        <p role="status">Step 1 of 3</p>
+        <label for="relationship">Who is this inquiry for?</label>
+        <select id="relationship" name="relationship">
+          <option value="">Select relationship</option>
+          <option>Adult child / family member</option>
+        </select>
+        <label for="urgency">How soon is care needed?</label>
+        <select id="urgency" name="urgency">
+          <option value="">Select timing</option>
+          <option>Within 2 weeks</option>
+        </select>
+        <label for="interest">Care need</label>
+        <select id="interest" name="interest">
+          <option>Prefer not to say</option>
+          <option>General Inquiry</option>
+        </select>
+        <label for="name">Your name</label>
+        <input id="name" name="sender_name" type="text" autocomplete="name" />
+        <label for="phone">Phone / WhatsApp</label>
+        <input id="phone" name="sender_phone" type="tel" autocomplete="tel" />
+        <label for="email">Email</label>
+        <input id="email" name="sender_email" type="email" autocomplete="email" />
+        <label for="channel">Preferred contact channel</label>
+        <select id="channel" name="preferred_channel">
+          <option>WhatsApp</option>
+          <option>Phone call</option>
+          <option>Email</option>
+        </select>
+        <label for="consent">
+          <input id="consent" name="consent" type="checkbox" />
+          I want The Caring Cove to use these details to follow up about a private tour.
+        </label>
+        <p>
+          <a href="#inquiry-privacy">Inquiry notice</a>
+        </p>
+        <button type="submit">Send tour request</button>
+      </form>
+      <section id="inquiry-privacy">
+        <h2>Inquiry notice</h2>
+        <p>
+          Tour inquiries are used only to follow up about a private tour and possible admission.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -16,7 +16,7 @@ import PillarsOfCare from "@/components/sections/PillarsOfCare";
 export const metadata: Metadata = {
   title: "Memory Care in Karen, Nairobi",
   description:
-    "Memory care and senior living in Karen, Nairobi. Learn about our services and book a private tour.",
+    "Memory care and 24/7 skilled nursing in Karen, Nairobi. Learn about our services and book a private tour.",
   alternates: { canonical: SITE_URL },
 };
 

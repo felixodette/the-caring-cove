@@ -10,7 +10,7 @@ const isDownloadHref = (href: string) => href.toLowerCase().endsWith(".pdf");
 const Hero = () => (
   <section
     className="relative min-h-[600px] flex items-center bg-cover bg-center"
-    style={{ backgroundImage: "url(/images/hero-bg.jpg)" }}
+    style={{ backgroundImage: "url(/images/sitting-area-people.jpeg)" }}
   >
     <div className="absolute inset-0 bg-navy/60" />
     <div className="container mx-auto relative z-10 py-24">
@@ -44,7 +44,10 @@ const Hero = () => (
         transition={{ duration: 0.5, delay: 0.3 }}
         className="flex flex-wrap gap-4"
       >
-        <a href={hero.cta.primary.href} className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors">
+        <a
+          href={hero.cta.primary.href}
+          className="bg-primary text-primary-foreground px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors"
+        >
           {hero.cta.primary.label}
         </a>
         <a
