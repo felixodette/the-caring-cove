@@ -3,5 +3,13 @@
   "sender_email": "synthetic.family@example.test",
   "sender_phone": "+254700000000",
   "interest": "General Inquiry",
-  "location_context": "Nairobi (Karen/Lavington)"
+  "location_context": "Nairobi (Karen/Lavington)",
+  "relationship": "Adult child / family member",
+  "urgency": "Within 2 weeks",
+  "preferred_channel": "WhatsApp",
+  "tour_window": "Weekday morning",
+  "resident_first_name": "",
+  "consent": true,
+  "policy_version": "2026-08-17.1",
+  "request_id": "tcc_inq_0123456789abcdef0123456789"
 }

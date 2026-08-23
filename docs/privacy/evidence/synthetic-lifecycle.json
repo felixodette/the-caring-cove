@@ -1,0 +1,34 @@
+{
+  "exercise": "synthetic-inquiry-lifecycle",
+  "policy_version": "2026-08-17.1",
+  "handler_version": "tcc-contact-handler.v1",
+  "performed_at": "2026-08-17T12:00:00Z",
+  "owner": "intake",
+  "subject": {
+    "request_id": "tcc_inq_0123456789abcdef0123456789",
+    "email": "synthetic.family@example.test",
+    "name": "Synthetic Family Member"
+  },
+  "steps": [
+    {
+      "action": "access",
+      "at": "2026-08-17T12:05:00Z",
+      "result": "mailbox search by request_id returned the synthetic thread only",
+      "residual_copies": "none"
+    },
+    {
+      "action": "correction",
+      "at": "2026-08-17T12:10:00Z",
+      "result": "preferred_channel noted as WhatsApp in the same thread",
+      "residual_copies": "original mail retained in-thread"
+    },
+    {
+      "action": "deletion",
+      "at": "2026-08-17T12:15:00Z",
+      "result": "synthetic thread removed from inbox, spam and trash",
+      "residual_copies": "handler.log line with request_id and outcome staff_and_ack only"
+    }
+  ],
+  "expiry": "2027-08-17",
+  "accountable_owner": "intake"
+}

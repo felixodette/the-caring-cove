@@ -1,0 +1,15 @@
+{
+  "sender_name": "Synthetic Spouse",
+  "sender_email": "synthetic.spouse@example.test",
+  "sender_phone": "+254711111111",
+  "interest": "Alzheimer's / Dementia Care",
+  "location_context": "Diaspora (Europe/UK/Americas)",
+  "relationship": "Spouse / partner",
+  "urgency": "Immediate (needed now)",
+  "preferred_channel": "WhatsApp",
+  "tour_window": "Weekday morning",
+  "resident_first_name": "Sam",
+  "consent": true,
+  "policy_version": "2026-08-17.1",
+  "request_id": "tcc_inq_aaaaaaaaaaaaaaaaaaaaaaaaaa"
+}

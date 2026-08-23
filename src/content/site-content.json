@@ -21,8 +21,8 @@
       "items": [
         {
           "icon": "timer",
-          "title": "Nursing Care",
-          "description": "Around-the-clock professional support and compassionate assistance tailored to your unique health requirements."
+          "title": "24/7 Skilled Nursing",
+          "description": "Registered nurses on hand around the clock for medical needs, with compassionate support tailored to each resident."
         },
         {
           "icon": "flower-2",
@@ -64,14 +64,14 @@
           "icon": "activity",
           "title": "Restorative Care & Convalescence",
           "headline": "The Bridge to Recovery and Independence.",
-          "description": "Specialized post-operative support for those recovering from surgeries or neurological events. We offer a dedicated, tranquil recovery environment designed to provide the focus and personal attention required for a successful transition home.",
+          "description": "We work with specialists in a multidisciplinary team to provide specialised recovery after surgery or neurological events, in a calm setting suited to a safe return home.",
           "oneToOneEdge": "Personalized \"Strength and Balance\" protocols and 24/7 attentive oversight to support surgical recovery and promote safe mobility"
         },
         {
           "icon": "shield",
-          "title": "Skilled Nursing & Care",
+          "title": "24/7 Skilled Nursing",
           "headline": "Clinical Excellence in a Boutique Setting.",
-          "description": "For residents with medical needs, including diabetes management, and wound care. We maintain clinical standards without the institutional feel.",
+          "description": "24/7 skilled nursing for residents with medical needs, including diabetes management and wound care. Clinical standards, without the institutional feel.",
           "oneToOneEdge": "Clinical oversight with a focus on dignity and personal choice."
         },
         {
@@ -85,7 +85,7 @@
           "icon": "tree-pine",
           "title": "Holistic Wellness & Social Engagement",
           "headline": "Active Aging and Meaningful Living.",
-          "description": "Wellness at The Cove isn't just medical; it's social. From farm-to-table nutrition to garden walks, we curate a lifestyle that keeps the mind and body active.",
+          "description": "Wellness at The Cove isn't just medical; it's social. From locally sourced food to garden walks, we curate a lifestyle that keeps the mind and body active.",
           "oneToOneEdge": "Activity schedules are flexible. If a resident wants to garden at 10 AM or listen to music at 8 PM, we'll make it happen."
         }
       ]
@@ -103,8 +103,8 @@
         {
           "icon": "heart",
           "title": "Gold-Standard Palliative Oversight",
-          "expertise": "Trained in the UK Gold Standard Framework (GSF) for end-of-life care, specializing in complex pain management and respiratory comfort.",
-          "whyItMatters": "We provide hospital-grade comfort in a tranquil bedroom setting, ensuring a peaceful, pain-free journey for your loved one."
+          "expertise": "Trained in the UK Gold Standard Framework (GSF) for end-of-life care, specializing in pain management and respiratory comfort.",
+          "whyItMatters": "Comfort in a calm bedroom setting, with dignified pain management in a home-like sanctuary."
         },
         {
           "icon": "pill",
@@ -115,12 +115,12 @@
         {
           "icon": "activity",
           "title": "Physical Rehabilitation",
-          "expertise": "Specialized competency in post-operative recovery (hips/knees) and stroke rehab, focusing on safe manual handling and mobility restoration.",
-          "whyItMatters": "Our 1:4 ratio means residents get 24/7 encouragement and assistance with their physical therapy goals, leading to faster recovery."
+          "expertise": "Working with specialists in a multidisciplinary team to provide specialised recovery, with a focus on safe manual handling and mobility.",
+          "whyItMatters": "Small-home staffing means residents get 24/7 encouragement and assistance with their physical therapy goals."
         }
       ],
       "stats": [
-        { "value": "1:4", "label": "Staff-to-Resident Ratio (Nairobi's highest standard)" },
+        { "value": "High-touch", "label": "Small-home staffing, help close at hand" },
         { "value": "100%", "label": "Staff Trained in Clinical Protocols" },
         { "value": "24/7", "label": "Registered Nursing Oversight" },
         { "value": "0", "label": "Pressure Sore Incident Rate (The result of boutique care)" }
@@ -131,7 +131,7 @@
       "subtitle": "The \"Why Us\"",
       "title": "Bridging Two Worlds of Care",
       "goal": "A Vision Born of Excellence",
-      "quote": "Having spent 10 years working in the UK, I realized that Nairobi families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
+      "quote": "Having spent 10 years working in the UK, I realized that Kenyan families deserve that same 'Outstanding' level of care, delivered with a local heart. The Caring Cove is that bridge: A sanctuary where international clinical rigor meets home-grown compassion.",
       "founderName": "Njeri Blagden"
     },
     "amenities": {
@@ -141,13 +141,13 @@
       "items": [
         {
           "icon": "utensils",
-          "title": "Farm-to-Table Nutrition",
-          "description": "Locally sourced produce/ingredients."
+          "title": "Locally sourced food",
+          "description": "Meals made with locally sourced produce and ingredients."
         },
         {
           "icon": "tree-pine",
-          "title": "Sensory Gardens",
-          "description": "Secure, beautifully landscaped garden that is peaceful and wheelchair accessible."
+          "title": "Secure, beautiful garden",
+          "description": "Secure, beautiful garden that is peaceful and wheelchair accessible."
         },
         {
           "icon": "music",
@@ -163,8 +163,8 @@
       "items": [
         {
           "icon": "monitor-smartphone",
-          "title": "Care Management Integration",
-          "description": "We use a care management system. Every meal, medication, and mood is recorded. Families (including those in the Diaspora) can receive secure updates, ensuring you are never 'out of the loop' regarding your loved one's health."
+          "title": "Care Management",
+          "description": "We use care management to record every meal, medication, and mood. Families (including those in the Diaspora) can receive secure updates, so you are never out of the loop about your loved one's health."
         },
         {
           "icon": "award",
@@ -198,7 +198,7 @@
       {
         "icon": "heart",
         "title": "Compassionate Palliative & End-of-Life Care",
-        "coreMission": "A dignified, pain-free journey in a home-like sanctuary.",
+        "coreMission": "Dignified pain management in a home-like sanctuary.",
         "approach": "We implement the UK Gold Standard Framework (GSF) for palliative care. Our focus is on the \"Total Patient\"—addressing physical pain, emotional anxiety, and spiritual peace.",
         "keyFeatures": [
           "Expert Pain Management: 24/7 nursing oversight with oversight in pharmacology and comfort measures.",
@@ -208,9 +208,9 @@
       },
       {
         "icon": "activity",
-        "title": "Rehabilitation & Post-Op Recovery",
+        "title": "Specialised Recovery",
         "coreMission": "Bridging the gap between hospital and home.",
-        "approach": "Ideal for seniors recovering from hip/knee replacements or a stroke. We ensure that physical therapy exercises are performed safely and consistently, significantly reducing recovery time.",
+        "approach": "For seniors recovering after surgery or a stroke, we work with specialists in a multidisciplinary team to provide specialised recovery. Therapy is supported safely and consistently in the home.",
         "keyFeatures": [
           "Mobility Restoration: Personalized \"Strength and Balance\" programs to prevent future falls.",
           "Wound Care & Monitoring: Clinical-grade management of surgical sites to prevent infection.",
@@ -219,9 +219,9 @@
       },
       {
         "icon": "shield",
-        "title": "Skilled Nursing & Complex Medical Care",
+        "title": "24/7 Skilled Nursing",
         "coreMission": "Hospital-standard rigor in a boutique bedroom setting.",
-        "approach": "For residents with chronic conditions like diabetes, hypertension, or respiratory issues. We provide a level of medical governance that larger homes cannot match due to their high resident-to-nurse ratios.",
+        "approach": "24/7 skilled nursing for residents with chronic conditions such as diabetes, hypertension, or respiratory issues. Clinical governance that larger homes often cannot match, given their higher resident-to-nurse ratios.",
         "keyFeatures": [
           "Polypharmacy Oversight: Meticulous management of multi-drug regimens to avoid adverse interactions.",
           "Vital Sign Analytics: Daily digital tracking of blood sugar, pressure, and oxygen levels with immediate GP escalation if required.",
@@ -246,7 +246,7 @@
         "approach": "Wellness at The Cove is proactive. We believe an active mind and a nourished body are the best forms of medicine.",
         "keyFeatures": [
           "Bespoke Activity Calendars: 100% personalized—from garden walks and \"Baking for the Soul\" to music therapy and pet visits.",
-          "Farm-to-Table Dining: High-protein, nutrient-dense menus tailored to dietary needs.",
+          "Locally sourced dining: High-protein, nutrient-dense menus tailored to dietary needs.",
           "Spiritual Care: Coordination with local clergy for those who value faith-based reflection."
         ]
       }
@@ -254,7 +254,7 @@
     "comparisonTable": {
       "title": "Why Our Boutique Model Wins",
       "rows": [
-        { "feature": "Staffing Ratio", "largeFacilities": "1:10 or higher", "theCove": "1:4 Guaranteed" },
+        { "feature": "Staffing", "largeFacilities": "Stretched teams, long waits", "theCove": "Small-home staffing, help close at hand" },
         { "feature": "Medical Record", "largeFacilities": "Paper-based / Delayed", "theCove": "Nourish Digital (UK Standard)" },
         { "feature": "Environment", "largeFacilities": "Institutional Wards", "theCove": "Private Residence" },
         { "feature": "Menu Choice", "largeFacilities": "Fixed \"Canteen\" Style", "theCove": "Chef-Prepared & Bespoke" }
@@ -311,31 +311,31 @@
     "subheadline": "Bringing decades of \"Outstanding\" UK clinical experience to the heart of Nairobi.",
     "visionary": {
       "headline": "From UK to Karen: A Journey of Care.",
-      "copy": "Our founder's journey began in the United Kingdom, working within facilities recognized by the Care Quality Commission (CQC) for 'Outstanding' clinical excellence. After years of wroking in dementia and nursing care in the UK, a clear realization emerged: Nairobi families were looking for more than just a room; they were looking for a standard of care that didn't yet exist locally. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture."
+      "copy": "After years of working in dementia and nursing care in the United Kingdom, within facilities recognized for outstanding excellence, a clear realization emerged: Kenyan families were looking for holistic, high-quality care and support from well-trained, compassionate staff in a warm, serene, and relaxed environment. The Caring Cove was born from a desire to bridge that gap—combining the rigorous medical governance of the British healthcare system with the warmth, respect, and familial values of Kenyan culture. We pride ourselves on a person-centred approach to care."
     },
     "philosophy": {
       "headline": "Our Mission and Objectives.",
-      "copy": "The mission statement of the company is to provide person centered support to every individual that we provided a service to provide a secure, relaxed and homely environment in which the care, well-being and comfort of all service users are of prime importance. We aim to eliminate loneliness by creating an enviornment where older people can experience a better quality of life and well being.",
+      "copy": "Our mission is to deliver person-centred support in a secure, relaxed, and homely environment where the care, well-being, and comfort of every individual are paramount. We work to reduce loneliness by creating a community where older adults can enjoy a better quality of life.",
       "points": [
-        "Offering you courtesy, respect and privacy.",
+        "Offering courtesy, respect, and privacy.",
         "Providing individualised care and support based on personal needs and preferences.",
-        "Involving residents, family and friends in individualising a care plan.",
-        "Ensuring the right of every person to independence and choice.",
-        "Delivering high quality care to eeryone, respecting ethnic origins, religious or life choices.",
-        "Communicating effectively with residents, family and friends, to ensure they have the information needed to make informed choices.",
-        "Regularly re-evaluating care to access its effective."
+        "Involving residents, family, and friends in shaping each care plan.",
+        "Upholding every person's right to independence and choice.",
+        "Delivering high-quality care to everyone, with respect for ethnic origin, faith, and life choices.",
+        "Communicating clearly with residents, family, and friends so they have the information needed to make informed choices.",
+        "Regularly reviewing care to assess its effectiveness."
       ]
     },
     "coreValues": [
       { "title": "Dignity Above All", "description": "We believe aging is a journey to be honored, not a condition to be managed." },
       { "title": "Evidence-Based Excellence", "description": "Every protocol we use—from our digital medication tracking to our reminiscence therapy—is rooted in international best practices." },
-      { "title": "Radical Transparency", "description": "For families, especially those living in the Diaspora, we provide a digital window into their loved one's daily life. You are never an outsider to the care process." },
-      { "title": "Bespoke Enrichment", "description": "We don't do 'group activities.' We do 'individual passions.' Whether it's gardening in the Karen sun or listening to classical music, we curate the day around the person." }
+      { "title": "Duty of Candour", "description": "We give families a window into their loved one's daily life. Through regular updates and open communication, you are never an outsider to the care process." },
+      { "title": "Bespoke Enrichment", "description": "We tailor activities to each resident's passions, rather than a generic group programme, so days feel meaningful." }
     ],
-    "founderNote": "I spent years in the UK seeing what 'perfect' care looks like. I saw how the right environment and the right ratio could turn a person's final years into a season of peace rather than a season of decline. I opened The Caring Cove to give Kenyan families that same peace of mind. Here, your loved one isn't just cared for—they are cherished.",
+    "founderNote": "I spent years in the UK seeing what 'perfect' care looks like. I saw how the right environment and the right staffing could turn a person's final years into a season of peace rather than a season of decline. I opened The Caring Cove to give Kenyan families that same peace of mind. Here, your loved one isn't just cared for—they are cherished.",
     "experienceGrid": [
       { "value": "15+", "label": "Years of UK Leadership in dementia and nursing care." },
-      { "value": "1:4", "label": "The highest care standard in Nairobi" },
+      { "value": "High-touch", "label": "Small-home staffing, help close at hand" },
       { "value": "International", "label": "Standards – Clinical protocols audited against global benchmarks" },
       { "value": "Digital", "label": "Integration – Real-time updates via UK-standard care software" }
     ],
@@ -403,23 +403,10 @@
     ],
     "form": {
       "headline": "Request a Private Tour",
-      "subheadline": "Our boutique home has only 4 suites. Secure your priority viewing today.",
-      "cta": "Check Availability & Book Tour",
-      "successMessage": "Inquiry Sent. We will contact you within 2 hours.",
-      "errorMessage": "Something went wrong. Please call us directly.",
-      "interests": [
-        "Alzheimer's / Dementia Care",
-        "Palliative / End of Life",
-        "Post-Op Rehabilitation",
-        "Respite Stay (Short Term)",
-        "Skilled Nursing / Complex Care",
-        "General Inquiry"
-      ],
-      "locations": [
-        "Nairobi (Karen/Lavington)",
-        "Other parts of Kenya",
-        "Diaspora (Europe/UK/Americas)"
-      ]
+      "subheadline": "Four suites. We will tell you honestly if we are a fit.",
+      "cta": "Send tour request",
+      "successMessage": "We have your request. A team member will contact you within 2 hours during business hours.",
+      "errorMessage": "Something went wrong. Please call or WhatsApp us directly."
     }
   },
   "galleryPage": {
@@ -588,11 +575,11 @@
           },
           {
             "q": "What happens in a medical emergency?",
-            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we are within reach of Nairobi's leading hospitals. Our 1:4 ratio ensures a dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
+            "a": "We maintain 24/7 nursing oversight. In the event of an emergency, we are within reach of Nairobi's leading hospitals. A dedicated staff member remains with your loved one from the moment an incident occurs until they are stabilized."
           },
           {
             "q": "How do you prevent falls and pressure sores in a residential home?",
-            "a": "Unlike larger facilities with 1:10 ratios, our 1:4 model allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
+            "a": "Small-home staffing allows for \"Proactive Observation.\" We use high-contrast environmental design to reduce confusion and implement 2-hourly skin integrity checks for non-mobile residents, maintaining a 0% pressure sore target."
           }
         ]
       },
@@ -603,7 +590,7 @@
         "questions": [
           {
             "q": "I live in the UK/USA. How will I know my parent is actually being cared for?",
-            "a": "We solve the \"Distance Gap\" with Radical Transparency. Through our digital care platform, we provide secure, real-time updates. You will see what they ate, their mood for the day, and photos of their participation in activities. We also facilitate scheduled high-definition video calls to keep you connected."
+            "a": "We close the distance with a Duty of Candour. Through our digital care platform, families receive a secure window into daily life: meals, mood, and photos of activities. Scheduled high-definition video calls keep you connected, so you are never an outsider to the care process."
           },
           {
             "q": "How do you handle time-zone differences for updates or emergencies?",

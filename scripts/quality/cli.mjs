@@ -262,15 +262,16 @@ function testIntegration() {
 
 function testPhp() {
   const file = join(ROOT, "public/contact-handler.php");
-  const result = run("php", ["-l", file]);
-  const ok = result.exit === 0 && result.stdout.includes("No syntax errors");
+  const lint = run("php", ["-l", file]);
+  const self = run("php", [file, "--self-test"]);
+  const ok = lint.exit === 0 && lint.stdout.includes("No syntax errors") && self.exit === 0;
   return finish(
     "test:php",
     {
       ok,
       aud: ok ? [] : ["AUD-011"],
-      stdout: result.stdout.trim(),
-      stderr: result.stderr.trim(),
+      stdout: `${lint.stdout}\n${self.stdout}`.trim(),
+      stderr: `${lint.stderr}\n${self.stderr}`.trim(),
       timestamp: nowIso(),
     },
     ok ? 0 : 1,
