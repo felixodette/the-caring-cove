@@ -7,12 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const features = [
   {
-    title: "Care Ratio",
+    title: "Staffing",
     icon: Users,
-    standard: "1:12 Resident to Staff",
-    cove: "1:4 Dedicated Care",
+    standard: "Stretched teams in large homes",
+    cove: "Small-home staffing",
     description:
-      "In large homes, residents wait for help. At The Cove, your loved one has a dedicated shadow for safety and engagement.",
+      "In large homes, residents wait for help. At The Cove, staff stay close for safety and engagement.",
   },
   {
     title: "Clinical Monitoring",
@@ -28,7 +28,7 @@ const features = [
     standard: "Set 'Canteen' Menus",
     cove: "Chef-Prepared & Bespoke",
     description:
-      "Our organic Karen-sourced meals are tailored to specific geriatric nutritional needs and personal preferences.",
+      "Our meals use locally sourced food, tailored to geriatric nutrition needs and personal tastes.",
   },
   {
     title: "Environment",
@@ -47,12 +47,10 @@ const BoutiqueInfographic = () => {
   return (
     <div className="max-w-5xl mx-auto py-12 px-4">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-foreground mb-4">
-          Why Boutique Care Wins
-        </h2>
+        <h2 className="text-3xl font-bold text-foreground mb-4">Why Boutique Care Wins</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Compare the standard institutional model against our high-touch, 1:4
-          clinical approach.
+          Compare the standard institutional model against our high-touch, small-home clinical
+          approach.
         </p>
       </div>
 
@@ -73,9 +71,7 @@ const BoutiqueInfographic = () => {
                 }`}
               >
                 <div
-                  className={`mr-4 shrink-0 ${
-                    isActive ? "text-primary" : "text-muted-foreground"
-                  }`}
+                  className={`mr-4 shrink-0 ${isActive ? "text-primary" : "text-muted-foreground"}`}
                 >
                   <Icon className="w-6 h-6" />
                 </div>
@@ -103,12 +99,8 @@ const BoutiqueInfographic = () => {
               className="space-y-6"
             >
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">
-                  {activeFeature.title}
-                </h3>
-                <p className="text-muted-foreground italic text-sm">
-                  {activeFeature.description}
-                </p>
+                <h3 className="text-xl font-bold text-foreground mb-2">{activeFeature.title}</h3>
+                <p className="text-muted-foreground italic text-sm">{activeFeature.description}</p>
               </div>
 
               <div className="space-y-4">

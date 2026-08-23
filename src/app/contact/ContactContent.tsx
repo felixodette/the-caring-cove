@@ -30,9 +30,7 @@ export default function ContactContent() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               We&apos;re Here to Help
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              {content.subheadline}
-            </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{content.subheadline}</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -48,7 +46,7 @@ export default function ContactContent() {
                         ? `tel:${c.lines[0].replace(/\s/g, "")}`
                         : c.icon === "map-pin"
                           ? GOOGLE_MAPS_LOCATION_URL
-                        : undefined
+                          : undefined
                   }
                   target={c.icon === "map-pin" ? "_blank" : undefined}
                   rel={c.icon === "map-pin" ? "noopener noreferrer" : undefined}
@@ -65,9 +63,7 @@ export default function ContactContent() {
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">
-                    {c.title}
-                  </h3>
+                  <h3 className="text-xl font-bold text-foreground mb-3">{c.title}</h3>
                   {c.lines.map((l, j) => (
                     <p
                       key={j}
@@ -107,10 +103,80 @@ export default function ContactContent() {
             </div>
           </motion.div>
 
+          <div className="max-w-3xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold text-foreground text-center mb-8">
+              From first message to a decision
+            </h3>
+            <ol className="grid sm:grid-cols-5 gap-4">
+              {[
+                {
+                  step: "1",
+                  title: "Inquiry",
+                  copy: "Call, WhatsApp, or the form. We need a way to reach you.",
+                },
+                {
+                  step: "2",
+                  title: "Conversation",
+                  copy: "We reply within 2 hours in business hours and learn what you need.",
+                },
+                {
+                  step: "3",
+                  title: "Private tour",
+                  copy: "You see the Karen home. No group walk-throughs.",
+                },
+                {
+                  step: "4",
+                  title: "Assessment",
+                  copy: "If it may be a fit, we plan a clinical assessment with the facts you choose to share.",
+                },
+                {
+                  step: "5",
+                  title: "Offer or honest no",
+                  copy: "A clear next step, or a straight answer if we are not the right home.",
+                },
+              ].map((item) => (
+                <li key={item.step} className="bg-card border border-border rounded-xl p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-primary mb-2">
+                    Step {item.step}
+                  </p>
+                  <p className="font-semibold text-foreground mb-1">{item.title}</p>
+                  <p className="text-sm text-muted-foreground">{item.copy}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+
           {/* Contact Form */}
           <div id="request-tour" className="scroll-mt-24">
             <ContactForm />
           </div>
+
+          <aside
+            id="inquiry-privacy"
+            className="max-w-xl mx-auto mt-10 scroll-mt-24 text-sm text-muted-foreground space-y-3"
+          >
+            <h3 className="text-base font-bold text-foreground">
+              Inquiry notice (version 2026-08-17.1)
+            </h3>
+            <p>
+              The Caring Cove, Karen, Nairobi, uses tour inquiries only to follow up about a private
+              tour and possible admission. We do not sell this information.
+            </p>
+            <p>
+              Fields: your name, email, phone, preferred channel, relationship to the person needing
+              care, timing, high-level care need, location, tour window, optional resident first
+              name, and your consent. We do not ask for diagnoses in this form.
+            </p>
+            <p>
+              Email is delivered through the website host mailbox to info@thecaringcove.co.ke. We
+              keep inquiry mail for 12 months, then delete it, unless a later admission file must
+              keep a subset. You can ask for a copy, a correction, or deletion by emailing{" "}
+              <a className="text-primary underline" href="mailto:info@thecaringcove.co.ke">
+                info@thecaringcove.co.ke
+              </a>{" "}
+              with your reference number.
+            </p>
+          </aside>
         </div>
       </section>
     </>

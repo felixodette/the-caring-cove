@@ -73,8 +73,8 @@ const Footer = () => (
             {[
               { label: "Memory Care (Alzheimer's & Dementia)", href: "/service#service-0" },
               { label: "Palliative & End-of-Life Care", href: "/service#service-1" },
-              { label: "Convalescence & Rehabilitation", href: "/service#service-2" },
-              { label: "Skilled Nursing & Complex Care", href: "/service#service-3" },
+              { label: "Specialised Recovery", href: "/service#service-2" },
+              { label: "24/7 Skilled Nursing", href: "/service#service-3" },
               { label: "Respite Stays", href: "/service#service-4" },
               { label: "Wellness & Lifestyle", href: "/service#service-5" },
             ].map(({ label, href }) => (

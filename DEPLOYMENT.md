@@ -144,23 +144,11 @@ The contact form uses a **PHP mail-bridge** script that deploys with your static
 
 ### How it works
 
-1. **Frontend:** The form uses progressive disclosure (2 steps) to reduce form fatigue. Step 1: Name, Phone, Email. Step 2: Primary Interest, Location (for lead qualification).
-2. **Backend:** Form submits to `/contact-handler.php`, which sends an email to `info@thecaringcove.co.ke`.
-3. **cPanel:** Ensure PHP is enabled for your domain. The script uses the standard `mail()` function.
+1. **Frontend:** Three steps: situation, how we reach you, tour window plus consent. Hidden unless `NEXT_PUBLIC_CONTACT_FORM_DISABLED=enabled`.
+2. **Backend:** Same-origin `contact-handler.php` validates the contract, scores the lead, mails intake, and acknowledges the family.
+3. **cPanel:** PHP `mail()` plus optional off-root JSON config. See [docs/CONTACT-FORM-DEPLOYMENT.md](docs/CONTACT-FORM-DEPLOYMENT.md).
 
-### Alternative: Formspree
-
-To use Formspree instead of PHP, set this environment variable before build:
-
-```
-NEXT_PUBLIC_CONTACT_FORM_ENDPOINT=https://formspree.io/f/YOUR_FORM_ID
-```
-
-Add it to `.env.local` for local dev, and to your GitHub Actions workflow (or build command) for production.
-
-### Auto-Responder (cPanel)
-
-Set up an Auto-Responder for `info@thecaringcove.co.ke` with your Dignity & Care Guide attached. Suggested message: *"Thank you for trusting us. While you wait for our call, please find our Dignity & Care Guide attached..."*
+Handler already sends a family acknowledgement. Do not add a second cPanel auto-responder unless it avoids duplicating that mail.
 
 ---
 

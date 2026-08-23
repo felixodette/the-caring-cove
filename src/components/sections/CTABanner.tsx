@@ -3,9 +3,11 @@ import Link from "next/link";
 const CTABanner = () => (
   <section className="bg-primary py-16">
     <div className="container mx-auto text-center">
-      <p className="section-subtitle text-primary-foreground/80">We&apos;re here to support families—near and far</p>
+      <p className="section-subtitle text-primary-foreground/80">
+        We&apos;re here to support families—near and far
+      </p>
       <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-        Ready to see the 1:4 difference for yourself?
+        Ready to see boutique care for yourself?
       </h2>
       <Link
         href="/contact"
